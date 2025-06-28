@@ -1,0 +1,229 @@
+{
+  "services": [
+    {
+      "id": "research-consulting",
+      "title": "Research Consulting",
+      "icon": "bi bi-search",
+      "description": "Expert research consulting services for academic and industry projects. Specializing in machine learning, data science, and artificial intelligence research.",
+      "long_description": "I provide comprehensive research consulting services to help organizations develop and implement cutting-edge research projects. My expertise spans from initial research design to final implementation and publication.",
+      "features": [
+        "Research methodology design",
+        "Literature review and gap analysis",
+        "Experimental design and statistical analysis",
+        "Data collection and preprocessing strategies",
+        "Research proposal development",
+        "Publication support and peer review"
+      ],
+      "applications": [
+        "Academic research projects",
+        "Industry R&D initiatives",
+        "Government research programs",
+        "Startup technology development"
+      ],
+      "technologies": [
+        "Python",
+        "R",
+        "Statistical Analysis Tools",
+        "Research Management Software"
+      ],
+      "deliverables": [
+        "Research proposals",
+        "Methodology documents",
+        "Statistical analysis reports",
+        "Publication-ready manuscripts"
+      ]
+    },
+    {
+      "id": "machine-learning-development",
+      "title": "Machine Learning Development",
+      "icon": "bi bi-cpu",
+      "description": "End-to-end machine learning solution development, from data preprocessing to model deployment in production environments.",
+      "long_description": "I develop custom machine learning solutions tailored to your specific needs. From initial data analysis to production deployment, I ensure robust, scalable, and maintainable ML systems.",
+      "features": [
+        "Custom ML model development",
+        "Data preprocessing and feature engineering",
+        "Model training and optimization",
+        "Performance evaluation and validation",
+        "Production deployment and monitoring",
+        "Model maintenance and updates"
+      ],
+      "applications": [
+        "Predictive analytics",
+        "Computer vision systems",
+        "Natural language processing",
+        "Recommendation systems",
+        "Anomaly detection"
+      ],
+      "technologies": [
+        "TensorFlow",
+        "PyTorch",
+        "Scikit-learn",
+        "AWS SageMaker",
+        "Google Cloud AI",
+        "Docker"
+      ],
+      "deliverables": [
+        "Trained ML models",
+        "API endpoints",
+        "Documentation and user guides",
+        "Performance reports"
+      ]
+    },
+    {
+      "id": "data-science-solutions",
+      "title": "Data Science Solutions",
+      "icon": "bi bi-graph-up",
+      "description": "Comprehensive data science services including data analysis, visualization, and insights generation for informed decision-making.",
+      "long_description": "Transform your data into actionable insights with comprehensive data science solutions. I help organizations understand their data, identify patterns, and make data-driven decisions.",
+      "features": [
+        "Exploratory data analysis",
+        "Statistical modeling and hypothesis testing",
+        "Data visualization and dashboard creation",
+        "Predictive modeling",
+        "Business intelligence solutions",
+        "Data strategy consulting"
+      ],
+      "applications": [
+        "Business analytics",
+        "Market research",
+        "Performance optimization",
+        "Risk assessment",
+        "Customer behavior analysis"
+      ],
+      "technologies": [
+        "Python",
+        "R",
+        "SQL",
+        "Tableau",
+        "Power BI",
+        "Jupyter Notebooks"
+      ],
+      "deliverables": [
+        "Data analysis reports",
+        "Interactive dashboards",
+        "Statistical models",
+        "Recommendation reports"
+      ]
+    },
+    {
+      "id": "academic-writing",
+      "title": "Academic Writing & Publication",
+      "icon": "bi bi-journal-text",
+      "description": "Professional academic writing services including research papers, grant proposals, and technical documentation.",
+      "long_description": "I provide expert academic writing services to help researchers and organizations communicate their findings effectively. From research papers to grant proposals, I ensure clarity, accuracy, and impact.",
+      "features": [
+        "Research paper writing and editing",
+        "Grant proposal development",
+        "Technical documentation",
+        "Literature reviews",
+        "Peer review support",
+        "Publication strategy consulting"
+      ],
+      "applications": [
+        "Academic publications",
+        "Research grant applications",
+        "Technical reports",
+        "Conference presentations",
+        "Patent applications"
+      ],
+      "technologies": [
+        "LaTeX",
+        "Microsoft Word",
+        "Reference management tools",
+        "Citation databases"
+      ],
+      "deliverables": [
+        "Publication-ready manuscripts",
+        "Grant proposals",
+        "Technical documentation",
+        "Presentation materials"
+      ]
+    },
+    {
+      "id": "software-development",
+      "title": "Software Development",
+      "icon": "bi bi-code-slash",
+      "description": "Custom software development services focusing on research tools, data processing applications, and web-based solutions.",
+      "long_description": "I develop custom software solutions that support research and data analysis workflows. From research tools to web applications, I create robust, scalable, and user-friendly software.",
+      "features": [
+        "Custom research software development",
+        "Web application development",
+        "API development and integration",
+        "Database design and implementation",
+        "Software testing and quality assurance",
+        "Deployment and maintenance"
+      ],
+      "applications": [
+        "Research data management systems",
+        "Laboratory information management",
+        "Data visualization platforms",
+        "Collaborative research tools",
+        "Automated data processing pipelines"
+      ],
+      "technologies": [
+        "Python",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "deliverables": [
+        "Custom software applications",
+        "API documentation",
+        "User manuals",
+        "Deployment guides"
+      ]
+    },
+    {
+      "id": "training-workshops",
+      "title": "Training & Workshops",
+      "icon": "bi bi-people",
+      "description": "Professional training and workshops on machine learning, data science, and research methodologies for teams and organizations.",
+      "long_description": "I conduct comprehensive training sessions and workshops to help teams develop skills in machine learning, data science, and research methodologies. Training is customized to your organization's needs.",
+      "features": [
+        "Machine learning fundamentals",
+        "Data science best practices",
+        "Research methodology training",
+        "Tool-specific workshops",
+        "Hands-on project work",
+        "Ongoing support and mentoring"
+      ],
+      "applications": [
+        "Corporate training programs",
+        "Academic course development",
+        "Workshop facilitation",
+        "Skill development programs",
+        "Team building activities"
+      ],
+      "technologies": [
+        "Jupyter Notebooks",
+        "Online learning platforms",
+        "Interactive demonstrations",
+        "Real-world datasets"
+      ],
+      "deliverables": [
+        "Training materials",
+        "Hands-on exercises",
+        "Assessment tools",
+        "Certificates of completion"
+      ]
+    }
+  ],
+  "pricing": {
+    "consulting_rate": "$150/hour",
+    "project_based": "Custom quotes based on scope",
+    "training_rate": "$200/hour",
+    "discounts": [
+      "Academic institutions: 20% discount",
+      "Non-profit organizations: 15% discount",
+      "Long-term projects: Volume discounts available"
+    ]
+  },
+  "availability": {
+    "status": "Available for new projects",
+    "response_time": "Within 24 hours",
+    "project_timeline": "2-8 weeks depending on scope",
+    "timezone": "EST (UTC-5)"
+  }
+}

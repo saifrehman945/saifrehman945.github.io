@@ -1,0 +1,69 @@
+{
+  "personal": {
+    "name": "Saif Rehman",
+    "title": "Research Scientist & Developer",
+    "tagline": "I'm a Research Scientist & Developer",
+    "typed_items": ["Research Scientist", "Machine Learning Engineer", "Data Scientist", "Full Stack Developer"],
+    "profile_image": "assets/img/my-profile-img.png",
+    "hero_background": "assets/img/hero-bg.jpg",
+    "favicon": "assets/img/favicon.png",
+    "apple_touch_icon": "assets/img/apple-touch-icon.png"
+  },
+  "contact": {
+    "email": "saifrehman945@gmail.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "Research Lab, University Campus, City, State 12345",
+    "website": "https://saifrehman945.github.io",
+    "location": "City, State, Country"
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/in/saifrehman945",
+    "github": "https://github.com/saifrehman945",
+    "twitter": "https://twitter.com/saifrehman945",
+    "research_gate": "https://researchgate.net/profile/saifrehman945",
+    "google_scholar": "https://scholar.google.com/citations?user=saifrehman945",
+    "orcid": "https://orcid.org/0000-0000-0000-0000"
+  },
+  "about": {
+    "summary": "Passionate research scientist with expertise in machine learning, data science, and software development. Focused on developing innovative solutions for real-world problems through interdisciplinary research.",
+    "description": "I am a dedicated researcher with a strong background in computer science and machine learning. My work focuses on developing cutting-edge algorithms and systems that address complex challenges in various domains including healthcare, finance, and environmental science.",
+    "birthday": "1999-05-01",
+    "age": 19,
+    "degree": "Ph.D. in Computer Science",
+    "freelance": "Available for Research Collaborations",
+    "research_interests": [
+      "Machine Learning",
+      "Deep Learning",
+      "Computer Vision",
+      "Natural Language Processing",
+      "Data Science",
+      "Software Engineering"
+    ]
+  },
+  "stats": [
+    {
+      "icon": "bi bi-emoji-smile",
+      "count": 5,
+      "label": "Research Papers",
+      "description": "Published in top-tier conferences and journals"
+    },
+    {
+      "icon": "bi bi-journal-richtext",
+      "count": 25,
+      "label": "Research Projects",
+      "description": "Completed innovative research projects"
+    },
+    {
+      "icon": "bi bi-headset",
+      "count": 1000,
+      "label": "Hours of Research",
+      "description": "Dedicated research and development time"
+    },
+    {
+      "icon": "bi bi-people",
+      "count": 15,
+      "label": "Collaborations",
+      "description": "Research collaborations worldwide"
+    }
+  ]
+}

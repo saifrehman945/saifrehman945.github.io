@@ -108,7 +108,32 @@
   /**
    * Initiate Pure Counter
    */
-  new PureCounter();
+  function initPureCounter() {
+    if (window.statsReady) {
+      console.log('Initializing PureCounter after stats are ready');
+      new PureCounter();
+    } else {
+      console.log('Waiting for stats to be ready before initializing PureCounter');
+      let attempts = 0;
+      const maxAttempts = 50; // 5 seconds max wait
+      
+      // Check every 100ms if stats are ready
+      const checkStats = setInterval(() => {
+        attempts++;
+        if (window.statsReady) {
+          console.log('Stats are ready, initializing PureCounter');
+          new PureCounter();
+          clearInterval(checkStats);
+        } else if (attempts >= maxAttempts) {
+          console.log('Timeout reached, initializing PureCounter with default values');
+          new PureCounter();
+          clearInterval(checkStats);
+        }
+      }, 100);
+    }
+  }
+  
+  initPureCounter();
 
   /**
    * Animate the skills items on reveal

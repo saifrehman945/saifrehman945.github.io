@@ -1,0 +1,88 @@
+{
+  "testimonials": [
+    {
+      "id": "testimonial-1",
+      "name": "Dr. Sarah Johnson",
+      "position": "Research Director",
+      "institution": "AI Research Institute",
+      "image": "assets/img/testimonials/testimonials-1.jpg",
+      "quote": "Saif's expertise in machine learning and research methodology is exceptional. He led our computer vision project with remarkable results, achieving 95% accuracy and publishing in top-tier conferences. His ability to translate complex research into practical solutions is invaluable.",
+      "project": "Computer Vision Research Project",
+      "rating": 5,
+      "date": "2024-03-15",
+      "category": "research"
+    },
+    {
+      "id": "testimonial-2",
+      "name": "Prof. Michael Chen",
+      "position": "Professor of Computer Science",
+      "institution": "University of Technology",
+      "image": "assets/img/testimonials/testimonials-2.jpg",
+      "quote": "Working with Saif on our NLP research was a game-changer. His deep understanding of transformer models and innovative approaches led to significant improvements in our sentiment analysis system. He's not just a skilled researcher but also an excellent communicator.",
+      "project": "Natural Language Processing Research",
+      "rating": 5,
+      "date": "2024-02-20",
+      "category": "academic"
+    },
+    {
+      "id": "testimonial-3",
+      "name": "Dr. Emily Rodriguez",
+      "position": "Chief Data Scientist",
+      "institution": "TechCorp Solutions",
+      "image": "assets/img/testimonials/testimonials-3.jpg",
+      "quote": "Saif delivered an outstanding machine learning solution for our healthcare diagnostics platform. His attention to detail, understanding of medical AI requirements, and ability to meet strict deadlines made him an invaluable partner. The results exceeded our expectations.",
+      "project": "Healthcare AI Platform",
+      "rating": 5,
+      "date": "2024-01-10",
+      "category": "industry"
+    },
+    {
+      "id": "testimonial-4",
+      "name": "Dr. David Kim",
+      "position": "Research Fellow",
+      "institution": "National Research Lab",
+      "image": "assets/img/testimonials/testimonials-4.jpg",
+      "quote": "Saif's contribution to our data visualization platform was instrumental in its success. His full-stack development skills, combined with his research background, enabled us to create a tool that serves hundreds of researchers daily. Highly recommended for any research software project.",
+      "project": "Data Visualization Platform",
+      "rating": 5,
+      "date": "2023-12-05",
+      "category": "software"
+    },
+    {
+      "id": "testimonial-5",
+      "name": "Lisa Thompson",
+      "position": "Head of Research",
+      "institution": "Innovation Labs",
+      "image": "assets/img/testimonials/testimonials-5.jpg",
+      "quote": "Saif conducted an excellent training workshop for our research team on machine learning fundamentals. His ability to explain complex concepts clearly and provide hands-on guidance helped our team develop essential skills. The workshop was well-structured and highly engaging.",
+      "project": "ML Training Workshop",
+      "rating": 5,
+      "date": "2023-11-15",
+      "category": "training"
+    },
+    {
+      "id": "testimonial-6",
+      "name": "Dr. Robert Wilson",
+      "position": "Principal Investigator",
+      "institution": "Medical Research Center",
+      "image": "assets/img/testimonials/testimonials-6.jpg",
+      "quote": "Saif's expertise in medical AI and his understanding of clinical requirements made him the perfect collaborator for our diagnostic imaging project. His work on chest X-ray analysis achieved remarkable accuracy and is now being used in clinical trials. A true professional in every sense.",
+      "project": "Medical Imaging AI",
+      "rating": 5,
+      "date": "2023-10-20",
+      "category": "healthcare"
+    }
+  ],
+  "statistics": {
+    "total_testimonials": 6,
+    "average_rating": 5.0,
+    "categories": [
+      "research",
+      "academic", 
+      "industry",
+      "software",
+      "training",
+      "healthcare"
+    ]
+  }
+}

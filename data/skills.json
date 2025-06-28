@@ -1,0 +1,100 @@
+{
+  "technical_skills": [
+    {
+      "name": "Python",
+      "percentage": 95,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "R",
+      "percentage": 90,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "JavaScript",
+      "percentage": 85,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "Java",
+      "percentage": 80,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "C++",
+      "percentage": 75,
+      "category": "Programming Languages"
+    },
+    {
+      "name": "TensorFlow",
+      "percentage": 90,
+      "category": "Machine Learning"
+    },
+    {
+      "name": "PyTorch",
+      "percentage": 88,
+      "category": "Machine Learning"
+    },
+    {
+      "name": "Scikit-learn",
+      "percentage": 92,
+      "category": "Machine Learning"
+    },
+    {
+      "name": "OpenCV",
+      "percentage": 85,
+      "category": "Computer Vision"
+    },
+    {
+      "name": "NLTK",
+      "percentage": 82,
+      "category": "Natural Language Processing"
+    },
+    {
+      "name": "React",
+      "percentage": 80,
+      "category": "Web Development"
+    },
+    {
+      "name": "Node.js",
+      "percentage": 75,
+      "category": "Web Development"
+    },
+    {
+      "name": "Docker",
+      "percentage": 85,
+      "category": "DevOps"
+    },
+    {
+      "name": "Git",
+      "percentage": 90,
+      "category": "Version Control"
+    },
+    {
+      "name": "LaTeX",
+      "percentage": 88,
+      "category": "Documentation"
+    }
+  ],
+  "research_methodologies": [
+    "Experimental Design",
+    "Statistical Analysis",
+    "Data Collection",
+    "Literature Review",
+    "Peer Review",
+    "Research Ethics",
+    "Academic Writing",
+    "Conference Presentations"
+  ],
+  "tools_and_platforms": [
+    "Jupyter Notebooks",
+    "Google Colab",
+    "AWS/Azure/GCP",
+    "HPC Clusters",
+    "GitHub/GitLab",
+    "Overleaf",
+    "Mendeley",
+    "Tableau",
+    "Power BI"
+  ]
+}

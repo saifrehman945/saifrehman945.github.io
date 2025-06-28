@@ -1,0 +1,238 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Machine Learning for Healthcare Diagnosis",
+      "category": "machine-learning",
+      "featured": true,
+      "short_description": "Advanced ML model for early cardiovascular disease detection",
+      "description": "Developed an advanced machine learning model for early detection of cardiovascular diseases using patient data analysis and predictive algorithms.",
+      "detailed_description": "This research project focused on developing a comprehensive machine learning system for early detection of cardiovascular diseases. The project involved analyzing large datasets of patient information, including medical history, vital signs, and diagnostic test results. The developed model achieved 94% accuracy in predicting cardiovascular risk factors and was validated across multiple healthcare institutions.",
+      "main_image": "assets/img/portfolio/app-1.jpg",
+      "additional_images": [
+        "assets/img/portfolio/app-1.jpg",
+        "assets/img/portfolio/app-2.jpg",
+        "assets/img/portfolio/app-3.jpg"
+      ],
+      "methodology": [
+        "Data collection from 10,000+ patient records",
+        "Feature engineering and selection",
+        "Deep learning model development using TensorFlow",
+        "Cross-validation and model evaluation",
+        "Clinical validation with healthcare partners"
+      ],
+      "results": [
+        "94% accuracy in disease prediction",
+        "Reduced false positives by 23%",
+        "Published in top-tier medical AI journal",
+        "Deployed in 3 major hospitals"
+      ],
+      "technologies": ["Python", "TensorFlow", "Scikit-learn", "Pandas", "NumPy"],
+      "publications": [
+        {
+          "title": "Early Detection of Cardiovascular Diseases Using Machine Learning",
+          "journal": "Journal of Medical AI",
+          "year": 2023,
+          "doi": "10.1000/example.2023.001"
+        }
+      ],
+      "github_url": "https://github.com/saifrehman945/healthcare-ml",
+      "demo_url": "https://demo.healthcare-ml.com",
+      "status": "completed",
+      "duration": "18 months",
+      "team_size": 5
+    },
+    {
+      "id": 2,
+      "title": "NLP for Research Paper Analysis",
+      "category": "nlp",
+      "featured": true,
+      "short_description": "Automated literature review and knowledge extraction system",
+      "description": "Built an NLP system to analyze and extract key insights from research papers, enabling automated literature review and knowledge discovery.",
+      "detailed_description": "This project developed a comprehensive natural language processing system designed to analyze research papers and extract meaningful insights. The system can identify research trends, extract key findings, and generate automated summaries. It processes thousands of papers across multiple domains and provides researchers with valuable insights for their work.",
+      "main_image": "assets/img/portfolio/app-2.jpg",
+      "additional_images": [
+        "assets/img/portfolio/app-2.jpg",
+        "assets/img/portfolio/product-1.jpg",
+        "assets/img/portfolio/product-2.jpg"
+      ],
+      "methodology": [
+        "Text preprocessing and tokenization",
+        "BERT-based document embedding",
+        "Topic modeling and clustering",
+        "Information extraction using NER",
+        "Automated summarization techniques"
+      ],
+      "results": [
+        "Processed 50,000+ research papers",
+        "85% accuracy in key insight extraction",
+        "Reduced literature review time by 70%",
+        "Generated automated research summaries"
+      ],
+      "technologies": ["Python", "Transformers", "BERT", "SpaCy", "FastAPI"],
+      "publications": [
+        {
+          "title": "Automated Research Paper Analysis Using Advanced NLP Techniques",
+          "journal": "Computational Linguistics",
+          "year": 2023,
+          "doi": "10.1000/example.2023.002"
+        }
+      ],
+      "github_url": "https://github.com/saifrehman945/research-nlp",
+      "demo_url": "https://demo.research-nlp.com",
+      "status": "completed",
+      "duration": "12 months",
+      "team_size": 3
+    },
+    {
+      "id": 3,
+      "title": "Computer Vision for Autonomous Vehicles",
+      "category": "computer-vision",
+      "featured": false,
+      "short_description": "Real-time object detection and path planning algorithms",
+      "description": "Implemented computer vision algorithms for real-time object detection and path planning in autonomous vehicle systems.",
+      "detailed_description": "This research focused on developing computer vision algorithms for autonomous vehicle navigation. The project involved real-time object detection, lane detection, and path planning using advanced deep learning techniques. The system was tested in various environmental conditions and achieved high accuracy in object recognition and navigation.",
+      "main_image": "assets/img/portfolio/app-3.jpg",
+      "additional_images": [
+        "assets/img/portfolio/app-3.jpg",
+        "assets/img/portfolio/product-3.jpg",
+        "assets/img/portfolio/branding-1.jpg"
+      ],
+      "methodology": [
+        "Real-time video processing pipeline",
+        "YOLO-based object detection",
+        "Lane detection using edge detection",
+        "Path planning with A* algorithm",
+        "Simulation testing in various conditions"
+      ],
+      "results": [
+        "Real-time processing at 30 FPS",
+        "95% accuracy in object detection",
+        "Successfully tested in urban environments",
+        "Reduced collision risk by 40%"
+      ],
+      "technologies": ["Python", "OpenCV", "PyTorch", "ROS", "CUDA"],
+      "publications": [
+        {
+          "title": "Real-time Object Detection for Autonomous Vehicle Navigation",
+          "journal": "IEEE Transactions on Intelligent Transportation Systems",
+          "year": 2023,
+          "doi": "10.1000/example.2023.003"
+        }
+      ],
+      "github_url": "https://github.com/saifrehman945/autonomous-vision",
+      "demo_url": "https://demo.autonomous-vision.com",
+      "status": "completed",
+      "duration": "24 months",
+      "team_size": 8
+    },
+    {
+      "id": 4,
+      "title": "Data Science Platform for Climate Analysis",
+      "category": "data-science",
+      "description": "Developed a comprehensive data science platform for analyzing climate change patterns and predicting environmental impacts.",
+      "long_description": "This project created a comprehensive data science platform for climate analysis. The platform processes satellite data, weather station information, and environmental sensors to analyze climate change patterns. It provides predictive models for environmental impacts and helps researchers understand climate trends.",
+      "image": "assets/img/portfolio/product-1.jpg",
+      "technologies": ["Python", "R", "PostgreSQL", "Docker", "AWS"],
+      "duration": "16 months",
+      "team_size": 6,
+      "publications": [
+        {
+          "title": "Climate Change Analysis Using Advanced Data Science Techniques",
+          "journal": "Environmental Science & Technology",
+          "year": 2023,
+          "doi": "10.1000/example.2023.004"
+        }
+      ],
+      "github_url": "https://github.com/saifrehman945/climate-analysis",
+      "demo_url": "https://demo.climate-analysis.com",
+      "status": "completed"
+    },
+    {
+      "id": 5,
+      "title": "Blockchain-based Research Data Management",
+      "category": "blockchain",
+      "description": "Implemented a blockchain solution for secure and transparent management of research data and academic credentials.",
+      "long_description": "This project developed a blockchain-based system for managing research data and academic credentials. The system ensures data integrity, provides transparent access control, and enables secure sharing of research findings. It addresses the growing need for trustworthy data management in academic research.",
+      "image": "assets/img/portfolio/product-2.jpg",
+      "technologies": ["Solidity", "Web3.js", "Node.js", "MongoDB", "Ethereum"],
+      "duration": "14 months",
+      "team_size": 4,
+      "publications": [
+        {
+          "title": "Blockchain Solutions for Research Data Management",
+          "journal": "IEEE Blockchain",
+          "year": 2023,
+          "doi": "10.1000/example.2023.005"
+        }
+      ],
+      "github_url": "https://github.com/saifrehman945/research-blockchain",
+      "demo_url": "https://demo.research-blockchain.com",
+      "status": "completed"
+    },
+    {
+      "id": 6,
+      "title": "IoT-based Smart Laboratory Monitoring",
+      "category": "iot",
+      "description": "Designed and implemented an IoT system for real-time monitoring of laboratory equipment and experimental conditions.",
+      "long_description": "This project developed an IoT-based monitoring system for laboratory environments. The system tracks equipment status, environmental conditions, and experimental parameters in real-time. It provides alerts for anomalies and maintains detailed logs for research compliance and quality assurance.",
+      "image": "assets/img/portfolio/product-3.jpg",
+      "technologies": ["Arduino", "Raspberry Pi", "MQTT", "Python", "InfluxDB"],
+      "duration": "10 months",
+      "team_size": 3,
+      "publications": [
+        {
+          "title": "IoT-based Laboratory Monitoring Systems",
+          "journal": "Journal of Laboratory Automation",
+          "year": 2023,
+          "doi": "10.1000/example.2023.006"
+        }
+      ],
+      "github_url": "https://github.com/saifrehman945/lab-iot",
+      "demo_url": "https://demo.lab-iot.com",
+      "status": "completed"
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Projects",
+      "filter": "*"
+    },
+    {
+      "id": "featured",
+      "name": "Featured Projects",
+      "filter": ".featured"
+    },
+    {
+      "id": "machine-learning",
+      "name": "Machine Learning",
+      "filter": ".machine-learning"
+    },
+    {
+      "id": "nlp",
+      "name": "NLP",
+      "filter": ".nlp"
+    },
+    {
+      "id": "computer-vision",
+      "name": "Computer Vision",
+      "filter": ".computer-vision"
+    },
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "filter": ".data-science"
+    },
+    {
+      "id": "blockchain",
+      "name": "Blockchain",
+      "filter": ".blockchain"
+    },
+    {
+      "id": "iot",
+      "name": "Internet of Things",
+      "filter": ".iot"
+    }
+  ]
+} 
