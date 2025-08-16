@@ -7,14 +7,72 @@
     "profile_image": "assets/img/my-profile-img.png",
     "hero_background": "assets/img/hero-bg.jpg",
     "favicon": "assets/img/favicon.png",
-    "apple_touch_icon": "assets/img/apple-touch-icon.png"
+    "apple_touch_icon": "assets/img/apple-touch-icon.png",
+    "copyright": {
+      "text": "All Rights Reserved",
+      "year": 2024
+    },
+    "credits": {
+      "show": true,
+      "designer": {
+        "name": "BootstrapMade",
+        "url": "https://bootstrapmade.com/"
+      },
+      "distributor": {
+        "name": "ThemeWagon",
+        "url": "https://themewagon.com"
+      }
+    }
   },
   "contact": {
     "email": "saifrehman945@gmail.com",
     "phone": "+1 (555) 123-4567",
     "address": "Research Lab, University Campus, City, State 12345",
     "website": "https://saifrehman945.github.io",
-    "location": "City, State, Country"
+    "location": "City, State, Country",
+    "section_title": "Contact",
+    "section_description": "Get in touch for research collaborations, consulting, or questions about my work",
+    "map": {
+      "embed_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus",
+      "width": "100%",
+      "height": "270"
+    },
+    "form": {
+      "title": "Send Message",
+      "fields": [
+        {
+          "id": "name",
+          "label": "Your Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "id": "email",
+          "label": "Your Email",
+          "type": "email",
+          "required": true
+        },
+        {
+          "id": "subject",
+          "label": "Subject",
+          "type": "text",
+          "required": true
+        },
+        {
+          "id": "message",
+          "label": "Message",
+          "type": "textarea",
+          "required": true,
+          "rows": 10
+        }
+      ],
+      "button_text": "Send Message",
+      "messages": {
+        "loading": "Loading",
+        "error": "Message could not be sent",
+        "success": "Your message has been sent. Thank you!"
+      }
+    }
   },
   "social": {
     "linkedin": "https://linkedin.com/in/saifrehman945",
