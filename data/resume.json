@@ -1,180 +1,154 @@
 {
   "summary": {
-    "name": "Saif Rehman",
-    "title": "Research Scientist & Machine Learning Engineer",
-    "description": "Innovative and deadline-driven research scientist with 5+ years of experience in machine learning, data science, and software development. Published 20+ research papers in top-tier conferences and journals. Led multiple research projects from initial concept to final implementation.",
+    "name": "Muhammad Saif ur Rehman",
+    "title": "Simulation Engineer | CFD & FEA Specialist",
+    "description": "A Simulation Engineer with deep interest in multiphase flow simulations and their applications across complex engineering systems. Skilled in advanced CAE tools, automation with Python, and core development in C++. Experienced in CFD/FEA modeling, optimization, and workflow automation with strong problem-solving and leadership abilities.",
     "contact": {
-      "address": "Research Lab, University Campus, City, State 12345",
-      "phone": "+1 (555) 123-4567",
-      "email": "saifrehman945@gmail.com"
+      "address": "Multan, Pakistan",
+      "phone": "+92 3106107233",
+      "email": "saifurrehman945@outlook.com",
+      "linkedin": "https://www.linkedin.com/in/saif-ur-rehman-41250b187/",
+      "whatsapp": "+923106107233"
     }
   },
   "education": [
     {
-      "degree": "Ph.D. in Computer Science",
-      "institution": "University of Technology",
-      "period": "2020 - 2024",
-      "location": "City, State",
-      "description": "Specialized in Machine Learning and Artificial Intelligence. Dissertation: 'Advanced Deep Learning Techniques for Computer Vision Applications'",
-      "gpa": "3.9/4.0",
-      "thesis": "Advanced Deep Learning Techniques for Computer Vision Applications",
-      "advisor": "Dr. John Smith"
+      "degree": "Bachelors in Mechanical Engineering",
+      "institution": "National University of Sciences and Technology (NUST)",
+      "period": "2019 - 2023",
+      "location": "Islamabad, Pakistan",
+      "description": "Specialization in Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD), and Numerical Methods. Additional courses in Vehicle Design, Mechatronics, and Gas Turbines.",
+      "gpa": null
     },
     {
-      "degree": "Master of Science in Computer Science",
-      "institution": "University of Technology",
-      "period": "2018 - 2020",
-      "location": "City, State",
-      "description": "Focused on Data Science and Machine Learning. Thesis: 'Machine Learning Approaches for Predictive Analytics'",
-      "gpa": "3.8/4.0",
-      "thesis": "Machine Learning Approaches for Predictive Analytics",
-      "advisor": "Dr. Jane Doe"
-    },
-    {
-      "degree": "Bachelor of Science in Computer Science",
-      "institution": "University of Technology",
-      "period": "2014 - 2018",
-      "location": "City, State",
-      "description": "Major in Computer Science with minor in Mathematics",
-      "gpa": "3.7/4.0"
+      "degree": "Certificate of Training - OpenFOAM",
+      "institution": "School of Mechanical and Manufacturing Engineering (SMME), NUST",
+      "period": "Jan 2023",
+      "location": "Islamabad, Pakistan",
+      "description": "Covered fundamentals to advanced CFD including meshing, solvers, turbulence modeling, multiphase flows, solver customization, and scripting.",
+      "link": "https://tinyurl.com/39x28dbj"
     }
   ],
   "experience": [
     {
-      "title": "Senior Research Scientist",
-      "company": "Tech Research Institute",
-      "period": "2024 - Present",
-      "location": "City, State",
-      "description": "Leading cutting-edge research in machine learning and artificial intelligence",
+      "title": "Simulation Engineer",
+      "company": "SOCO-Engineers GmbH",
+      "period": "Dec 2023 - Present",
+      "location": "Multan, Pakistan",
+      "description": "Working in Simulation and Development department with focus on material modeling, workflow automation, and optimization.",
       "responsibilities": [
-        "Lead research projects in computer vision and natural language processing",
-        "Develop and implement state-of-the-art machine learning algorithms",
-        "Collaborate with industry partners on applied research projects",
-        "Mentor junior researchers and graduate students",
-        "Publish research findings in top-tier conferences and journals"
-      ],
-      "achievements": [
-        "Published 5 research papers in top-tier conferences (ICML, NeurIPS, CVPR)",
-        "Secured $500K in research funding from government and industry partners",
-        "Developed novel deep learning architecture achieving 95% accuracy on benchmark datasets"
-      ]
-    },
-    {
-      "title": "Machine Learning Engineer",
-      "company": "AI Solutions Inc.",
-      "period": "2022 - 2024",
-      "location": "City, State",
-      "description": "Developed and deployed machine learning solutions for enterprise clients",
-      "responsibilities": [
-        "Designed and implemented machine learning pipelines for production systems",
-        "Optimized model performance and scalability for large-scale deployments",
-        "Collaborated with cross-functional teams to integrate ML solutions",
-        "Conducted research on emerging ML technologies and methodologies"
-      ],
-      "achievements": [
-        "Reduced model inference time by 60% through optimization techniques",
-        "Deployed ML models serving 1M+ daily predictions",
-        "Led team of 3 engineers in developing recommendation system"
+        "Integrated classical material models into MATLAB and Python as user subroutines for industrial FEA solvers.",
+        "Developed workflows to validate material models against experimental and simulation data.",
+        "Managed a comprehensive material database of 200+ material types from 300+ suppliers.",
+        "Designed and implemented 10+ simulation workflows for testing, data parsing, meshing, and post-processing.",
+        "Developed shape optimization framework in Python and C++ using adjoint sensitivities.",
+        "Maintained code quality with GitHub CI/CD pipelines and modular development."
       ]
     },
     {
       "title": "Research Assistant",
-      "company": "University Research Lab",
-      "period": "2020 - 2022",
-      "location": "City, State",
-      "description": "Conducted research in computer vision and deep learning",
+      "company": "National University of Sciences and Technology (NUST)",
+      "period": "Sep 2022 - Dec 2023",
+      "location": "Islamabad, Pakistan",
+      "description": "Conducted research in nanofluids-based heat transfer enhancement and ventilated super-cavitation.",
       "responsibilities": [
-        "Implemented and evaluated deep learning models for computer vision tasks",
-        "Collected and preprocessed large-scale datasets",
-        "Assisted in writing research papers and grant proposals",
-        "Presented research findings at conferences and workshops"
-      ],
-      "achievements": [
-        "Published 3 research papers in top computer vision conferences",
-        "Developed novel dataset with 100K+ annotated images",
-        "Received Best Paper Award at CVPR 2021"
+        "Enhanced nanofluid solar collector heat transfer efficiency up to 70% using artificial roughness.",
+        "Demonstrated that increasing Air-Al₂O₃ volume fraction (1% to 4%) doubled heat transfer rate.",
+        "Developed ventilated super-cavitation model reducing drag by 65%.",
+        "Optimized cavitator design achieving 5% additional drag reduction with disk cavitator.",
+        "Reduced computational time using ANSYS Fluent MPI on HPC clusters."
+      ]
+    },
+    {
+      "title": "Freelance CAE Engineer",
+      "company": "Fiverr / LinkedIn",
+      "period": "May 2023 - Present",
+      "location": "Islamabad, Pakistan",
+      "description": "Delivered freelance projects in CFD and FEA modeling.",
+      "responsibilities": [
+        "Built numerical models and discretization schemes.",
+        "Developed multiphase flow and turbulence models.",
+        "Performed FEA for mechanical structures.",
+        "Delivered 10+ projects with 95% client satisfaction."
+      ]
+    },
+    {
+      "title": "Maintenance Engineer - Intern",
+      "company": "Pak Arab Refinery (PARCO) - MCR",
+      "period": "Feb 2022 - Aug 2022",
+      "location": "Kot Addu, Pakistan",
+      "description": "Worked in maintenance engineering and plant operations.",
+      "responsibilities": [
+        "Reviewed 100+ work permits, inspection reports, and P&IDs across 10+ departments.",
+        "Implemented API, ASTM, ANSI, ISO standards on 20+ rotary and stationary equipment.",
+        "Supervised team of 10+ in overhaul of Naphtha Hydro pump.",
+        "Proposed AI-based workload planning mechanism reducing field time by 30%."
       ]
     }
   ],
-  "publications": [
+  "projects": [
     {
-      "title": "Advanced Deep Learning for Computer Vision Applications",
-      "authors": "Rehman, S., Smith, J., Doe, J.",
-      "venue": "International Conference on Machine Learning (ICML)",
-      "year": 2024,
-      "type": "Conference",
-      "doi": "10.1234/icml.2024.123",
-      "url": "https://arxiv.org/abs/2024.12345",
-      "abstract": "This paper presents novel deep learning architectures for computer vision tasks...",
-      "citations": 15,
-      "impact_factor": "High"
+      "title": "Dental Zirconia Fixed Prosthesis (FEA)",
+      "period": "Jul 2023 - Feb 2024",
+      "description": "Analyzed effect of cement thickness and Young’s modulus on stress distribution in zirconia dental prosthesis. Optimized adhesive thickness improved clinical service by 35%.",
+      "link": "https://tinyurl.com/2s4zptka"
     },
     {
-      "title": "Machine Learning Approaches for Predictive Analytics",
-      "authors": "Rehman, S., Johnson, A.",
-      "venue": "Neural Information Processing Systems (NeurIPS)",
-      "year": 2023,
-      "type": "Conference",
-      "doi": "10.1234/neurips.2023.456",
-      "url": "https://arxiv.org/abs/2023.67890",
-      "abstract": "We propose a new framework for predictive analytics using machine learning...",
-      "citations": 8,
-      "impact_factor": "High"
+      "title": "Vortex Shedding in Underwater Circular Cylinders",
+      "period": "Feb 2023 - Apr 2023",
+      "description": "Validated RANS SST k-ω turbulent model for vortex-induced vibrations at Re=10000 with <15% error margin.",
+      "links": ["https://tinyurl.com/bdcbara6", "https://tinyurl.com/n8xx558x"]
     },
     {
-      "title": "Deep Learning in Healthcare: A Comprehensive Review",
-      "authors": "Rehman, S., Brown, M., Wilson, K.",
-      "venue": "Nature Machine Intelligence",
-      "year": 2023,
-      "type": "Journal",
-      "doi": "10.1038/s42256-023-00123-4",
-      "url": "https://www.nature.com/articles/s42256-023-00123-4",
-      "abstract": "This review provides a comprehensive overview of deep learning applications in healthcare...",
-      "citations": 25,
-      "impact_factor": "Very High"
+      "title": "AgroDrone Project",
+      "period": "2021",
+      "description": "Led a team of 8 to design UAV for targeted pesticide spraying. Finalist in FICS Stage 3 startup pitching competition.",
+      "link": "https://tinyurl.com/58apa66n"
     }
   ],
-  "awards": [
+  "skills": {
+    "development": [
+      "Python", "C++", "PostgreSQL", "SQLAlchemy", "Git", "Docker", "CI/CD", "NumPy", "SciPy", "scikit-learn", "Pandas", "Openpyxl"
+    ],
+    "simulation": [
+      "OpenFOAM", "ANSYS Fluent", "COMSOL Multiphysics", "Optistruct", "Abaqus CAE", "LS-DYNA"
+    ]
+  },
+  "languages": {
+    "Urdu": "Native",
+    "English": "C1 (Advanced)"
+  },
+  "volunteering": [
     {
-      "title": "Best Paper Award",
-      "organization": "Computer Vision and Pattern Recognition Conference (CVPR)",
-      "year": 2021,
-      "description": "Awarded for outstanding contribution to computer vision research"
+      "title": "Lead Blood Donation Drive",
+      "organization": "AFIT & Sundas Foundation",
+      "period": "Nov 2022 - Dec 2022",
+      "location": "Islamabad, Pakistan",
+      "description": "Led team of 8 volunteers, collected 25+ pints of blood for Thalassemia patients during COVID-19."
     },
     {
-      "title": "Graduate Research Fellowship",
-      "organization": "National Science Foundation",
-      "year": 2020,
-      "description": "Prestigious fellowship for graduate students in STEM fields"
-    },
-    {
-      "title": "Dean's List",
-      "organization": "University of Technology",
-      "year": "2018-2020",
-      "description": "Academic excellence recognition for maintaining 3.8+ GPA"
+      "title": "Educating Underprivileged Children",
+      "organization": "Local NGO",
+      "period": "Apr 2021 - Aug 2021",
+      "location": "Islamabad, Pakistan",
+      "description": "Provided foundational education to underprivileged children in slum areas, enabling integration into formal education system."
     }
   ],
   "certifications": [
     {
-      "name": "AWS Certified Machine Learning - Specialty",
-      "issuer": "Amazon Web Services",
+      "name": "Certificate of Training - OpenFOAM",
+      "issuer": "SMME, NUST",
       "year": 2023,
-      "expiry": "2026",
-      "credential_id": "AWS-ML-123456"
+      "credential_link": "https://tinyurl.com/39x28dbj"
     },
     {
-      "name": "Google Cloud Professional Machine Learning Engineer",
-      "issuer": "Google Cloud",
+      "name": "Time Management Techniques and Tools",
+      "issuer": "Certified Training",
       "year": 2023,
-      "expiry": "2026",
-      "credential_id": "GCP-ML-789012"
-    },
-    {
-      "name": "Certified Data Scientist",
-      "issuer": "Data Science Council of America",
-      "year": 2022,
-      "expiry": "2025",
-      "credential_id": "DASCA-345678"
+      "credential_link": "https://tinyurl.com/2p9vc94u"
     }
+  ],
+  "interests": [
+    "Badminton (8+ years, University Team Player, Inter-School Semifinalist)"
   ]
-} 
+}

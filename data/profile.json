@@ -1,9 +1,9 @@
 {
   "personal": {
-    "name": "Saif Rehman",
+    "name": "Saif ur Rehman",
     "title": "Research Scientist & Developer",
     "tagline": "I'm a Research Scientist & Developer",
-    "typed_items": ["Research Scientist", "Machine Learning Engineer", "Data Scientist", "Full Stack Developer"],
+    "typed_items": ["Research Scientist", "CAE Engineer", "Computational developer", "ML enthusiast"],
     "profile_image": "assets/img/my-profile-img.png",
     "hero_background": "assets/img/hero-bg.jpg",
     "favicon": "assets/img/favicon.png",
@@ -27,9 +27,9 @@
   "contact": {
     "email": "saifrehman945@gmail.com",
     "phone": "+1 (555) 123-4567",
-    "address": "Research Lab, University Campus, City, State 12345",
+    "address": "Islamabad, Pakistan",
     "website": "https://saifrehman945.github.io",
-    "location": "City, State, Country",
+    "location": "Islamabad",
     "section_title": "Contact",
     "section_description": "Get in touch for research collaborations, consulting, or questions about my work",
     "map": {
@@ -83,19 +83,18 @@
     "orcid": "https://orcid.org/0000-0000-0000-0000"
   },
   "about": {
-    "summary": "Passionate research scientist with expertise in machine learning, data science, and software development. Focused on developing innovative solutions for real-world problems through interdisciplinary research.",
-    "description": "I am a dedicated researcher with a strong background in computer science and machine learning. My work focuses on developing cutting-edge algorithms and systems that address complex challenges in various domains including healthcare, finance, and environmental science.",
-    "birthday": "1999-05-01",
-    "age": 19,
-    "degree": "Ph.D. in Computer Science",
+    "summary": "I am a passionate Research Scientist and Developer with expertise in CFD modelling and R&D development. I have a strong academic background and extensive experience in developing innovative solutions for the CAE industry.",
+    "description": "Fully professional with 3 years of industry experience in Computational Fluid Dynamics (CFD) modelling and Research & Development (R&D). I have a proven track record of delivering high-quality research projects and innovative solutions in the field of CAE. My expertise includes machine learning, deep learning, computer vision, and natural language processing. I am dedicated to advancing the field of computational engineering through rigorous research and development.",
+    "birthday": "2001-01-01",
+    "age": 24,
+    "degree": "Bachelors in Mechanical Engineer",
     "freelance": "Available for Research Collaborations",
     "research_interests": [
-      "Machine Learning",
-      "Deep Learning",
-      "Computer Vision",
-      "Natural Language Processing",
-      "Data Science",
-      "Software Engineering"
+      "Material Modelling",
+      "R&D development",
+      "Computational Fluid Dynamics (CFD)",
+      "Finite Element Analysis (FEA)",
+      "CAE Development"
     ]
   },
   "stats": [

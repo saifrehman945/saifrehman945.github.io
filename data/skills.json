@@ -6,64 +6,74 @@
       "category": "Programming Languages"
     },
     {
-      "name": "R",
-      "percentage": 90,
-      "category": "Programming Languages"
-    },
-    {
-      "name": "JavaScript",
-      "percentage": 85,
-      "category": "Programming Languages"
-    },
-    {
-      "name": "Java",
-      "percentage": 80,
-      "category": "Programming Languages"
-    },
-    {
       "name": "C++",
-      "percentage": 75,
+      "percentage": 90,
       "category": "Programming Languages"
     },
     {
-      "name": "TensorFlow",
-      "percentage": 90,
-      "category": "Machine Learning"
+      "name": "PostgreSQL",
+      "percentage": 85,
+      "category": "Databases"
     },
     {
-      "name": "PyTorch",
+      "name": "SQLAlchemy",
+      "percentage": 80,
+      "category": "Databases"
+    },
+    {
+      "name": "NumPy",
+      "percentage": 92,
+      "category": "Scientific Computing"
+    },
+    {
+      "name": "SciPy",
+      "percentage": 90,
+      "category": "Scientific Computing"
+    },
+    {
+      "name": "Scikit-learn",
       "percentage": 88,
       "category": "Machine Learning"
     },
     {
-      "name": "Scikit-learn",
+      "name": "Pandas",
       "percentage": 92,
-      "category": "Machine Learning"
+      "category": "Data Analysis"
     },
     {
-      "name": "OpenCV",
+      "name": "Openpyxl",
       "percentage": 85,
-      "category": "Computer Vision"
+      "category": "Data Analysis"
     },
     {
-      "name": "NLTK",
+      "name": "OpenFOAM",
+      "percentage": 90,
+      "category": "Simulation Software"
+    },
+    {
+      "name": "ANSYS Fluent",
+      "percentage": 88,
+      "category": "Simulation Software"
+    },
+    {
+      "name": "COMSOL Multiphysics",
+      "percentage": 85,
+      "category": "Simulation Software"
+    },
+    {
+      "name": "OptiStruct",
       "percentage": 82,
-      "category": "Natural Language Processing"
+      "category": "Simulation Software"
     },
     {
-      "name": "React",
+      "name": "Abaqus CAE",
+      "percentage": 88,
+      "category": "Simulation Software"
+    },
+    {
+      "name": "LS-DYNA",
       "percentage": 80,
-      "category": "Web Development"
-    },
-    {
-      "name": "Node.js",
-      "percentage": 75,
-      "category": "Web Development"
-    },
-    {
-      "name": "Docker",
-      "percentage": 85,
-      "category": "DevOps"
+      "category": "Simulation Software"
     },
     {
       "name": "Git",
@@ -71,30 +81,36 @@
       "category": "Version Control"
     },
     {
-      "name": "LaTeX",
-      "percentage": 88,
-      "category": "Documentation"
+      "name": "Docker",
+      "percentage": 85,
+      "category": "DevOps"
+    },
+    {
+      "name": "CI/CD Pipelines",
+      "percentage": 82,
+      "category": "DevOps"
     }
   ],
   "research_methodologies": [
-    "Experimental Design",
-    "Statistical Analysis",
-    "Data Collection",
-    "Literature Review",
-    "Peer Review",
-    "Research Ethics",
-    "Academic Writing",
-    "Conference Presentations"
+    "Computational Fluid Dynamics (CFD)",
+    "Finite Element Analysis (FEA)",
+    "Multiphase Flow Modeling",
+    "Turbulence Modeling",
+    "Discrete Phase Modeling",
+    "Material Modeling & Simulation",
+    "Optimization Frameworks (Shape Optimization, Adjoint Methods)",
+    "Numerical Methods",
+    "HPC Cluster Simulations",
+    "Cross-Disciplinary Research (Engineering & Clinical Sciences)"
   ],
   "tools_and_platforms": [
-    "Jupyter Notebooks",
-    "Google Colab",
-    "AWS/Azure/GCP",
-    "HPC Clusters",
     "GitHub/GitLab",
-    "Overleaf",
-    "Mendeley",
-    "Tableau",
-    "Power BI"
+    "Docker",
+    "CI/CD (GitHub Workflows)",
+    "HPC Clusters",
+    "MATLAB",
+    "Animator",
+    "META Post",
+    "Fiverr/LinkedIn Freelance Platforms"
   ]
 }

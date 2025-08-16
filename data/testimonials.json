@@ -2,87 +2,48 @@
   "testimonials": [
     {
       "id": "testimonial-1",
-      "name": "Dr. Sarah Johnson",
-      "position": "Research Director",
-      "institution": "AI Research Institute",
-      "image": "assets/img/testimonials/testimonials-1.jpg",
-      "quote": "Saif's expertise in machine learning and research methodology is exceptional. He led our computer vision project with remarkable results, achieving 95% accuracy and publishing in top-tier conferences. His ability to translate complex research into practical solutions is invaluable.",
-      "project": "Computer Vision Research Project",
+      "name": "Hamza Riaz",
+      "position": "Design and Simulation Engineer | Research Fellow",
+      "institution": null,
+      "image": "assets/img/testimonials/hamza.jpg",
+      "quote": "I'm pleased to offer a positive testimonial for my respected colleague, Saif Ur Rehman, whose outstanding attributes as a mechanical engineer have made a lasting impact. As an excellent researcher, Saif consistently demonstrated unwavering dedication and a strong work ethic in all endeavors. His exceptional research skills, particularly in ANSYS and computational fluid dynamics (CFD), have not only advanced our projects but also enriched our team's collective knowledge. Saif embodies the spirit of a true team player, seamlessly integrating into collaborative efforts and contributing with enthusiasm. With his profound expertise and commitment, I have no doubt that Saif Ur Rehman will be an invaluable addition to any research team fortunate enough to have him.",
+      "project": "Research & Simulation Projects (ANSYS, CFD)",
       "rating": 5,
-      "date": "2024-03-15",
+      "date": "2023-09-27",
       "category": "research"
     },
     {
       "id": "testimonial-2",
-      "name": "Prof. Michael Chen",
-      "position": "Professor of Computer Science",
-      "institution": "University of Technology",
-      "image": "assets/img/testimonials/testimonials-2.jpg",
-      "quote": "Working with Saif on our NLP research was a game-changer. His deep understanding of transformer models and innovative approaches led to significant improvements in our sentiment analysis system. He's not just a skilled researcher but also an excellent communicator.",
-      "project": "Natural Language Processing Research",
+      "name": "Umar Farooq",
+      "position": "Thermal Engineer",
+      "institution": null,
+      "image": "assets/img/testimonials/umar.jpg",
+      "quote": "I am delighted to provide a glowing recommendation for Saif Ur Rehman, who I had the pleasure of working alongside on a challenging project involving Ansys CFD (Computational Fluid Dynamics). I had the opportunity to witness his exceptional work ethics and unwavering technical soundness throughout the project. I have the utmost confidence in his abilities. He is not only a technically sound engineer but also a dedicated and reliable team member. I would highly recommend Saif Ur Rehman for any project that requires expertise in Ansys CFD or any related field. His contributions are sure to enhance the success of any endeavor he undertakes, and he would be a valuable asset to any team or organization.",
+      "project": "Ansys CFD Project",
       "rating": 5,
-      "date": "2024-02-20",
-      "category": "academic"
-    },
-    {
-      "id": "testimonial-3",
-      "name": "Dr. Emily Rodriguez",
-      "position": "Chief Data Scientist",
-      "institution": "TechCorp Solutions",
-      "image": "assets/img/testimonials/testimonials-3.jpg",
-      "quote": "Saif delivered an outstanding machine learning solution for our healthcare diagnostics platform. His attention to detail, understanding of medical AI requirements, and ability to meet strict deadlines made him an invaluable partner. The results exceeded our expectations.",
-      "project": "Healthcare AI Platform",
-      "rating": 5,
-      "date": "2024-01-10",
+      "date": "2023-09-20",
       "category": "industry"
     },
     {
-      "id": "testimonial-4",
-      "name": "Dr. David Kim",
-      "position": "Research Fellow",
-      "institution": "National Research Lab",
-      "image": "assets/img/testimonials/testimonials-4.jpg",
-      "quote": "Saif's contribution to our data visualization platform was instrumental in its success. His full-stack development skills, combined with his research background, enabled us to create a tool that serves hundreds of researchers daily. Highly recommended for any research software project.",
-      "project": "Data Visualization Platform",
+      "id": "testimonial-3",
+      "name": "Abdul Munim",
+      "position": "Mechanical Engineer | PSO | xSAPPHIRE | xInterloop | NUST'23",
+      "institution": "National University of Sciences and Technology (NUST)",
+      "image": "assets/img/testimonials/munim.jpg",
+      "quote": "I am delighted to provide a strong recommendation for Saif Ur Rehman, a dedicated and talented class fellow who played a crucial role in the success of my final year project involving Computational Fluid Dynamics (CFD) simulations. Saif’s expertise and exceptional command of ANSYS simulations were instrumental in navigating the complexities of our project, leading to valuable insights and accurate results. His commitment to quality work, problem-solving skills, and collaborative approach greatly enhanced the overall project experience. Saif's ability to analyze, interpret, and optimize CFD simulations showcases his deep understanding of the subject matter. His contributions not only enriched our project but also demonstrated his commitment to academic excellence. I have no doubt that Saif’s proficiency in ANSYS simulations and his unwavering dedication will continue to drive success in any endeavor he undertakes. It is a privilege to endorse Saif Ur Rehman for his outstanding skills and invaluable support in the realm of CFD simulations.",
+      "project": "Final Year Project (CFD Simulations)",
       "rating": 5,
-      "date": "2023-12-05",
-      "category": "software"
-    },
-    {
-      "id": "testimonial-5",
-      "name": "Lisa Thompson",
-      "position": "Head of Research",
-      "institution": "Innovation Labs",
-      "image": "assets/img/testimonials/testimonials-5.jpg",
-      "quote": "Saif conducted an excellent training workshop for our research team on machine learning fundamentals. His ability to explain complex concepts clearly and provide hands-on guidance helped our team develop essential skills. The workshop was well-structured and highly engaging.",
-      "project": "ML Training Workshop",
-      "rating": 5,
-      "date": "2023-11-15",
-      "category": "training"
-    },
-    {
-      "id": "testimonial-6",
-      "name": "Dr. Robert Wilson",
-      "position": "Principal Investigator",
-      "institution": "Medical Research Center",
-      "image": "assets/img/testimonials/testimonials-6.jpg",
-      "quote": "Saif's expertise in medical AI and his understanding of clinical requirements made him the perfect collaborator for our diagnostic imaging project. His work on chest X-ray analysis achieved remarkable accuracy and is now being used in clinical trials. A true professional in every sense.",
-      "project": "Medical Imaging AI",
-      "rating": 5,
-      "date": "2023-10-20",
-      "category": "healthcare"
+      "date": "2023-08-15",
+      "category": "academic"
     }
   ],
   "statistics": {
-    "total_testimonials": 6,
+    "total_testimonials": 3,
     "average_rating": 5.0,
     "categories": [
       "research",
-      "academic", 
       "industry",
-      "software",
-      "training",
-      "healthcare"
+      "academic"
     ]
   }
 }
