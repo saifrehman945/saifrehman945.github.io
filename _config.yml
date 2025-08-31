@@ -1,6 +1,6 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
-favicon: images/favicon.ico
+repository: saifrehman945/saifrehman945.github.io
+# favicon: images/favicon.ico
 
 seo:
   name: "Saif ur Rehman"
@@ -56,8 +56,13 @@ additional_links:
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile_pic.jpg
 about_content: | # this will include new lines to allow paragraphs
-  CAE Engineer and Researcher with 3+ years of professional experience, specializing in CFD modeling and optimizationwith applications in energy, automotive, and naval hydrodynamics. My work advances solver-driven optimization frameworks through adjoint methods, parameterization, and uncertainty quantification, while leveraging high-performance computing for scalable and reproducible workflows. I have developed automated CAE pipelines in Python/C++ and contributed to material modeling, experimental validation, and integration of optimization algorithms to enhance structural and fluid-dynamic performance. I am particularly motivated by the intersection of computational mechanics, data-driven methods, and HPC, bridging academic research with industrial applications.
+  I am a CAE Engineer and Researcher with **3+ years** of professional experience, specializing in CFD modeling and optimization 
+  with applications in energy, automotive, and naval hydrodynamics. 
+  I have developed automated CAE pipelines in Python/C++ and contributed to material modeling, experimental validation, and integration of 
+  optimization algorithms to enhance structural and fluid-dynamic performance. I am particularly motivated by the intersection of 
+  computational mechanics, data-driven methods, and HPC, bridging academic research with industrial applications.
 
+  **Expertise & Technologies**: CFD, FEA, HPC, Python, C++, Optimization, Adjoint Methods, Material Modeling, Automation
 content:
   - title: Work Experience
     layout: list
@@ -70,14 +75,15 @@ content:
         # quote: >
         #   A leader in CAE Methods (CFD, crash, NVH, and structure)
         description: | 
-          At SOCO Engineers I work on automating CAE workflows and integrating simulation tools into engineering processes. I develop and maintain C++ and Python components for adjoint-based optimization, material modelling, and preprocessing/meshing pipelines to improve repeatability and scalability. I support result validation, postprocessing workflows, and collaborate with engineers to deploy tools on HPC systems.
+
+          At SOCO Engineers I work on automating **CAE workflows** and integrating **simulation tools** into **engineering processes**. I develop and maintain **C++** and **Python** components for **adjoint-based optimization**, **material modelling**, and **preprocessing/meshing pipelines** to improve repeatability and scalability. I support result validation, **postprocessing workflows**, and collaborate with engineers to deploy tools on **HPC systems**.
 
           **Key contributions:**
-          - Automated preprocessing and meshing pipelines (Python) to improve setup consistency.
-          - Core development of an adjoint optimization framework (C++ core, Python wrappers).
-          - Built postprocessing and analysis workflows for rapid verification and reporting.
-          - Integrated material data management and validation into FEA workflows.
-          - Collaborated with engineering and HPC teams to deploy tools and provide user support/mentoring.
+          - Automated **preprocessing and meshing pipelines** (**Python**) to improve setup consistency.
+          - Core development of an **adjoint optimization framework** (**C++ core, Python wrappers**).
+          - Built **postprocessing and analysis workflows** for rapid verification and reporting.
+          - Integrated **material data management** and validation into **FEA workflows**.
+          - Collaborated with engineering and **HPC teams** to deploy tools and provide user support/mentoring.
 
 
       - layout: left
@@ -88,14 +94,14 @@ content:
         # quote: >
         #   A leader in CAE Methods (CFD, crash, NVH, and structure)
         description: | # this will include new lines to allow paragraphs
-          As a Research Assistant at SMME NUST, I contributed to various projects focused on Heat Transfer and Multiphase Problems, 
-          providing solutions primarily through Computational Fluid Dynamics (CFD) tools. I was a part of a 10-member research team, 
+          As a Research Assistant at SMME NUST, I contributed to various projects focused on **Heat Transfer** and **Multiphase Problems**, 
+          providing solutions primarily through **Computational Fluid Dynamics (CFD)** tools. I was a part of a 10-member research team, 
           collaborating on innovative approaches to complex engineering challenges.
 
           **Key contributions:**
 
-          - [Effect of Nanofluids on Heat Transfer Enhancement in Solar Heaters](https://doi.org/10.1007/s10973-025-14571-4)
-          - [Analyses of Ventilated Super Cavitation in Underwater vehicles](https://github.com/saifrehman945/VentilatedSupercavitation)
+          - [Effect of **Nanofluids** on **Heat Transfer Enhancement** in Solar Heaters](https://doi.org/10.1007/s10973-025-14571-4)
+          - [Analyses of **Ventilated Super Cavitation** in Underwater vehicles](https://github.com/saifrehman945/VentilatedSupercavitation)
           - [Particle deposition study in the human trachea](https://pubs.aip.org/aip/pof/article/36/4/043338/3284891)
 
   - title: Projects # Title for the section
@@ -113,7 +119,7 @@ content:
         #     icon: fab fa-github
         #     url: https://github.com/saifrehman945/FluentVortexShedding
         quote: >
-          A comprehensive material data management and simulation framework.
+          Technologies: Python, PostgreSQL, C++, LS-DYNA, ABAQUS
         description: | # this will include new lines to allow paragraphs
            <style>
               /* Popup background */
@@ -140,15 +146,15 @@ content:
             <div style="display:flex; align-items:center; gap:30px;">
               <!-- Left side: text -->
               <div style="flex:3; font-size:16px; line-height:1.5;">
-                Managing material data from hundreds of sources is often fragmented, error-prone, and limits reliable FEA simulations.
-                I led the development of a comprehensive material data management and simulation framework, 
+                Managing <b>material data</b> from hundreds of sources is often fragmented, error-prone, and limits reliable <b>FEA simulations</b>.
+                I led the development of a comprehensive <b>material data management and simulation framework</b>, 
                 consolidating test data from over 300 materials sourced from suppliers, institutes, and in-house 
-                experiments into a systematic database. This involved creating and maintaining material cards for 
-                advanced FEA simulations on multiple loadcases, designing automated workflows to streamline data collection, 
-                validation, and updates, and integrating database algorithms to enable efficient handling of complex datasets. 
-                By correlating simulation results with experimental data, I established a reliable workflow that significantly 
-                reduced dependency on physical testing while ensuring accuracy in predictive modelling. This project not only enhanced 
-                the scalability and traceability of material data management but also accelerated simulation-driven design across multiple engineering domains.
+                experiments into a systematic database. This involved creating and maintaining <b>material cards</b> for 
+                advanced <b>FEA simulations</b> on multiple loadcases, designing <b>automated workflows</b> to streamline data collection, 
+                validation, and updates, and integrating <b>database algorithms</b> to enable efficient handling of complex datasets. 
+                By correlating <b>simulation results</b> with <b>experimental data</b>, I established a reliable workflow that significantly 
+                reduced dependency on physical testing while ensuring accuracy in <b>predictive modelling</b>. This project not only enhanced 
+                the scalability and traceability of <b>material data management</b> but also accelerated <b>simulation-driven design</b> across multiple engineering domains.
               </div>
               
               <!-- Right side: image -->
@@ -180,41 +186,38 @@ content:
           #   icon: fab fa-github
           #   url: https://github.com/saifrehman945/VentilatedSupercavitation
         quote: >
-          Adjoint loop: sensitivities to shape updates, driving gradient-based optimization.
+          Technologies: C++, Python, Adjoint solvers
         description: | # this will include new lines to allow paragraphs
           
-          I contributed as a core developer to an optimization framework that leverages 
-          adjoint sensitivities from the solver to drive gradient-based optimization of 
-          geometry shape and thickness. The framework was implemented in C++ for computational 
-          performance and wrapped in Python for accessibility and workflow automation. 
+          I contributed as a core developer to an **optimization framework** that leverages 
+          **adjoint sensitivities** from the solver to drive **gradient-based optimization** of 
+          geometry shape and thickness. The framework was implemented in **C++** for computational 
+          performance and wrapped in **Python** for accessibility and **workflow automation**. 
           My role involved maintaining and extending the core codebase, integrating new 
-          optimization features, and ensuring scalability and robustness of the framework. 
-          By coupling solver outputs with a streamlined optimization pipeline, I enabled 
+          **optimization features**, and ensuring scalability and robustness of the framework. 
+          By coupling solver outputs with a streamlined **optimization pipeline**, I enabled 
           efficient and automated design iterations, reducing manual overhead and advancing 
-          solver-driven design optimization capabilities.
+          **solver-driven design optimization** capabilities.
 
       - layout: top-middle
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
+        # border: weak  # Value of `weak` will display a weak border below this item. # Any 
+        #               # other value (or no value) means no border will be displayed
         title: Drag Reduction in Underwater Vehicles - Ventilated Cavitation
         link: https://github.com/saifrehman945/VentilatedSupercavitation
         link_text: saifrehman945/VentilatedSupercavitation
         additional_links:
-          # - title: Springer
-          #   icon: fas fa-external-link-alt
-          #   url: https://doi.org/10.1007/s10973-025-14571-4
           - title:  Github
             icon: fab fa-github
             url: https://github.com/saifrehman945/VentilatedSupercavitation
         quote: >
-          Enhancing Underwater Propulsion: Ventilated Supercavitation for Significant Drag Reduction
+          Technologies: ANSYS FLuent, Gnuplot
         description: | # this will include new lines to allow paragraphs
-          Underwater vehicles face severe drag penalties that limit speed and efficiency, making drag reduction a critical design challenge.
-          In this industrial research study, I engineered and validated a CFD 
-          computational model to harness ventilated supercavitation for underwater drag reduction. 
-          By integrating multiphase CFD simulations with unsteady RANS-VOF methodologies, 
-          I achieved a remarkable 27% reduction in drag—pushing the boundaries of hydrodynamic efficiency. 
-          The study unveiled critical insights into cavity dynamics, ventilation rates, and cavitator geometries.
+          Underwater vehicles face severe drag penalties that limit speed and efficiency, making **drag reduction** a critical design challenge.
+          In this industrial research study, I engineered and validated a **CFD** 
+          computational model to harness **ventilated supercavitation** for underwater **drag reduction**. 
+          By integrating **multiphase CFD simulations** with **unsteady RANS-VOF methodologies**, 
+          I achieved a remarkable 27% reduction in drag—pushing the boundaries of **hydrodynamic efficiency**. 
+          The study unveiled critical insights into **cavity dynamics**, **ventilation rates**, and **cavitator geometries**.
       - layout: top-middle
         # border: weak  # Value of `weak` will display a weak border below this item. # Any 
         #               # other value (or no value) means no border will be displayed
@@ -226,13 +229,13 @@ content:
             icon: fab fa-github
             url: https://github.com/saifrehman945/HagenPoiseuilleValidation
         quote: >
-          A version bump for Publically available OpenFOAM tutorials
+          Technologies: OpenFOAM, Python, Gnuplot, Bash
         description: | # this will include new lines to allow paragraphs
-          This project modernizes the classic Hagen-Poiseuille flow validation by upgrading OpenFOAM tutorials 
-          from v6 to v12. I revamped control files, streamlined mesh handling, and introduced runtime sampling for 
-          cleaner, more efficient simulations. Legacy scripts were replaced with Python notebooks and Gnuplot visualizations, 
+          This project modernizes the classic **Hagen-Poiseuille flow** validation by upgrading **OpenFOAM** tutorials 
+          from v6 to v12. I revamped control files, streamlined **mesh handling**, and introduced **runtime sampling** for 
+          cleaner, more efficient simulations. Legacy scripts were replaced with **Python notebooks** and **Gnuplot visualizations**, 
           making post-processing seamless and interactive. Redundant files were eliminated, simplifying the workflow and boosting 
-          maintainability. The result is a reproducible, user-friendly pipeline for validating laminar flow fundamentals. 
+          maintainability. The result is a reproducible, user-friendly pipeline for validating **laminar flow** fundamentals. 
 
       - layout: top-middle
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
@@ -245,20 +248,20 @@ content:
             icon: fab fa-github
             url: https://github.com/saifrehman945/FluentVortexShedding
         quote: >
-          Visualizing vortex-induced vibrations with RANS-SST modeling and real-world validation.
+          Technologies: ANSYS Fluent, Python
         description: | # this will include new lines to allow paragraphs
-          Vortex-induced vibrations around underwater cylinders pose major risks to marine structures, affecting stability, fatigue life, and overall performance.
-          The project simulates vortex shedding around underwater cylinders at Re = 10,000 using the RANS-SST turbulence model. 
-          It captures unsteady flow patterns, pressure fluctuations, and vortex-induced vibrations critical to marine engineering. 
-          Created animations and plots to visualize vortex formation and shedding frequencies. Results were benchmarked against 
-          experimental data to validate accuracy. The project provides a benchmark for modelling VIV phenomena.
+          **Vortex-induced vibrations (VIV)** around underwater cylinders pose major risks to marine structures, affecting stability, fatigue life, and overall performance.
+          The project simulates **vortex shedding** around underwater cylinders at Re = 10,000 using the **RANS-SST turbulence model**. 
+          It captures **unsteady flow patterns**, **pressure fluctuations**, and **vortex-induced vibrations** critical to **marine engineering**. 
+          Created animations and plots to visualize **vortex formation** and **shedding frequencies**. Results were benchmarked against 
+          **experimental data** to validate accuracy. The project provides a benchmark for modelling **VIV phenomena**.
 
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        # border: weak  # Value of `weak` will display a weak border below this item. # Any 
-        #               # other value (or no value) means no border will be displayed
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
         title: Synergistic effects of Al2O3-ethylene glycol/water nanofluids and artificial roughness on solar heater thermal performance
         # link: https://doi.org/10.1007/s10973-025-14571-4
         # link_text: Research Article Published in Journal of Thermal Analysis and Calorimetry
@@ -272,12 +275,7 @@ content:
         quote: >
           Research Article Published in Journal of Thermal Analysis and Calorimetry
         description: | # this will include new lines to allow paragraphs
-          This CFD study engineered a high-performance solar heater by synergizing Al₂O₃ 
-          nanofluids with artificial ribs. The optimal design—inverted triangular ribs and 
-          a 40% EG/60% Water nanofluid—achieved a 71.6% boost in heat transfer. Analysis of 
-          turbulent kinetic energy revealed intense micro-vortices enhancing thermal exchange. 
-          The configuration yielded a superior Performance Evaluation Criterion (PEC = 1.5), 
-          proving its efficiency outweighs pumping costs.
+          This **CFD** study engineered a high-performance solar heater by synergizing **Al₂O₃ nanofluids** with **artificial ribs**. The optimal design—inverted triangular ribs and a 40% EG/60% Water nanofluid—achieved a 71.6% boost in **heat transfer**. Analysis of **turbulent kinetic energy** revealed intense **micro-vortices** enhancing thermal exchange. The configuration yielded a superior **Performance Evaluation Criterion (PEC = 1.5)**, proving its efficiency outweighs pumping costs.
 
   - title: Education
     layout: list
@@ -315,16 +313,16 @@ content:
   - title: Languages
     layout: text
     content: |
-      **English:** Certified Language expert ([IELTS](https://drive.google.com/file/d/11sNK-16Jhjl5W4Z_t_tQvkXyQ7JMAv7B/view?usp=drive_link))
-      
+      **English:** Certified Language expert ([**IELTS**](https://drive.google.com/file/d/11sNK-16Jhjl5W4Z_t_tQvkXyQ7JMAv7B/view?usp=drive_link))
+
       **Urdu:** Native
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      When I'm not working, you'll probably find me on a badminton court or getting lost in a good history book. I love staying active and learning about the past just for fun.
+      When I'm not working, you'll probably find me on a **badminton** court or getting lost in a good **history** book. I love staying active and learning about the past just for fun.
 
 # Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 # Build settings
