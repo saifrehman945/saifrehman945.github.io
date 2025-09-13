@@ -104,6 +104,29 @@ content:
           - [Analyses of **Ventilated Super Cavitation** in Underwater vehicles](https://github.com/saifrehman945/VentilatedSupercavitation)
           - [Particle deposition study in the human trachea](https://pubs.aip.org/aip/pof/article/36/4/043338/3284891)
 
+
+  - title: Publications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: Synergistic effects of Al2O3-ethylene glycol/water nanofluids and artificial roughness on solar heater thermal performance
+        # link: https://doi.org/10.1007/s10973-025-14571-4
+        # link_text: Research Article Published in Journal of Thermal Analysis and Calorimetry
+        additional_links:
+          - title: Springer
+            icon: fas fa-external-link-alt
+            url: https://doi.org/10.1007/s10973-025-14571-4
+          - title:  Scholar
+            icon: fas fa-book 
+            url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=--WM-zoAAAAJ&citation_for_view=--WM-zoAAAAJ:0EnyYjriUFMC
+        quote: >
+          Research Article Published in Journal of Thermal Analysis and Calorimetry
+        description: | # this will include new lines to allow paragraphs
+          This **CFD** study engineered a high-performance solar heater by synergizing **Al₂O₃ nanofluids** with **artificial ribs**. The optimal design—inverted triangular ribs and a 40% EG/60% Water nanofluid—achieved a 71.6% boost in **heat transfer**. Analysis of **turbulent kinetic energy** revealed intense **micro-vortices** enhancing thermal exchange. The configuration yielded a superior **Performance Evaluation Criterion (PEC = 1.5)**, proving its efficiency outweighs pumping costs.
+
+
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -255,27 +278,6 @@ content:
           It captures **unsteady flow patterns**, **pressure fluctuations**, and **vortex-induced vibrations** critical to **marine engineering**. 
           Created animations and plots to visualize **vortex formation** and **shedding frequencies**. Results were benchmarked against 
           **experimental data** to validate accuracy. The project provides a benchmark for modelling **VIV phenomena**.
-
-  - title: Publications # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: Synergistic effects of Al2O3-ethylene glycol/water nanofluids and artificial roughness on solar heater thermal performance
-        # link: https://doi.org/10.1007/s10973-025-14571-4
-        # link_text: Research Article Published in Journal of Thermal Analysis and Calorimetry
-        additional_links:
-          - title: Springer
-            icon: fas fa-external-link-alt
-            url: https://doi.org/10.1007/s10973-025-14571-4
-          - title:  Scholar
-            icon: fas fa-book 
-            url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=--WM-zoAAAAJ&citation_for_view=--WM-zoAAAAJ:0EnyYjriUFMC
-        quote: >
-          Research Article Published in Journal of Thermal Analysis and Calorimetry
-        description: | # this will include new lines to allow paragraphs
-          This **CFD** study engineered a high-performance solar heater by synergizing **Al₂O₃ nanofluids** with **artificial ribs**. The optimal design—inverted triangular ribs and a 40% EG/60% Water nanofluid—achieved a 71.6% boost in **heat transfer**. Analysis of **turbulent kinetic energy** revealed intense **micro-vortices** enhancing thermal exchange. The configuration yielded a superior **Performance Evaluation Criterion (PEC = 1.5)**, proving its efficiency outweighs pumping costs.
 
   - title: Education
     layout: list
