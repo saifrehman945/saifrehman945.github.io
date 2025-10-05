@@ -10,7 +10,7 @@ seo:
 version: 2
 
 # Personal info
-name: Saif ur Rehman
+name: Saif ur Rehman 
 title: CAE Engineer | Researcher | Developer
 email: saifurrehman945@outlook.com
 # email_title: Email (Email title override)
@@ -42,6 +42,9 @@ additional_links:
 - title: Google scholar
   icon: fas fa-graduation-cap
   url: https://scholar.google.com/citations?user=WM-zoAAAAJ&user=--WM-zoAAAAJ
+- title: Download CV
+  icon: "fas fa-file-alt"
+  url: "https://drive.google.com/file/d/1kWJcvNO_uedjYQywnw09TW7VPPp9LXz8/view?usp=drive_link"
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
@@ -69,21 +72,30 @@ content:
     content:
       - layout: left
         title: Simulation Engineer
+        border: weak
         sub_title: SOCO Engineers
         caption: December 2023 - present
         link: soco-engineers.com
         # quote: >
-        #   A leader in CAE Methods (CFD, crash, NVH, and structure)
+        #   Key technologies: Computational Mechanics | Python | C++ | HPC | Optimization | Automation | LS-DYNA | ABAQUS
         description: | 
 
-          At SOCO Engineers I work on automating **CAE workflows** and integrating **simulation tools** into **engineering processes**. I develop and maintain **C++** and **Python** components for **adjoint-based optimization**, **material modelling**, and **preprocessing/meshing pipelines** to improve repeatability and scalability. I support result validation, **postprocessing workflows**, and collaborate with engineers to deploy tools on **HPC systems**.
+          ## Material Modelling and Validation
 
-          **Key contributions:**
-          - Automated **preprocessing and meshing pipelines** (**Python**) to improve setup consistency.
-          - Core development of an **adjoint optimization framework** (**C++ core, Python wrappers**).
-          - Built **postprocessing and analysis workflows** for rapid verification and reporting.
-          - Integrated **material data management** and validation into **FEA workflows**.
-          - Collaborated with engineering and **HPC teams** to deploy tools and provide user support/mentoring.
+          - Led the development of a Virtual Material Workbench to validate and predict material behavior from over 300 suppliers, enhancing material model accuracy and standardization.
+          - Developed interactive visualization dashboards to compare and validate material models against experimental datasets for improved correlation and reliability.
+          - Co-authored classical material models to investigate the deformation behavior of aluminum and steel sheet metals, contributing to advanced constitutive modeling research.
+
+          ## Adjoint-Based Optimization
+
+          - Served as a core developer for an internal adjoint-based optimization framework, collaborating through a PR-driven workflow across more than 10 departments.
+          - Maintained and extended the C++ core architecture, integrated new optimization modules, and ensured scalability, robustness, and computational performance of the framework.
+
+          ## FEM Support
+
+          - Provided technical support for FEA-related challenges as part of the FEM Support Team, achieving a 95% client satisfaction rate.
+          - Developed automated meshing pipelines for automotive shock absorber assemblies, reducing manual preprocessing effort by 75%.
+          - Engineered a customized HPC post-processing tool for NVH and crash loadcases, resolving 20+ customer-reported issues and improving analysis reliability and efficiency.
 
 
       - layout: left
@@ -94,23 +106,23 @@ content:
         # quote: >
         #   A leader in CAE Methods (CFD, crash, NVH, and structure)
         description: | # this will include new lines to allow paragraphs
-          As a Research Assistant at SMME NUST, I contributed to various projects focused on **Heat Transfer** and **Multiphase Problems**, 
-          providing solutions primarily through **Computational Fluid Dynamics (CFD)** tools. I was a part of a 10-member research team, 
-          collaborating on innovative approaches to complex engineering challenges.
-
-          **Key contributions:**
-
-          - [Effect of **Nanofluids** on **Heat Transfer Enhancement** in Solar Heaters](https://doi.org/10.1007/s10973-025-14571-4)
-          - [Analyses of **Ventilated Super Cavitation** in Underwater vehicles](https://github.com/saifrehman945/VentilatedSupercavitation)
-          - [Particle deposition study in the human trachea](https://pubs.aip.org/aip/pof/article/36/4/043338/3284891)
-
+          ## Heat transfer and Nano Fluids
+          - Contributed as a 2nd Author in a peer-reviewed journal article published in the Journal of Thermal Analysis and Calorimetry
+          - Published Article titled  [Effect of **Nanofluids** on **Heat Transfer Enhancement** in Solar Heaters](https://doi.org/10.1007/s10973-025-14571-4)
+          
+          ## Multiphase Flows
+          - Completed Industrial Research on Deep water hydrodynamics, and Cavitations
+          - Co-Authored Journal Article based on [Analyses of **Ventilated Super Cavitation** in Underwater vehicles](https://github.com/saifrehman945/VentilatedSupercavitation)
+          
+          ## Biomedical Flows
+          - Contributed as a team member in a project on [Particle deposition study in the human trachea](https://pubs.aip.org/aip/pof/article/36/4/043338/3284891)
 
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
+        # border: weak  # Value of `weak` will display a weak border below this item. # Any 
+        #               # other value (or no value) means no border will be displayed
         title: Synergistic effects of Al2O3-ethylene glycol/water nanofluids and artificial roughness on solar heater thermal performance
         # link: https://doi.org/10.1007/s10973-025-14571-4
         # link_text: Research Article Published in Journal of Thermal Analysis and Calorimetry
@@ -126,101 +138,150 @@ content:
         description: | # this will include new lines to allow paragraphs
           This **CFD** study engineered a high-performance solar heater by synergizing **Al₂O₃ nanofluids** with **artificial ribs**. The optimal design—inverted triangular ribs and a 40% EG/60% Water nanofluid—achieved a 71.6% boost in **heat transfer**. Analysis of **turbulent kinetic energy** revealed intense **micro-vortices** enhancing thermal exchange. The configuration yielded a superior **Performance Evaluation Criterion (PEC = 1.5)**, proving its efficiency outweighs pumping costs.
 
+      - layout: top-middle
+        # border: weak  # Value of `weak` will display a weak border below this item. # Any 
+        #               # other value (or no value) means no border will be displayed
+        title: Ventilated Super-Cavitation Dynamics and AI-Based Prediction of Unsteady Drag in Underwater Projectiles
+        # link: https://doi.org/10.1007/s10973-025-14571-4
+        # link_text: Research Article Published in Journal of Thermal Analysis and Calorimetry
+        additional_links:
+          - title: Applied Energy 
+            icon: fas fa-external-link-alt
+            url: https://drive.google.com/file/d/1kZEkLTSeFsc2uFp_tjWxbnCTLbBgscmk/view?usp=drive_link
+        quote: >
+          Research Article Submitted in Journal of Applied Energy
+        description: | # this will include new lines to allow paragraphs
+          This study analyzes **unsteady multiphase turbulent flow** within **ventilated super-cavities** and applies **Kolmogorov-Arnold Network (KAN)** to predict drag fluctuations from **RANS-VOF** simulation data. The KAN model outperforms ANN and SVM in accuracy and stability across different ventilation conditions. CFD results validate a 27% drag reduction through optimized ventilation, while the AI approach provides a faster and reliable tool for predicting unsteady cavitation-induced drag.
+
+
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: School of Mechanical and Manufacturing Engineering (SMME), NUST
+        sub_title: Bachelors in Mechanical Engineering
+        caption: 2019 - 2023
+        # quote: >
+        #   Short institution or course description (optional)
+        description: | # this will include new lines to allow paragraphs
+          <table style="width:100%; border-collapse:collapse; font-size:16px;">
+            <thead>
+              <tr>
+                <th style="text-align:left; padding:4px; border-bottom:1px solid #ccc;">Core Subjects</th>
+                <th style="text-align:left; padding:4px; border-bottom:1px solid #ccc;">Electives</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:4px; vertical-align:top;">Mechanics, Materials, Manufacturing</td>
+                <td style="padding:4px; vertical-align:top;">Finite Element Analysis, Computational Fluid Mechanics</td>
+              </tr>
+              <tr>
+                <td style="padding:4px; vertical-align:top;">Machine Design, Mechanics of Machines</td>
+                <td style="padding:4px; vertical-align:top;">Numerical Methods, Heat Transfer</td>
+              </tr>
+              <tr>
+                <td style="padding:4px; vertical-align:top;">Thermodynamics, Fluids</td>
+                <td style="padding:4px; vertical-align:top;">Programming, Gas Turbines</td>
+              </tr>
+            </tbody>
+          </table>
+
 
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
 
-      - layout: top-middle
-        # border: weak  # Value of `weak` will display a weak border below this item. # Any 
-        #               # other value (or no value) means no border will be displayed
-        title: Material Data Management and Simulation Framework
-        # link: https://github.com/saifrehman945/FluentVortexShedding
-        # link_text: saifrehman945/FluentVortexShedding
-        # additional_links:
-        #   - title:  Github
-        #     icon: fab fa-github
-        #     url: https://github.com/saifrehman945/FluentVortexShedding
-        quote: >
-          Technologies: Python, PostgreSQL, C++, LS-DYNA, ABAQUS
-        description: | # this will include new lines to allow paragraphs
-           <style>
-              /* Popup background */
-              .popup {
-                display: none;
-                position: fixed;
-                z-index: 9999;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0,0,0,0.85);
-              }
-              .popup img {
-                display: block;
-                margin: 5% auto;
-                max-width: 90%;
-                max-height: 90%;
-                border-radius: 10px;
-                box-shadow: 0 6px 18px rgba(0,0,0,0.4);
-              }
-            </style>
+      # - layout: top-middle
+      #   # border: weak  # Value of `weak` will display a weak border below this item. # Any 
+      #   #               # other value (or no value) means no border will be displayed
+      #   title: Material Data Management and Simulation Framework
+      #   # link: https://github.com/saifrehman945/FluentVortexShedding
+      #   # link_text: saifrehman945/FluentVortexShedding
+      #   # additional_links:
+      #   #   - title:  Github
+      #   #     icon: fab fa-github
+      #   #     url: https://github.com/saifrehman945/FluentVortexShedding
+      #   quote: >
+      #     Technologies: Python, PostgreSQL, C++, LS-DYNA, ABAQUS
+      #   description: | # this will include new lines to allow paragraphs
+      #      <style>
+      #         /* Popup background */
+      #         .popup {
+      #           display: none;
+      #           position: fixed;
+      #           z-index: 9999;
+      #           left: 0;
+      #           top: 0;
+      #           width: 100%;
+      #           height: 100%;
+      #           background-color: rgba(0,0,0,0.85);
+      #         }
+      #         .popup img {
+      #           display: block;
+      #           margin: 5% auto;
+      #           max-width: 90%;
+      #           max-height: 90%;
+      #           border-radius: 10px;
+      #           box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+      #         }
+      #       </style>
 
-            <div style="display:flex; align-items:center; gap:30px;">
-              <!-- Left side: text -->
-              <div style="flex:3; font-size:16px; line-height:1.5;">
-                Managing <b>material data</b> from hundreds of sources is often fragmented, error-prone, and limits reliable <b>FEA simulations</b>.
-                I led the development of a comprehensive <b>material data management and simulation framework</b>, 
-                consolidating test data from over 300 materials sourced from suppliers, institutes, and in-house 
-                experiments into a systematic database. This involved creating and maintaining <b>material cards</b> for 
-                advanced <b>FEA simulations</b> on multiple loadcases, designing <b>automated workflows</b> to streamline data collection, 
-                validation, and updates, and integrating <b>database algorithms</b> to enable efficient handling of complex datasets. 
-                By correlating <b>simulation results</b> with <b>experimental data</b>, I established a reliable workflow that significantly 
-                reduced dependency on physical testing while ensuring accuracy in <b>predictive modelling</b>. This project not only enhanced 
-                the scalability and traceability of <b>material data management</b> but also accelerated <b>simulation-driven design</b> across multiple engineering domains.
-              </div>
+      #       <div style="display:flex; align-items:center; gap:30px;">
+      #         <!-- Left side: text -->
+      #         <div style="flex:3; font-size:16px; line-height:1.5;">
+      #           Managing <b>material data</b> from hundreds of sources is often fragmented, error-prone, and limits reliable <b>FEA simulations</b>.
+      #           I led the development of a comprehensive <b>material data management and simulation framework</b>, 
+      #           consolidating test data from over 300 materials sourced from suppliers, institutes, and in-house 
+      #           experiments into a systematic database. This involved creating and maintaining <b>material cards</b> for 
+      #           advanced <b>FEA simulations</b> on multiple loadcases, designing <b>automated workflows</b> to streamline data collection, 
+      #           validation, and updates, and integrating <b>database algorithms</b> to enable efficient handling of complex datasets. 
+      #           By correlating <b>simulation results</b> with <b>experimental data</b>, I established a reliable workflow that significantly 
+      #           reduced dependency on physical testing while ensuring accuracy in <b>predictive modelling</b>. This project not only enhanced 
+      #           the scalability and traceability of <b>material data management</b> but also accelerated <b>simulation-driven design</b> across multiple engineering domains.
+      #         </div>
               
-              <!-- Right side: image -->
-              <div style="flex:2; text-align:right; display:flex; justify-content:center; align-items:center;">
-                <a href="javascript:void(0)" onclick="document.getElementById('flowchart-popup').style.display='block'">
-                  <img src="/assets/images/flowchart.png" 
-                      alt="Material Modelling Workflow" 
-                      style="width:520px; max-width:100%; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.2);" />
-                </a>
-              </div>
-            </div>
+      #         <!-- Right side: image -->
+      #         <div style="flex:2; text-align:right; display:flex; justify-content:center; align-items:center;">
+      #           <a href="javascript:void(0)" onclick="document.getElementById('flowchart-popup').style.display='block'">
+      #             <img src="/assets/images/flowchart.png" 
+      #                 alt="Material Modelling Workflow" 
+      #                 style="width:520px; max-width:100%; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.2);" />
+      #           </a>
+      #         </div>
+      #       </div>
 
-            <!-- Hidden popup -->
-            <div id="flowchart-popup" class="popup" onclick="this.style.display='none'">
-              <img src="/assets/images/flowchart.png" alt="Material Modelling Workflow Full" />
-            </div>
+      #       <!-- Hidden popup -->
+      #       <div id="flowchart-popup" class="popup" onclick="this.style.display='none'">
+      #         <img src="/assets/images/flowchart.png" alt="Material Modelling Workflow Full" />
+      #       </div>
 
-      - layout: top-middle
-        # border: weak  # Value of `weak` will display a weak border below this item. # Any 
-        #               # other value (or no value) means no border will be displayed
-        title: Adjoint-Based Shape Optimization Framework
-        # link: https://github.com/saifrehman945/VentilatedSupercavitation
-        # link_text: saifrehman945/VentilatedSupercavitation
-        additional_links:
-          # - title: Springer
-          #   icon: fas fa-external-link-alt
-          #   url: https://doi.org/10.1007/s10973-025-14571-4
-          # - title:  Github
-          #   icon: fab fa-github
-          #   url: https://github.com/saifrehman945/VentilatedSupercavitation
-        quote: >
-          Technologies: C++, Python, Adjoint solvers
-        description: | # this will include new lines to allow paragraphs
+      # - layout: top-middle
+      #   # border: weak  # Value of `weak` will display a weak border below this item. # Any 
+      #   #               # other value (or no value) means no border will be displayed
+      #   title: Adjoint-Based Shape Optimization Framework
+      #   # link: https://github.com/saifrehman945/VentilatedSupercavitation
+      #   # link_text: saifrehman945/VentilatedSupercavitation
+      #   additional_links:
+      #     # - title: Springer
+      #     #   icon: fas fa-external-link-alt
+      #     #   url: https://doi.org/10.1007/s10973-025-14571-4
+      #     # - title:  Github
+      #     #   icon: fab fa-github
+      #     #   url: https://github.com/saifrehman945/VentilatedSupercavitation
+      #   quote: >
+      #     Technologies: C++, Python, Adjoint solvers
+      #   description: | # this will include new lines to allow paragraphs
           
-          I contributed as a core developer to an **optimization framework** that leverages 
-          **adjoint sensitivities** from the solver to drive **gradient-based optimization** of 
-          geometry shape and thickness. The framework was implemented in **C++** for computational 
-          performance and wrapped in **Python** for accessibility and **workflow automation**. 
-          My role involved maintaining and extending the core codebase, integrating new 
-          **optimization features**, and ensuring scalability and robustness of the framework. 
-          By coupling solver outputs with a streamlined **optimization pipeline**, I enabled 
-          efficient and automated design iterations, reducing manual overhead and advancing 
-          **solver-driven design optimization** capabilities.
+      #     I contributed as a core developer to an **optimization framework** that leverages 
+      #     **adjoint sensitivities** from the solver to drive **gradient-based optimization** of 
+      #     geometry shape and thickness. The framework was implemented in **C++** for computational 
+      #     performance and wrapped in **Python** for accessibility and **workflow automation**. 
+      #     My role involved maintaining and extending the core codebase, integrating new 
+      #     **optimization features**, and ensuring scalability and robustness of the framework. 
+      #     By coupling solver outputs with a streamlined **optimization pipeline**, I enabled 
+      #     efficient and automated design iterations, reducing manual overhead and advancing 
+      #     **solver-driven design optimization** capabilities.
 
       - layout: top-middle
         # border: weak  # Value of `weak` will display a weak border below this item. # Any 
@@ -279,38 +340,51 @@ content:
           Created animations and plots to visualize **vortex formation** and **shedding frequencies**. Results were benchmarked against 
           **experimental data** to validate accuracy. The project provides a benchmark for modelling **VIV phenomena**.
 
-  - title: Education
+    
+  - title: Extra-Curricular Activities
     layout: list
     content:
       - layout: left
-        title: School of Mechanical and Manufacturing Engineering (SMME), NUST
-        sub_title: Bachelors in Mechanical Engineering
-        caption: 2019 - 2023
-        # quote: >
-        #   Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          <table style="width:100%; border-collapse:collapse; font-size:16px;">
-            <thead>
-              <tr>
-                <th style="text-align:left; padding:4px; border-bottom:1px solid #ccc;">Core Subjects</th>
-                <th style="text-align:left; padding:4px; border-bottom:1px solid #ccc;">Specialization</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="padding:4px; vertical-align:top;">Mechanics, Materials, Manufacturing</td>
-                <td style="padding:4px; vertical-align:top;">Finite Element Analysis, Computational Fluid Mechanics</td>
-              </tr>
-              <tr>
-                <td style="padding:4px; vertical-align:top;">Machine Design, Mechanics of Machines</td>
-                <td style="padding:4px; vertical-align:top;">Numerical Methods, Heat Transfer</td>
-              </tr>
-              <tr>
-                <td style="padding:4px; vertical-align:top;">Thermodynamics, Fluids</td>
-                <td style="padding:4px; vertical-align:top;">Programming, Gas Turbines</td>
-              </tr>
-            </tbody>
-          </table>
+        title: Team Lead - AgroDrone
+        caption: 2021 | NUST, Islamabad
+        # border: weak
+        description: |
+          - Led a multidisciplinary team of 8 members in developing UAVs for targeted pesticide spraying in cornfields.  
+          - Oversaw CAD modeling, prototyping, and system integration.  
+          - Reached the Final Stage (FICS Stage 3) of NUST's startup pitching competition.  
+          - [Project Link](https://tinyurl.com/58apa66n)
+
+      - layout: left
+        title: Badminton Enthusiast
+        caption: Ongoing | NUST, Islamabad
+        # border: weak
+        description: |
+          - Represented university as part of the 4-member Badminton Team.  
+          - Semifinalist in both Inter-School and Inter-Hostel Badminton Championships.  
+          - Active player for over 8 years, maintaining consistent sports participation and team spirit.
+
+  - title: Volunteering
+    layout: list
+    content:
+      - layout: left
+        title: Lead - Blood Donation Drive
+        sub_title: AFIT (Rawalpindi) & Sundas Foundation
+        caption: November 2022 - December 2022 | Islamabad
+        # border: weak
+        description: |
+          - Led a blood donation campaign in collaboration with AFIT and Sundas Foundation during the COVID-19 period.  
+          - Coordinated and managed a team of 8 volunteers, ensuring smooth organization and successful execution.  
+          - Collected 25+ pints of blood to support Thalassemia patients.  
+          - Received Extra Credits on the official academic transcript in recognition of leadership and contribution.  
+
+      - layout: left
+        title: Volunteer Initiative - Educating Underprivileged Children
+        caption: April 2021 - August 2021 | Islamabad
+        # border: weak
+        description: |
+          - Collaborated with university peers to support an NGO educating underprivileged children in Islamabad's slum areas.  
+          - Provided foundational education and mentoring, enabling children to transition into Pakistan's formal education system.  
+          - Fostered social responsibility by addressing educational disparities in marginalized communities.
 
   - title: Languages
     layout: text
@@ -318,11 +392,6 @@ content:
       **English:** Certified Language expert ([**IELTS**](https://drive.google.com/file/d/11sNK-16Jhjl5W4Z_t_tQvkXyQ7JMAv7B/view?usp=drive_link))
 
       **Urdu:** Native
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      When I'm not working, you'll probably find me on a **badminton** court or getting lost in a good **history** book. I love staying active and learning about the past just for fun.
-
 # Footer
 footer_show_references: false
 # references_title: References on request (Override references text)
