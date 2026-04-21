@@ -1,71 +1,56 @@
 # Site
 repository: saifrehman945/saifrehman945.github.io
-# favicon: images/favicon.ico
 
 seo:
   name: "Saif ur Rehman"
-  description: "CAE Engineer | Researcher | Developer specializing in CFD, FEA, HPC, and workflow automation"
+  description: "CFD Researcher specializing in AI-Driven Flow Simulation, Adjoint-Based Shape Optimization, and Physics-AI Hybrid Methods"
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Saif ur Rehman 
-title: CAE Engineer | Researcher | Developer
+name: Saif ur Rehman
+title: CFD Researcher | Physics-AI & Design Optimization
 email: saifurrehman945@outlook.com
-# email_title: Email (Email title override)
-# phone: Your phone number (optional)
-# phone_title: Phone (Phone title override)
-# website: Your website (eg. https://google.com)(optional)
-# website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
 darkmode: true
 
 # Social links
-# twitter_username: jekyllrb
-github_username:  saifrehman945
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-# instagram_username: jekyll
+github_username: saifrehman945
 linkedin_username: saifrehman945
-# xing_username: jekyll
-# pinterest_username: jekyll
-# youtube_username: jekyll
 orcid_username: 0009-0002-2344-8775
-# googlescholar_username: WM-zoAAAAJ
 
 # Additional icon links
 additional_links:
-- title: Google scholar
+- title: Google Scholar
   icon: fas fa-graduation-cap
   url: https://scholar.google.com/citations?user=WM-zoAAAAJ&user=--WM-zoAAAAJ
 - title: Download CV
-  icon: "fas fa-file-alt"
-  url: "https://drive.google.com/file/d/1kWJcvNO_uedjYQywnw09TW7VPPp9LXz8/view?usp=drive_link"
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
+  icon: fas fa-file-alt
+  url: https://drive.google.com/file/d/1kWJcvNO_uedjYQywnw09TW7VPPp9LXz8/view?usp=drive_link
 
 # About Section
-# about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile_pic.jpg
-about_content: | # this will include new lines to allow paragraphs
-  I am a CAE Engineer and Researcher with **3+ years** of professional experience, specializing in CFD modeling and optimization 
-  with applications in energy, automotive, and naval hydrodynamics. 
-  I have developed automated CAE pipelines in Python/C++ and contributed to material modeling, experimental validation, and integration of 
-  optimization algorithms to enhance structural and fluid-dynamic performance. I am particularly motivated by the intersection of 
-  computational mechanics, data-driven methods, and HPC, bridging academic research with industrial applications.
+about_content: |
+  I am a **CFD Researcher and Engineer** working at the intersection of **physics-based simulation** and
+  **data-driven AI**, with hands-on experience in multiphase flow modeling, adjoint-based shape optimization,
+  and neural network surrogate integration. My work bridges validated **RANS–VOF cavitation solvers** with
+  **Kolmogorov-Arnold Network (KAN)** surrogate models for real-time drag prediction, and extends to
+  **adjoint-driven shape optimization** with vertex morphing for industrial-scale design problems.
 
-  **Expertise & Technologies**: CFD, FEA, HPC, Python, C++, Optimization, Adjoint Methods, Material Modeling, Automation
+  <div style="margin-top:20px;">
+    <div style="font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#888; margin-bottom:10px;">Research Interests</div>
+    <span style="display:inline-block; border:1px solid #4fc3f7; color:#4fc3f7; background:rgba(79,195,247,0.12); padding:4px 12px; border-radius:16px; font-size:12px; margin:3px 2px;">Computational Fluid Dynamics</span>
+    <span style="display:inline-block; border:1px solid #4fc3f7; color:#4fc3f7; background:rgba(79,195,247,0.12); padding:4px 12px; border-radius:16px; font-size:12px; margin:3px 2px;">Adjoint-Based Optimization</span>
+    <span style="display:inline-block; border:1px solid #81c784; color:#81c784; background:rgba(129,199,132,0.12); padding:4px 12px; border-radius:16px; font-size:12px; margin:3px 2px;">AI / Surrogate Modeling</span>
+    <span style="display:inline-block; border:1px solid #81c784; color:#81c784; background:rgba(129,199,132,0.12); padding:4px 12px; border-radius:16px; font-size:12px; margin:3px 2px;">Physics-AI Hybrid Frameworks</span>
+    <span style="display:inline-block; border:1px solid #ffb74d; color:#ffb74d; background:rgba(255,183,77,0.12); padding:4px 12px; border-radius:16px; font-size:12px; margin:3px 2px;">Multiphase &amp; Cavitation Flows</span>
+    <span style="display:inline-block; border:1px solid #ffb74d; color:#ffb74d; background:rgba(255,183,77,0.12); padding:4px 12px; border-radius:16px; font-size:12px; margin:3px 2px;">Turbulence Modeling</span>
+    <span style="display:inline-block; border:1px solid #ce93d8; color:#ce93d8; background:rgba(206,147,216,0.12); padding:4px 12px; border-radius:16px; font-size:12px; margin:3px 2px;">MDO &amp; Solver Coupling</span>
+    <span style="display:inline-block; border:1px solid #ce93d8; color:#ce93d8; background:rgba(206,147,216,0.12); padding:4px 12px; border-radius:16px; font-size:12px; margin:3px 2px;">HPC &amp; Scientific Computing</span>
+  </div>
+
 content:
   - title: Work Experience
     layout: list
@@ -74,332 +59,336 @@ content:
         title: Simulation Engineer
         border: weak
         sub_title: SOCO Engineers
-        caption: December 2023 - present
+        caption: December 2023 – Present
         link: soco-engineers.com
-        # quote: >
-        #   Key technologies: Computational Mechanics | Python | C++ | HPC | Optimization | Automation | LS-DYNA | ABAQUS
-        description: | 
+        description: |
+          <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap;">
+            <div style="flex:2; min-width:260px;">
+              <p style="color:#4fc3f7; font-weight:700; margin:0 0 4px; padding-left:10px; border-left:3px solid #4fc3f7;">Design Optimization &amp; Solver Coupling</p>
+              <ul>
+                <li>Core developer of a <strong>node-based adjoint-driven shape optimization</strong> framework for multi-objective, multi-constraint problems</li>
+              </ul>
+              <p style="color:#4fc3f7; font-weight:700; margin:12px 0 4px; padding-left:10px; border-left:3px solid #4fc3f7;">Data-Driven Simulation Pipelines</p>
+              <ul>
+                <li>Developed Python automation pipelines for end-to-end simulation workflows—preprocessing, HPC-enabled execution, and post-processing—to generate structured datasets for surrogate model training.</li>
 
-          ## Material Modelling and Validation
-
-          - Led the development of a Virtual Material Workbench to validate and predict material behavior from over 300 suppliers, enhancing material model accuracy and standardization.
-          - Developed interactive visualization dashboards to compare and validate material models against experimental datasets for improved correlation and reliability.
-          - Co-authored classical material models to investigate the deformation behavior of aluminum and steel sheet metals, contributing to advanced constitutive modeling research.
-
-          ## Adjoint-Based Optimization
-
-          - Served as a core developer for an internal adjoint-based optimization framework, collaborating through a PR-driven workflow across more than 10 departments.
-          - Maintained and extended the C++ core architecture, integrated new optimization modules, and ensured scalability, robustness, and computational performance of the framework.
-
-          ## FEM Support
-
-          - Provided technical support for FEA-related challenges as part of the FEM Support Team, achieving a 95% client satisfaction rate.
-          - Developed automated meshing pipelines for automotive shock absorber assemblies, reducing manual preprocessing effort by 75%.
-          - Engineered a customized HPC post-processing tool for NVH and crash loadcases, resolving 20+ customer-reported issues and improving analysis reliability and efficiency.
-
+              </ul>
+              <p style="color:#4fc3f7; font-weight:700; margin:12px 0 4px; padding-left:10px; border-left:3px solid #4fc3f7;">Scientific Computing &amp; System Architecture</p>
+              <ul>
+                <li>Architected <strong>hybrid C++ (core kernels) + Python (orchestration)</strong> system for performance-critical simulation tasks</li>
+              </ul>
+            </div>
+          </div>
 
       - layout: left
         title: Research Assistant
         sub_title: National University of Sciences and Technology (NUST)
-        caption: November 2022 - December 2023
+        caption: November 2022 – December 2023
         link: smme.nust.edu.pk
-        # quote: >
-        #   A leader in CAE Methods (CFD, crash, NVH, and structure)
-        description: | # this will include new lines to allow paragraphs
-          ## Heat transfer and Nano Fluids
-          - Contributed as a 2nd Author in a peer-reviewed journal article published in the Journal of Thermal Analysis and Calorimetry
-          - Published Article titled  [Effect of **Nanofluids** on **Heat Transfer Enhancement** in Solar Heaters](https://doi.org/10.1007/s10973-025-14571-4)
-          
-          ## Multiphase Flows
-          - Completed Industrial Research on Deep water hydrodynamics, and Cavitations
-          - Co-Authored Journal Article based on [Analyses of **Ventilated Super Cavitation** in Underwater vehicles](https://github.com/saifrehman945/VentilatedSupercavitation)
-          
-          ## Biomedical Flows
-          - Contributed as a team member in a project on [Particle deposition study in the human trachea](https://pubs.aip.org/aip/pof/article/36/4/043338/3284891)
+        description: |
+          <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap;">
+            <div style="flex:2; min-width:260px;">
+              <p style="color:#81c784; font-weight:700; margin:0 0 4px; padding-left:10px; border-left:3px solid #81c784;">CFD + Physics-Based Modeling</p>
+              <ul>
+                <li>Developed multiphase CFD models for turbulent heat transfer and ventilated cavitating flows using unsteady <strong>RANS–VOF</strong> methodology</li>
+                <li>Investigated flow physics — TKE distribution, flow separation, cavitation dynamics — in complex engineering geometries</li>
+              </ul>
+              <p style="color:#81c784; font-weight:700; margin:12px 0 4px; padding-left:10px; border-left:3px solid #81c784;">AI-CFD Integration</p>
+              <ul>
+                <li>Integrated <strong>Kolmogorov-Arnold Network (KAN)</strong> with CFD time-series data for unsteady drag coefficient prediction — outperforming ANN and SVM benchmarks</li>
+                <li>Structured simulation outputs for surrogate modeling and data-driven analysis workflows</li>
+              </ul>
+              <p style="color:#81c784; font-weight:700; margin:12px 0 4px; padding-left:10px; border-left:3px solid #81c784;">Biomedical Flows</p>
+              <ul>
+                <li>Contributed to a <a href="https://pubs.aip.org/aip/pof/article/36/4/043338/3284891">particle deposition study in the human trachea</a> using CFD — published in Physics of Fluids (AIP)</li>
+              </ul>
+            </div>
+            <div style="flex:1; min-width:180px; display:flex; flex-direction:column; gap:10px; text-align:center;">
+              <img src="/images/projects/cavity_evolution.png" alt="Cavity Evolution in Ventilated Supercavitation (0.03–0.2s)" style="width:100%; border-radius:8px; box-shadow:0 3px 12px rgba(0,0,0,0.5);" />
+              <img src="/images/projects/trachea_mesh.jpeg" alt="Human Trachea CFD Mesh — Particle Deposition Study" style="width:100%; border-radius:8px; box-shadow:0 3px 12px rgba(0,0,0,0.5);" />
+              <p style="font-size:11px; color:#888;">Ventilated cavity evolution &amp; trachea CFD model</p>
+            </div>
+          </div>
 
-  - title: Publications # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Publications
+    layout: list
     content:
       - layout: top-middle
-        # border: weak  # Value of `weak` will display a weak border below this item. # Any 
-        #               # other value (or no value) means no border will be displayed
-        title: Synergistic effects of Al2O3-ethylene glycol/water nanofluids and artificial roughness on solar heater thermal performance
-        # link: https://doi.org/10.1007/s10973-025-14571-4
-        # link_text: Research Article Published in Journal of Thermal Analysis and Calorimetry
+        title: "KAN-Enhanced CFD Modeling of Drag Reduction in Ventilated Super-Cavities Around Underwater Projectiles"
+        additional_links:
+          - title: Abstract — Applied Energy
+            icon: fas fa-external-link-alt
+            url: https://drive.google.com/file/d/1kZEkLTSeFsc2uFp_tjWxbnCTLbBgscmk/view?usp=drive_link
+          - title: GitHub Repo
+            icon: fab fa-github
+            url: https://github.com/saifrehman945/VentilatedSupercavitation
+        quote: >
+          Under Review — Engineering Applications of Artificial Intelligence (2025) | 2nd Author
+        description: |
+          <div style="display:flex; gap:22px; align-items:center; flex-wrap:wrap;">
+            <div style="flex:3; min-width:260px;">
+              <p>Couples <strong>unsteady RANS–VOF</strong> multiphase CFD with a <strong>Kolmogorov-Arnold Network (KAN)</strong> surrogate to model and predict unsteady drag in ventilated super-cavities around underwater projectiles — directly bridging high-fidelity simulation with AI-driven design acceleration.</p>
+              <ul>
+                <li><strong>27% drag reduction</strong> achieved through optimized ventilation, translating to 27% lower propulsion power demand</li>
+                <li>KAN model trained on CFD time-series data <strong>outperforms ANN and SVM</strong> in accuracy and error minimization across all ventilation conditions (Cq = 0.60, 0.25, 0.15)</li>
+                <li>Ventilation coefficient strongly governs cavity dynamics and energy-saving potential</li>
+                <li>CFD model rigorously validated against experimental and numerical benchmarks</li>
+              </ul>
+            </div>
+            <div style="flex:2; min-width:180px; text-align:center;">
+              <img src="/images/projects/cavitation_comparison.png" alt="CFD: Ventilated vs Non-Ventilated Projectile — 65% drag difference" style="width:100%; border-radius:8px; box-shadow:0 3px 14px rgba(0,0,0,0.6);" />
+              <p style="font-size:11px; color:#888; margin-top:6px;">Volume fraction: ventilated vs non-ventilated (65% drag difference)</p>
+            </div>
+          </div>
+
+      - layout: top-middle
+        title: "Synergistic Effects of Al₂O₃–Ethylene Glycol/Water Nanofluids and Artificial Roughness on Solar Heater Thermal Performance"
         additional_links:
           - title: Springer
             icon: fas fa-external-link-alt
             url: https://doi.org/10.1007/s10973-025-14571-4
-          - title:  Scholar
-            icon: fas fa-book 
+          - title: Scholar
+            icon: fas fa-book
             url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=--WM-zoAAAAJ&citation_for_view=--WM-zoAAAAJ:0EnyYjriUFMC
         quote: >
-          Research Article Published in Journal of Thermal Analysis and Calorimetry
-        description: | # this will include new lines to allow paragraphs
-          This **CFD** study engineered a high-performance solar heater by synergizing **Al₂O₃ nanofluids** with **artificial ribs**. The optimal design—inverted triangular ribs and a 40% EG/60% Water nanofluid—achieved a 71.6% boost in **heat transfer**. Analysis of **turbulent kinetic energy** revealed intense **micro-vortices** enhancing thermal exchange. The configuration yielded a superior **Performance Evaluation Criterion (PEC = 1.5)**, proving its efficiency outweighs pumping costs.
+          Published — Journal of Thermal Analysis and Calorimetry, Springer (2025) | 2nd Author
+        description: |
+          <div style="display:flex; gap:22px; align-items:center; flex-wrap:wrap;">
+            <div style="flex:3; min-width:260px;">
+              <p>CFD parametric study of <strong>Al₂O₃ nanofluid</strong> (EG/Water) combined with artificial rib roughness to maximize solar heater thermal performance — validated against Dittus-Boelter correlation and experimental data using steady-state <strong>RANS with RNG k–ε</strong>.</p>
+              <ul>
+                <li>Optimal: <strong>inverted triangular ribs</strong> + 40%EG/60%Water nanofluid → <strong>71.6% heat transfer enhancement</strong> at Re = 18,000</li>
+                <li>Peak <strong>Performance Evaluation Criterion (PEC = 1.5)</strong> — thermal gain exceeds pumping penalty</li>
+                <li>TKE analysis reveals micro-vortex formation at rib–fluid interfaces driving boundary layer disruption</li>
+              </ul>
+            </div>
+            <div style="flex:2; min-width:180px; text-align:center;">
+              <img src="/images/projects/tke_triangular.png" alt="TKE Contour — Triangular Rib Configuration" style="width:100%; border-radius:8px; box-shadow:0 3px 12px rgba(0,0,0,0.5);" />
+              <p style="font-size:11px; color:#888; margin-top:6px;">TKE contour — triangular rib solar duct</p>
+            </div>
+          </div>
+
+  - title: Projects
+    layout: list
+    content:
 
       - layout: top-middle
-        # border: weak  # Value of `weak` will display a weak border below this item. # Any 
-        #               # other value (or no value) means no border will be displayed
-        title: Ventilated Super-Cavitation Dynamics and AI-Based Prediction of Unsteady Drag in Underwater Projectiles
-        # link: https://doi.org/10.1007/s10973-025-14571-4
-        # link_text: Research Article Published in Journal of Thermal Analysis and Calorimetry
+        title: Drag Reduction via Ventilated Supercavitation with KAN Surrogate
+        link: https://github.com/saifrehman945/VentilatedSupercavitation
+        link_text: saifrehman945/VentilatedSupercavitation
         additional_links:
-          - title: Applied Energy 
-            icon: fas fa-external-link-alt
-            url: https://drive.google.com/file/d/1kZEkLTSeFsc2uFp_tjWxbnCTLbBgscmk/view?usp=drive_link
+          - title: GitHub
+            icon: fab fa-github
+            url: https://github.com/saifrehman945/VentilatedSupercavitation
         quote: >
-          Research Article Submitted in Journal of Applied Energy
-        description: | # this will include new lines to allow paragraphs
-          This study analyzes **unsteady multiphase turbulent flow** within **ventilated super-cavities** and applies **Kolmogorov-Arnold Network (KAN)** to predict drag fluctuations from **RANS-VOF** simulation data. The KAN model outperforms ANN and SVM in accuracy and stability across different ventilation conditions. CFD results validate a 27% drag reduction through optimized ventilation, while the AI approach provides a faster and reliable tool for predicting unsteady cavitation-induced drag.
+          Technologies: ANSYS Fluent, KAN, ANN, SVM, Python, RANS-VOF Multiphase
+        description: |
+          <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; margin-top:8px;">
+            <div style="flex:3; min-width:260px;">
+              <p>Engineered and validated a <strong>multiphase RANS–VOF CFD model</strong> to investigate ventilated supercavitation for drag reduction in underwater projectiles. Applied <strong>Kolmogorov-Arnold Network (KAN)</strong> surrogate modeling on CFD time-series data for real-time drag prediction — a direct application of the AI-CFD paradigm.</p>
+              <ul>
+                <li>CFD model rigorously validated against experimental and numerical benchmarks — captures intricate unsteady features of highly turbulent cavitating flows</li>
+                <li><strong>27% drag reduction</strong> achieved; 10% decrease in cavitation number leads to significant additional reduction</li>
+                <li>Parametric study: ventilation coefficient (Cq = 0.60, 0.25, 0.15), disk vs cone cavitators, unsteady cavity shedding dynamics</li>
+                <li><strong>KAN outperforms ANN and SVM</strong> for time-dependent Cd prediction — superior accuracy, stability, and error minimization</li>
+              </ul>
+            </div>
+            <div style="flex:2; min-width:200px; display:flex; flex-direction:column; gap:10px; text-align:center;">
+              <video autoplay loop muted playsinline controls style="width:100%; border-radius:8px; box-shadow:0 3px 16px rgba(0,0,0,0.6);">
+                <source src="https://github.com/user-attachments/assets/f51adce3-11e9-426d-900f-5546f757a74e" type="video/mp4">
+              </video>
+              <img src="/images/projects/cavitation_comparison.png" alt="Volume Fraction: With vs Without Ventilation" style="width:100%; border-radius:8px; box-shadow:0 3px 16px rgba(0,0,0,0.6);" />
+              <img src="/images/projects/cavity_evolution.png" alt="Cavity Formation Evolution: 0.03s to 0.2s" style="width:100%; border-radius:8px; box-shadow:0 3px 16px rgba(0,0,0,0.6);" />
+              <p style="font-size:11px; color:#888;">CFD simulation &amp; cavity evolution</p>
+            </div>
+          </div>
 
+      - layout: top-middle
+        title: Nanofluid Heat Transfer Optimization in Solar Air Heaters
+        additional_links:
+          - title: Published — Springer
+            icon: fas fa-external-link-alt
+            url: https://doi.org/10.1007/s10973-025-14571-4
+        quote: >
+          Technologies: ANSYS Fluent, RNG k-ε RANS, Python, CFD Post-Processing
+        description: |
+          <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; margin-top:8px;">
+            <div style="flex:3; min-width:260px;">
+              <p>Developed and validated a <strong>2D steady-state RANS CFD model</strong> (RNG k–ε, ANSYS Fluent) for turbulent heat transfer in rib-roughened solar air heater ducts with Al₂O₃–EG/Water nanofluids. Published in <em>J. Thermal Analysis and Calorimetry</em>, Springer (2025).</p>
+              <ul>
+                <li>Systematic parametric study: nanoparticle concentration (1% vol.), EG/Water composition (20:80 / 40:60 / 60:40), and rib geometries (triangular vs square)</li>
+                <li>Optimal: 40/60% EG/Water + inverted triangular ribs → <strong>71.6% heat transfer coefficient increase</strong> over smooth duct baseline</li>
+                <li>Near-wall TKE analysis reveals vortex formation and boundary layer reattachment patterns at rib–fluid interfaces</li>
+                <li>Peak <strong>PEC = 1.5</strong> confirms thermal gain outweighs pumping cost — validated against Dittus-Boelter and experimental data</li>
+              </ul>
+            </div>
+            <div style="flex:2; min-width:180px; display:flex; flex-direction:column; gap:8px; text-align:center;">
+              <img src="/images/projects/solar_domain.png" alt="Solar Heater Computational Domain — Heat Flux and Nanofluid Flow" style="width:100%; border-radius:8px; box-shadow:0 3px 12px rgba(0,0,0,0.5);" />
+              <img src="/images/projects/tke_triangular.png" alt="TKE Contour — Triangular Rib Duct" style="width:100%; border-radius:8px; box-shadow:0 3px 12px rgba(0,0,0,0.5);" />
+              <p style="font-size:11px; color:#888;">Computational domain &amp; TKE contour (triangular ribs)</p>
+            </div>
+          </div>
+
+      - layout: top-middle
+        title: Adjoint-Based Shape Optimization Framework
+        quote: >
+          Technologies: C++, Python, Adjoint Solvers, Vertex Morphing, CFD/FEA Coupling | SOCO Engineers (In-House)
+        description: |
+          <img src="/images/projects/adjoint_workflow.png" alt="Adjoint-Based Shape Optimization Workflow Diagram" style="width:100%; max-width:820px; border-radius:10px; box-shadow:0 4px 20px rgba(0,0,0,0.7); display:block; margin:8px auto 20px;" />
+          <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap;">
+            <div style="flex:3; min-width:260px;">
+              <p>Designed and implemented a <strong>multi-objective, multi-constraint shape optimization architecture</strong> integrating adjoint sensitivities from external CFD/FEA solvers through a modular solver–optimizer coupling interface — enabling solver-agnostic, scalable design optimization across different physics domains.</p>
+              <ul>
+                <li><strong>Vertex morphing operator</strong> maps raw node-level shape sensitivities (∂J/∂x) to a control space, producing smooth and mesh-regular filtered sensitivity fields for physically consistent surface updates</li>
+                <li><strong>Gradient-based optimizer in control space</strong> drives constrained/unconstrained shape updates using adjoint-derived sensitivity fields — supports large-scale industrial design problems</li>
+                <li><strong>Hybrid C++ + Python architecture</strong> — C++ for optimization kernels and parallel execution, Python for workflow orchestration, I/O, and solver interfacing</li>
+                <li>Parallel multi-solver execution reduces adjoint computation time by ~50% with modular CI/CD-tested codebase</li>
+              </ul>
+            </div>
+            <div style="flex:2; min-width:180px; display:flex; flex-direction:column; gap:8px; text-align:center;">
+              <img src="/images/projects/shape_mirror.png" alt="Car Side Mirror — Shape Optimized Before/After" style="width:100%; border-radius:8px; box-shadow:0 3px 12px rgba(0,0,0,0.5);" />
+              <img src="/images/projects/shape_airfoil.png" alt="Airfoil Profile — Initial vs Optimized" style="width:100%; border-radius:8px; box-shadow:0 3px 12px rgba(0,0,0,0.5);" />
+              <p style="font-size:11px; color:#888;">Car mirror &amp; airfoil shape optimization results</p>
+            </div>
+          </div>
+
+
+      - layout: top-middle
+        title: Vortex-Shedding Simulation around Underwater Cylinders
+        link: https://github.com/saifrehman945/FluentVortexShedding
+        link_text: saifrehman945/FluentVortexShedding
+        additional_links:
+          - title: GitHub
+            icon: fab fa-github
+            url: https://github.com/saifrehman945/FluentVortexShedding
+        quote: >
+          Technologies: ANSYS Fluent, RANS-SST, Python, Flow Animations
+        description: |
+          Simulated **unsteady vortex shedding** around underwater cylinders at Re = 10,000 using the **RANS-SST** turbulence model. Analyzed unsteady pressure fluctuations, wake dynamics, and vortex-induced vibrations (VIV) — phenomena critical to marine structural stability and fatigue life prediction. Generated flow animations and spectral frequency plots; numerical results validated against experimental benchmarks.
+
+      - layout: top-middle
+        title: Hagen-Poiseuille Flow Validation in OpenFOAM v12
+        link: https://github.com/saifrehman945/HagenPoiseuilleValidation
+        link_text: saifrehman945/HagenPoiseuilleValidation
+        additional_links:
+          - title: GitHub
+            icon: fab fa-github
+            url: https://github.com/saifrehman945/HagenPoiseuilleValidation
+        quote: >
+          Technologies: OpenFOAM v12, Python, Gnuplot, Bash
+        description: |
+          Modernized the classic Hagen-Poiseuille flow validation from OpenFOAM v6 to v12. Revamped control dictionaries, introduced runtime sampling, and replaced legacy scripts with **Python notebooks** and **Gnuplot** visualizations for reproducible post-processing. A clean, self-contained benchmark for validating laminar pipe flow fundamentals in the modern OpenFOAM ecosystem.
+
+  - title: Technical Skills
+    layout: text
+    content: |
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(195px, 1fr)); gap:14px; margin-top:12px;">
+        <div style="border:1px solid rgba(79,195,247,0.35); border-radius:10px; padding:16px;">
+          <div style="color:#4fc3f7; font-weight:700; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; margin-bottom:12px;">CFD &amp; Simulation</div>
+          <div style="font-size:13px; line-height:2.0; color:#bbb;">ANSYS Fluent &nbsp;&middot;&nbsp; OpenFOAM<br/>RANS &nbsp;&middot;&nbsp; VOF &nbsp;&middot;&nbsp; LES<br/>Multiphase &amp; Cavitation<br/>Turbulence Modeling<br/>Heat Transfer CFD</div>
+        </div>
+        <div style="border:1px solid rgba(129,199,132,0.35); border-radius:10px; padding:16px;">
+          <div style="color:#81c784; font-weight:700; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; margin-bottom:12px;">FEA &amp; Structural</div>
+          <div style="font-size:13px; line-height:2.0; color:#bbb;">Abaqus &nbsp;&middot;&nbsp; LS-DYNA<br/>OptiStruct<br/>NVH &amp; Crash Analysis<br/>Material Modeling<br/>Automated Meshing</div>
+        </div>
+        <div style="border:1px solid rgba(255,183,77,0.35); border-radius:10px; padding:16px;">
+          <div style="color:#ffb74d; font-weight:700; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; margin-bottom:12px;">AI &amp; Machine Learning</div>
+          <div style="font-size:13px; line-height:2.0; color:#bbb;">Kolmogorov-Arnold Networks<br/>Neural Networks (ANN)<br/>SVM &nbsp;&middot;&nbsp; Regression<br/>Surrogate Modeling<br/>Time-Series Prediction</div>
+        </div>
+        <div style="border:1px solid rgba(206,147,216,0.35); border-radius:10px; padding:16px;">
+          <div style="color:#ce93d8; font-weight:700; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; margin-bottom:12px;">Optimization</div>
+          <div style="font-size:13px; line-height:2.0; color:#bbb;">Adjoint Methods<br/>Gradient-Based Optimization<br/>Vertex Morphing<br/>Multi-Objective / Constrained<br/>MDO Frameworks</div>
+        </div>
+        <div style="border:1px solid rgba(100,181,246,0.35); border-radius:10px; padding:16px;">
+          <div style="color:#64b5f6; font-weight:700; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; margin-bottom:12px;">Programming</div>
+          <div style="font-size:13px; line-height:2.0; color:#bbb;">Python (NumPy, Pandas, SciPy)<br/>C++ (OOP, performance)<br/>Bash &nbsp;&middot;&nbsp; Gnuplot<br/>CI/CD &nbsp;&middot;&nbsp; Testing Pipelines<br/>Data Pipelines</div>
+        </div>
+        <div style="border:1px solid rgba(77,182,172,0.35); border-radius:10px; padding:16px;">
+          <div style="color:#4db6ac; font-weight:700; font-size:11px; letter-spacing:1.2px; text-transform:uppercase; margin-bottom:12px;">HPC &amp; Computing</div>
+          <div style="font-size:13px; line-height:2.0; color:#bbb;">HPC Cluster Workflows<br/>Parallel Computing<br/>Solver Integration &amp; APIs<br/>Post-Processing Systems<br/>Scalable Pipelines</div>
+        </div>
+      </div>
+
+  - title: Certifications
+    layout: list
+    content:
+      - layout: left
+        title: Neural Networks and Deep Learning
+        sub_title: deeplearning.ai
+        caption: December 2024
+        border: weak
+        description: |
+          Foundational deep learning specialization covering neural network architectures, backpropagation, optimization algorithms, and regularization — directly applied to AI-CFD surrogate development.
+
+      - layout: left
+        title: Mastering ANSYS (Level 1 & 2)
+        sub_title: Udemy
+        caption: December 2021
+        border: weak
+        description: |
+          Comprehensive training in ANSYS FEA/CFD workflows — mesh generation, boundary conditions, solver settings, turbulence modeling, and result post-processing.
+
+      - layout: left
+        title: 3-Week OpenFOAM Workshop
+        sub_title: OpenFOAM Foundation / Wiki
+        caption: October 2022
+        border: weak
+        description: |
+          Intensive hands-on workshop covering OpenFOAM case setup, custom boundary conditions, turbulence models, parallel execution, and ParaView post-processing.
+
+      - layout: left
+        title: CFD Training Certificate
+        sub_title: SMME, NUST
+        caption: October 2022
+        description: |
+          Formal CFD training covering governing equations, numerical discretization, mesh quality, and solver validation for industrial flow problems.
 
   - title: Education
     layout: list
     content:
       - layout: left
         title: School of Mechanical and Manufacturing Engineering (SMME), NUST
-        sub_title: Bachelors in Mechanical Engineering
-        caption: 2019 - 2023
-        # quote: >
-        #   Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          <table style="width:100%; border-collapse:collapse; font-size:16px;">
+        sub_title: B.S. Mechanical Engineering
+        caption: 2019 – 2023
+        description: |
+          <table style="width:100%; border-collapse:collapse; font-size:14px;">
             <thead>
               <tr>
-                <th style="text-align:left; padding:4px; border-bottom:1px solid #ccc;">Core Subjects</th>
-                <th style="text-align:left; padding:4px; border-bottom:1px solid #ccc;">Electives</th>
+                <th style="text-align:left; padding:6px 8px; border-bottom:1px solid #333; color:#aaa;">Core Subjects</th>
+                <th style="text-align:left; padding:6px 8px; border-bottom:1px solid #333; color:#aaa;">Electives</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td style="padding:4px; vertical-align:top;">Mechanics, Materials, Manufacturing</td>
-                <td style="padding:4px; vertical-align:top;">Finite Element Analysis, Computational Fluid Mechanics</td>
+                <td style="padding:5px 8px;">Mechanics, Materials, Manufacturing</td>
+                <td style="padding:5px 8px;">Computational Fluid Mechanics</td>
               </tr>
               <tr>
-                <td style="padding:4px; vertical-align:top;">Machine Design, Mechanics of Machines</td>
-                <td style="padding:4px; vertical-align:top;">Numerical Methods, Heat Transfer</td>
+                <td style="padding:5px 8px;">Machine Design, Mechanics of Machines</td>
+                <td style="padding:5px 8px;">Finite Element Analysis</td>
               </tr>
               <tr>
-                <td style="padding:4px; vertical-align:top;">Thermodynamics, Fluids</td>
-                <td style="padding:4px; vertical-align:top;">Programming, Gas Turbines</td>
+                <td style="padding:5px 8px;">Thermodynamics, Fluid Mechanics</td>
+                <td style="padding:5px 8px;">Numerical Methods &amp; Heat Transfer</td>
+              </tr>
+              <tr>
+                <td style="padding:5px 8px;">Gas Turbines, Fundamentals of Programming</td>
+                <td style="padding:5px 8px;"></td>
               </tr>
             </tbody>
           </table>
 
-
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-
-      # - layout: top-middle
-      #   # border: weak  # Value of `weak` will display a weak border below this item. # Any 
-      #   #               # other value (or no value) means no border will be displayed
-      #   title: Material Data Management and Simulation Framework
-      #   # link: https://github.com/saifrehman945/FluentVortexShedding
-      #   # link_text: saifrehman945/FluentVortexShedding
-      #   # additional_links:
-      #   #   - title:  Github
-      #   #     icon: fab fa-github
-      #   #     url: https://github.com/saifrehman945/FluentVortexShedding
-      #   quote: >
-      #     Technologies: Python, PostgreSQL, C++, LS-DYNA, ABAQUS
-      #   description: | # this will include new lines to allow paragraphs
-      #      <style>
-      #         /* Popup background */
-      #         .popup {
-      #           display: none;
-      #           position: fixed;
-      #           z-index: 9999;
-      #           left: 0;
-      #           top: 0;
-      #           width: 100%;
-      #           height: 100%;
-      #           background-color: rgba(0,0,0,0.85);
-      #         }
-      #         .popup img {
-      #           display: block;
-      #           margin: 5% auto;
-      #           max-width: 90%;
-      #           max-height: 90%;
-      #           border-radius: 10px;
-      #           box-shadow: 0 6px 18px rgba(0,0,0,0.4);
-      #         }
-      #       </style>
-
-      #       <div style="display:flex; align-items:center; gap:30px;">
-      #         <!-- Left side: text -->
-      #         <div style="flex:3; font-size:16px; line-height:1.5;">
-      #           Managing <b>material data</b> from hundreds of sources is often fragmented, error-prone, and limits reliable <b>FEA simulations</b>.
-      #           I led the development of a comprehensive <b>material data management and simulation framework</b>, 
-      #           consolidating test data from over 300 materials sourced from suppliers, institutes, and in-house 
-      #           experiments into a systematic database. This involved creating and maintaining <b>material cards</b> for 
-      #           advanced <b>FEA simulations</b> on multiple loadcases, designing <b>automated workflows</b> to streamline data collection, 
-      #           validation, and updates, and integrating <b>database algorithms</b> to enable efficient handling of complex datasets. 
-      #           By correlating <b>simulation results</b> with <b>experimental data</b>, I established a reliable workflow that significantly 
-      #           reduced dependency on physical testing while ensuring accuracy in <b>predictive modelling</b>. This project not only enhanced 
-      #           the scalability and traceability of <b>material data management</b> but also accelerated <b>simulation-driven design</b> across multiple engineering domains.
-      #         </div>
-              
-      #         <!-- Right side: image -->
-      #         <div style="flex:2; text-align:right; display:flex; justify-content:center; align-items:center;">
-      #           <a href="javascript:void(0)" onclick="document.getElementById('flowchart-popup').style.display='block'">
-      #             <img src="/assets/images/flowchart.png" 
-      #                 alt="Material Modelling Workflow" 
-      #                 style="width:520px; max-width:100%; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.2);" />
-      #           </a>
-      #         </div>
-      #       </div>
-
-      #       <!-- Hidden popup -->
-      #       <div id="flowchart-popup" class="popup" onclick="this.style.display='none'">
-      #         <img src="/assets/images/flowchart.png" alt="Material Modelling Workflow Full" />
-      #       </div>
-
-      # - layout: top-middle
-      #   # border: weak  # Value of `weak` will display a weak border below this item. # Any 
-      #   #               # other value (or no value) means no border will be displayed
-      #   title: Adjoint-Based Shape Optimization Framework
-      #   # link: https://github.com/saifrehman945/VentilatedSupercavitation
-      #   # link_text: saifrehman945/VentilatedSupercavitation
-      #   additional_links:
-      #     # - title: Springer
-      #     #   icon: fas fa-external-link-alt
-      #     #   url: https://doi.org/10.1007/s10973-025-14571-4
-      #     # - title:  Github
-      #     #   icon: fab fa-github
-      #     #   url: https://github.com/saifrehman945/VentilatedSupercavitation
-      #   quote: >
-      #     Technologies: C++, Python, Adjoint solvers
-      #   description: | # this will include new lines to allow paragraphs
-          
-      #     I contributed as a core developer to an **optimization framework** that leverages 
-      #     **adjoint sensitivities** from the solver to drive **gradient-based optimization** of 
-      #     geometry shape and thickness. The framework was implemented in **C++** for computational 
-      #     performance and wrapped in **Python** for accessibility and **workflow automation**. 
-      #     My role involved maintaining and extending the core codebase, integrating new 
-      #     **optimization features**, and ensuring scalability and robustness of the framework. 
-      #     By coupling solver outputs with a streamlined **optimization pipeline**, I enabled 
-      #     efficient and automated design iterations, reducing manual overhead and advancing 
-      #     **solver-driven design optimization** capabilities.
-
-      - layout: top-middle
-        # border: weak  # Value of `weak` will display a weak border below this item. # Any 
-        #               # other value (or no value) means no border will be displayed
-        title: Drag Reduction in Underwater Vehicles - Ventilated Cavitation
-        link: https://github.com/saifrehman945/VentilatedSupercavitation
-        link_text: saifrehman945/VentilatedSupercavitation
-        additional_links:
-          - title:  Github
-            icon: fab fa-github
-            url: https://github.com/saifrehman945/VentilatedSupercavitation
-        quote: >
-          Technologies: ANSYS FLuent, Gnuplot
-        description: | # this will include new lines to allow paragraphs
-          Underwater vehicles face severe drag penalties that limit speed and efficiency, making **drag reduction** a critical design challenge.
-          In this industrial research study, I engineered and validated a **CFD** 
-          computational model to harness **ventilated supercavitation** for underwater **drag reduction**. 
-          By integrating **multiphase CFD simulations** with **unsteady RANS-VOF methodologies**, 
-          I achieved a remarkable 27% reduction in drag—pushing the boundaries of **hydrodynamic efficiency**. 
-          The study unveiled critical insights into **cavity dynamics**, **ventilation rates**, and **cavitator geometries**.
-      - layout: top-middle
-        # border: weak  # Value of `weak` will display a weak border below this item. # Any 
-        #               # other value (or no value) means no border will be displayed
-        title: Case setup for Hagen-Poiseuille Flow in OpenFOAM v12
-        link: https://github.com/saifrehman945/HagenPoiseuilleValidation
-        link_text: saifrehman945/HagenPoiseuilleValidation
-        additional_links:
-          - title:  Github
-            icon: fab fa-github
-            url: https://github.com/saifrehman945/HagenPoiseuilleValidation
-        quote: >
-          Technologies: OpenFOAM, Python, Gnuplot, Bash
-        description: | # this will include new lines to allow paragraphs
-          This project modernizes the classic **Hagen-Poiseuille flow** validation by upgrading **OpenFOAM** tutorials 
-          from v6 to v12. I revamped control files, streamlined **mesh handling**, and introduced **runtime sampling** for 
-          cleaner, more efficient simulations. Legacy scripts were replaced with **Python notebooks** and **Gnuplot visualizations**, 
-          making post-processing seamless and interactive. Redundant files were eliminated, simplifying the workflow and boosting 
-          maintainability. The result is a reproducible, user-friendly pipeline for validating **laminar flow** fundamentals. 
-
-      - layout: top-middle
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: Vortex-Shedding Simulation around Underwater Cylinders
-        link: https://github.com/saifrehman945/FluentVortexShedding
-        link_text: saifrehman945/FluentVortexShedding
-        additional_links:
-          - title:  Github
-            icon: fab fa-github
-            url: https://github.com/saifrehman945/FluentVortexShedding
-        quote: >
-          Technologies: ANSYS Fluent, Python
-        description: | # this will include new lines to allow paragraphs
-          **Vortex-induced vibrations (VIV)** around underwater cylinders pose major risks to marine structures, affecting stability, fatigue life, and overall performance.
-          The project simulates **vortex shedding** around underwater cylinders at Re = 10,000 using the **RANS-SST turbulence model**. 
-          It captures **unsteady flow patterns**, **pressure fluctuations**, and **vortex-induced vibrations** critical to **marine engineering**. 
-          Created animations and plots to visualize **vortex formation** and **shedding frequencies**. Results were benchmarked against 
-          **experimental data** to validate accuracy. The project provides a benchmark for modelling **VIV phenomena**.
-
-    
-  - title: Extra-Curricular Activities
-    layout: list
-    content:
-      - layout: left
-        title: Team Lead - AgroDrone
-        caption: 2021 | NUST, Islamabad
-        # border: weak
-        description: |
-          - Led a multidisciplinary team of 8 members in developing UAVs for targeted pesticide spraying in cornfields.  
-          - Oversaw CAD modeling, prototyping, and system integration.  
-          - Reached the Final Stage (FICS Stage 3) of NUST's startup pitching competition.  
-          - [Project Link](https://tinyurl.com/58apa66n)
-
-      - layout: left
-        title: Badminton Enthusiast
-        caption: Ongoing | NUST, Islamabad
-        # border: weak
-        description: |
-          - Represented university as part of the 4-member Badminton Team.  
-          - Semifinalist in both Inter-School and Inter-Hostel Badminton Championships.  
-          - Active player for over 8 years, maintaining consistent sports participation and team spirit.
-
-  - title: Volunteering
-    layout: list
-    content:
-      - layout: left
-        title: Lead - Blood Donation Drive
-        sub_title: AFIT (Rawalpindi) & Sundas Foundation
-        caption: November 2022 - December 2022 | Islamabad
-        # border: weak
-        description: |
-          - Led a blood donation campaign in collaboration with AFIT and Sundas Foundation during the COVID-19 period.  
-          - Coordinated and managed a team of 8 volunteers, ensuring smooth organization and successful execution.  
-          - Collected 25+ pints of blood to support Thalassemia patients.  
-          - Received Extra Credits on the official academic transcript in recognition of leadership and contribution.  
-
-      - layout: left
-        title: Volunteer Initiative - Educating Underprivileged Children
-        caption: April 2021 - August 2021 | Islamabad
-        # border: weak
-        description: |
-          - Collaborated with university peers to support an NGO educating underprivileged children in Islamabad's slum areas.  
-          - Provided foundational education and mentoring, enabling children to transition into Pakistan's formal education system.  
-          - Fostered social responsibility by addressing educational disparities in marginalized communities.
-
   - title: Languages
     layout: text
     content: |
-      **English:** Certified Language expert (C1 Proficiency IELTS 7.0)
+      **English:** C1 Proficiency — IELTS 7.0
 
       **Urdu:** Native
+
 # Footer
 footer_show_references: false
-# references_title: References on request (Override references text)
 
 # Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
-
 sass:
   sass_dir: _sass
   style: compressed
@@ -407,7 +396,7 @@ sass:
 plugins:
  - jekyll-seo-tag
 
-exclude : [
+exclude: [
   "Gemfile",
   "Gemfile.lock",
   "node_modules",

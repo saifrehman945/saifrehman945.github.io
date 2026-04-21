@@ -12,4 +12,32 @@
   a {
     color: #477dca;
   }
+
+  .header-container {
+    background: linear-gradient(135deg, #0d1b2a 0%, #162040 50%, #222 100%);
+  }
+
+  .layout:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+  }
+
+  p.quote {
+    background: rgba(71, 125, 202, 0.08);
+  }
+
+  .sidebar-nav__link {
+    color: #cecccc;
+  }
+
+  .sidebar-nav__sub-link {
+    color: #cecece;
+  }
+
+  .sidebar-nav__heading {
+    color: #aaa;
+  }
+
+  .sidebar-nav::-webkit-scrollbar-thumb {
+    background: #444;
+  }
 }
