@@ -1,0 +1,4 @@
+{{- with resources.Get "js/image-viewer.js" -}}
+  {{- $script := . | minify | fingerprint "sha256" -}}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+{{- end -}}

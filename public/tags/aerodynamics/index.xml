@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aerodynamics | </title>
+    <link>http://localhost:1315/tags/aerodynamics/</link>
+      <atom:link href="http://localhost:1315/tags/aerodynamics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Aerodynamics</description>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1315/media/icon_hu_1c0e9cb08cfb822a.png</url>
+      <title>Aerodynamics</title>
+      <link>http://localhost:1315/tags/aerodynamics/</link>
+    </image>
+    
+    <item>
+      <title>AeroForge</title>
+      <link>http://localhost:1315/projects/aeroforge/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1315/projects/aeroforge/</guid>
+      <description>&lt;p&gt;AeroForge began with a familiar CFD problem: evaluating one airfoil requires far more than choosing its shape. Geometry must be generated correctly, flow conditions translated into solver settings, a boundary-layer mesh built and checked, and every OpenFOAM case kept consistent. Repeating that process across several designs turns engineering work into file management.&lt;/p&gt;
+&lt;p&gt;I built AeroForge to make that journey visible and repeatable. After first exploring a browser-based interface with NiceGUI, I migrated the application to &lt;strong&gt;PyQt&lt;/strong&gt;, creating a focused desktop workspace for local simulation work.&lt;/p&gt;
+&lt;h2 id=&#34;start-with-the-airfoil&#34;&gt;Start with the Airfoil&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;AeroForge geometry workspace previewing a NACA 0012 airfoil at four degrees angle of attack&#34; 
+               srcset=&#34;http://localhost:1315/projects/aeroforge/image_1_hu_dc2e89b7455a02f6.webp 320w, http://localhost:1315/projects/aeroforge/image_1_hu_4e4a886182ba1260.webp 480w, http://localhost:1315/projects/aeroforge/image_1_hu_6e139042c1126882.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1315/projects/aeroforge/image_1_hu_dc2e89b7455a02f6.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;286&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The workflow opens with the design itself. Thickness, camber, camber position, angle of attack, and surface resolution define a NACA four-digit section. The preview updates the geometry before any expensive computation begins, exposing mistakes while they are still easy to fix.&lt;/p&gt;
+&lt;h2 id=&#34;make-the-mesh-defensible&#34;&gt;Make the Mesh Defensible&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;AeroForge mesh workspace showing the structured airfoil grid and mesh-quality gates&#34; 
+               srcset=&#34;http://localhost:1315/projects/aeroforge/image_2_hu_4fe68e3864298c5a.webp 320w, http://localhost:1315/projects/aeroforge/image_2_hu_db1fbe60c8917696.webp 480w, http://localhost:1315/projects/aeroforge/image_2_hu_df5ac721dc8b0c47.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1315/projects/aeroforge/image_2_hu_4fe68e3864298c5a.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;474&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Next, AeroForge builds the solver-ready case and brings mesh decisions into the interface. Boundary-layer growth, layer count, wall treatment, and surface sampling remain adjustable, while cell count, non-orthogonality, skewness, aspect ratio, and first-cell height are reported beside the mesh. The engineer sees not only that a mesh exists, but whether it is credible enough to run.&lt;/p&gt;
+&lt;h2 id=&#34;run-without-hiding-the-physics&#34;&gt;Run Without Hiding the Physics&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;AeroForge solver workspace with OpenFOAM controls and convergence plots&#34; 
+               srcset=&#34;http://localhost:1315/projects/aeroforge/image_3_hu_467615820dbdba3a.webp 320w, http://localhost:1315/projects/aeroforge/image_3_hu_a6e78a59e6af2627.webp 480w, http://localhost:1315/projects/aeroforge/image_3_hu_b2aa9e65436d2b39.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1315/projects/aeroforge/image_3_hu_467615820dbdba3a.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;488&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The solver stage keeps OpenFOAM accessible. Recommended defaults provide a safe starting point, while advanced controls expose iteration limits, correction schemes, relaxation factors, and parallel processes. Residual and force histories are monitored in the same workspace, so convergence becomes part of the decision rather than a terminal window left in the background.&lt;/p&gt;
+&lt;h2 id=&#34;turn-one-case-into-a-study&#34;&gt;Turn One Case into a Study&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;AeroForge batch workspace generating airfoil cases with Latin Hypercube Sampling&#34; 
+               srcset=&#34;http://localhost:1315/projects/aeroforge/image_4_hu_cf594de32d83bfe2.webp 320w, http://localhost:1315/projects/aeroforge/image_4_hu_44f7fd07b949514b.webp 480w, http://localhost:1315/projects/aeroforge/image_4_hu_60b86697e0c23fc.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1315/projects/aeroforge/image_4_hu_cf594de32d83bfe2.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;401&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The final step changes the scale of the problem. Cases can be added manually or generated with &lt;strong&gt;Latin Hypercube Sampling&lt;/strong&gt; across Reynolds number, angle of attack, thickness, and camber variables. AeroForge queues, builds, and runs them with controlled parallelism, turning the same traceable workflow into a small aerodynamic design campaign.&lt;/p&gt;
+&lt;p&gt;The result is not a wrapper that conceals CFD. It is a guided path through it:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Airfoil definition → Flow setup → Mesh evidence → Solver convergence → Design study&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CamberLab</title>
+      <link>http://localhost:1315/projects/camberlab/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1315/projects/camberlab/</guid>
+      <description>&lt;p&gt;It began with a basic trade-off. OpenFOAM can reveal how an airfoil behaves, but a single RANS simulation may take minutes or hours. A surrogate model can answer in milliseconds, yet speed becomes dangerous when the model quietly predicts beyond the CFD evidence that trained it.&lt;/p&gt;
+&lt;p&gt;I built CamberLab around a stricter idea: &lt;strong&gt;a fast prediction should also explain how far it can be trusted&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;one-dashboard-two-layers-of-evidence&#34;&gt;One Dashboard, Two Layers of Evidence&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;CamberLab dashboard showing a NACA airfoil, lift and drag sweeps, uncertainty bands, and nearby CFD samples&#34; 
+               srcset=&#34;http://localhost:1315/projects/camberlab/camberlab-dashboard_hu_7b476e32a61be0d7.webp 320w, http://localhost:1315/projects/camberlab/camberlab-dashboard_hu_38645012bb2c9451.webp 480w, http://localhost:1315/projects/camberlab/camberlab-dashboard_hu_236ba4c74c1b84e0.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1315/projects/camberlab/camberlab-dashboard_hu_7b476e32a61be0d7.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;427&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The dashboard turns an aerodynamic question into an interactive study. The engineer selects airfoil thickness, Reynolds number, an angle-of-attack sweep, and a surrogate family. CamberLab responds with lift, drag, lift-to-drag ratio, and a drag polar, while the airfoil preview keeps the geometry visible.&lt;/p&gt;
+&lt;p&gt;The curves are only the first layer. Confidence bands show predictive uncertainty, orange markers reveal nearby CFD training cases, and warnings identify sweep points outside the trained envelope. Instead of smoothing over missing knowledge, the interface makes it part of the result.&lt;/p&gt;
+&lt;h2 id=&#34;different-flow-different-physics&#34;&gt;Different Flow, Different Physics&lt;/h2&gt;
+&lt;p&gt;The central problem is that one CFD recipe cannot represent the entire design space. Attached turbulent flow, near-stall separation, transitional low-Reynolds flow, and high-Reynolds attached flow require different turbulence models, mesh densities, wall treatments, and target y+ values.&lt;/p&gt;
+&lt;p&gt;CamberLab therefore classifies each design into a flow regime before simulation. Dedicated OpenFOAM templates generate the evidence for that regime, and the regime label becomes an explicit surrogate input rather than an assumption hidden inside the dataset.&lt;/p&gt;
+&lt;h2 id=&#34;from-expensive-simulations-to-reusable-models&#34;&gt;From Expensive Simulations to Reusable Models&lt;/h2&gt;
+&lt;p&gt;Latin Hypercube Sampling defines the CFD campaign. Python generates NACA geometry, Gmsh builds regime-specific structured meshes, and OpenFOAM runs the cases in parallel. Results pass convergence and reference-validation gates before entering the training dataset.&lt;/p&gt;
+&lt;p&gt;Four model families—Gaussian Process, Random Forest, MLP, and Kriging—learn lift and drag from the harvested cases. Frozen train/test indices and fixed random seeds keep comparisons reproducible. The deployed Streamlit app reads only the resulting model artifacts, so prediction does not require OpenFOAM.&lt;/p&gt;
+&lt;p&gt;CamberLab remains a research preview and says so plainly: unsupported camber falls back to a symmetric airfoil, stall predictions are flagged as extrapolation, and incomplete regimes receive lower confidence. That honesty is the project’s defining feature.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Flow classification → Validated CFD → Surrogate training → Uncertainty-aware prediction&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

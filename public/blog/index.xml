@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog | </title>
+    <link>http://localhost:1315/blog/</link>
+      <atom:link href="http://localhost:1315/blog/index.xml" rel="self" type="application/rss+xml" />
+    <description>Blog</description>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1315/media/icon_hu_1c0e9cb08cfb822a.png</url>
+      <title>Blog</title>
+      <link>http://localhost:1315/blog/</link>
+    </image>
+    
+    <item>
+      <title>Coupling CFD with KAN Surrogates: Notes</title>
+      <link>http://localhost:1315/blog/hello-world/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1315/blog/hello-world/</guid>
+      <description>&lt;p&gt;Draft. Replace me.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

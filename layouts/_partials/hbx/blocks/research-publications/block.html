@@ -1,0 +1,97 @@
+{{/* Research-focused publication cards that show abstracts and local images. */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content }}
+{{ if not (reflect.IsMap $content) }}{{ $content = dict }}{{ end }}
+
+{{ $title := "Research Publications" }}
+{{ with index $content "title" }}{{ $title = strings.TrimSpace (printf "%v" .) }}{{ end }}
+{{ $subtitle := "" }}
+{{ with index $content "subtitle" }}{{ $subtitle = strings.TrimSpace (printf "%v" .) }}{{ end }}
+
+{{ $folders := slice "publications" }}
+{{ with index $content "folders" }}
+  {{ if reflect.IsSlice . }}
+    {{ $folders = . }}
+  {{ end }}
+{{ end }}
+
+{{ $publications := slice }}
+{{ range $folder := $folders }}
+  {{ $sectionPages := where site.RegularPages "Section" (printf "%v" $folder) }}
+  {{ $publications = $publications | append $sectionPages }}
+{{ end }}
+{{ $publications = sort $publications "Date" "desc" }}
+
+<div class="research-publications mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
+  <div class="mb-12 text-center">
+    {{ with $title }}
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">{{ . | $page.RenderString }}</h1>
+    {{ end }}
+    {{ with $subtitle }}
+    <p class="mx-auto max-w-3xl text-base leading-7 text-gray-600 dark:text-gray-400">{{ . | $page.RenderString }}</p>
+    {{ end }}
+  </div>
+
+  <div class="grid grid-cols-1 gap-8">
+    {{ range $publications }}
+      {{ $pub := . }}
+      {{ $abstract := "" }}
+      {{ with $pub.Params.abstract }}{{ $abstract = strings.TrimSpace (printf "%v" .) }}{{ end }}
+
+      {{ $featured := $pub.Resources.GetMatch "featured.*" }}
+      {{ $images := slice }}
+      {{ with $featured }}{{ $images = $images | append . }}{{ end }}
+      {{ range $pub.Resources.ByType "image" }}
+        {{ if or (not $featured) (ne .Name $featured.Name) }}
+          {{ $images = $images | append . }}
+        {{ end }}
+      {{ end }}
+
+      <article class="publication-card overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-primary-300 hover:shadow-xl dark:border-white/10 dark:bg-white/[0.03] dark:hover:border-primary-500/40">
+        <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
+          <div class="publication-card__media bg-gray-100 dark:bg-white/[0.04]">
+            {{ if gt (len $images) 0 }}
+              {{ with index $images 0 }}
+                {{ $large := .Fill "1100x760 Center webp" }}
+                <figure class="publication-card__featured">
+                  <img src="{{ $large.RelPermalink }}" alt="{{ $pub.Title }}" class="image-viewer-trigger h-full w-full object-cover" loading="lazy">
+                </figure>
+              {{ end }}
+
+              {{ if gt (len $images) 1 }}
+                <div class="publication-card__thumbs">
+                  {{ range after 1 $images }}
+                    {{ $thumb := .Fill "360x240 Center webp" }}
+                    <figure>
+                      <img src="{{ $thumb.RelPermalink }}" alt="{{ $pub.Title }}" class="image-viewer-trigger h-full w-full object-cover" loading="lazy">
+                    </figure>
+                  {{ end }}
+                </div>
+              {{ end }}
+            {{ else }}
+              <div class="publication-card__empty">
+                {{ partial "functions/get_icon" (dict "name" "hero/document-text" "attributes" "class=\"h-10 w-10\"") }}
+              </div>
+            {{ end }}
+          </div>
+
+          <div class="flex flex-col justify-center p-6 sm:p-8">
+            {{ with $pub.Params.publication.name }}
+            <p class="mb-3 text-xs font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-300">{{ . }}</p>
+            {{ end }}
+            <h2 class="text-2xl font-bold leading-tight text-gray-950 dark:text-white">
+              <a href="{{ $pub.RelPermalink }}" class="hover:text-primary-600 dark:hover:text-primary-300">{{ $pub.Title }}</a>
+            </h2>
+            {{ with $abstract }}
+            <div class="mt-6">
+              <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-500">Abstract</p>
+              <p class="mt-3 text-base leading-8 text-gray-700 dark:text-gray-300">{{ . | $pub.RenderString }}</p>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</div>
