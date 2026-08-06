@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pendula: Turning N Coupled Links into One General Solver | </title>
+    <link>http://localhost:1314/projects/pendula/</link>
+      <atom:link href="http://localhost:1314/projects/pendula/index.xml" rel="self" type="application/rss+xml" />
+    <description>Pendula: Turning N Coupled Links into One General Solver</description>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1314/media/icon_hu_1c0e9cb08cfb822a.png</url>
+      <title>Pendula: Turning N Coupled Links into One General Solver</title>
+      <link>http://localhost:1314/projects/pendula/</link>
+    </image>
+    
+  </channel>
+</rss>

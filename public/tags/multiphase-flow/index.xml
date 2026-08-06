@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multiphase-Flow | </title>
+    <link>http://localhost:1315/tags/multiphase-flow/</link>
+      <atom:link href="http://localhost:1315/tags/multiphase-flow/index.xml" rel="self" type="application/rss+xml" />
+    <description>Multiphase-Flow</description>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1315/media/icon_hu_1c0e9cb08cfb822a.png</url>
+      <title>Multiphase-Flow</title>
+      <link>http://localhost:1315/tags/multiphase-flow/</link>
+    </image>
+    
+    <item>
+      <title>Ventilated Supercavitation</title>
+      <link>http://localhost:1315/projects/ventilated-supercavitation-kan/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1315/projects/ventilated-supercavitation-kan/</guid>
+      <description>&lt;p&gt;Moving quickly underwater means fighting a dense fluid across the vehicles entire wetted surface. Ventilated supercavitation proposes a striking alternative: inject air near the nose, grow a cavity around the body, and replace much of that water contact with gas.&lt;/p&gt;
+&lt;p&gt;This project asks whether that protective envelope can form, remain useful, and reduce drag and whether the CFD can reproduce the pressure behavior seen in published work.&lt;/p&gt;
+&lt;h2 id=&#34;watching-the-cavity-grow&#34;&gt;Watching the Cavity Grow&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;Four stages showing ventilated air and vapor forming around the projectile&#34; 
+               srcset=&#34;http://localhost:1315/projects/ventilated-supercavitation-kan/media/cavity-evolution_hu_2cab135a70ace662.webp 320w, http://localhost:1315/projects/ventilated-supercavitation-kan/media/cavity-evolution_hu_ee0de2bef6710a56.webp 480w, http://localhost:1315/projects/ventilated-supercavitation-kan/media/cavity-evolution_hu_cbd014d4a309edc3.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1315/projects/ventilated-supercavitation-kan/media/cavity-evolution_hu_2cab135a70ace662.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;377&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;video controls autoplay muted loop playsinline width=&#34;100%&#34;&gt;
+  &lt;source src=&#34;media/cavity-evolution.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;p&gt;The simulation follows an unsteady, compressible, three-phase flow using a Volume-of-Fluid formulation with RANS turbulence. Air enters through a 1 mm ventilation slot near the projectile nose. The visual sequence captures the first cavitation bubbles, the expanding air envelope, cavity shedding, and the developed flow by 0.2 seconds.&lt;/p&gt;
+&lt;h2 id=&#34;seeing-the-drag-mechanism&#34;&gt;Seeing the Drag Mechanism&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;Ventilated and non-ventilated projectile flows with their reported drag coefficients&#34; 
+               srcset=&#34;http://localhost:1315/projects/ventilated-supercavitation-kan/media/ventilated-vs-nonventilated_hu_d2bdcaa6e6e0cc8d.webp 320w, http://localhost:1315/projects/ventilated-supercavitation-kan/media/ventilated-vs-nonventilated_hu_2138ea8129fdbe06.webp 480w, http://localhost:1315/projects/ventilated-supercavitation-kan/media/ventilated-vs-nonventilated_hu_b3b3d2b54705726a.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1315/projects/ventilated-supercavitation-kan/media/ventilated-vs-nonventilated_hu_d2bdcaa6e6e0cc8d.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;237&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;video controls autoplay muted loop playsinline width=&#34;100%&#34;&gt;
+  &lt;source src=&#34;media/ventilated-vs-nonventilated.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;p&gt;The side-by-side result makes the mechanism tangible. Without ventilation, water remains in contact with the body. With ventilation, the cavity surrounds much of the projectile. The reported drag coefficient changes from &lt;strong&gt;0.02759&lt;/strong&gt; without ventilation to &lt;strong&gt;0.01669&lt;/strong&gt; with ventilation, connecting the evolving flow structure to the engineering objective.&lt;/p&gt;
+&lt;h2 id=&#34;resolving-the-flow-where-it-matters&#34;&gt;Resolving the Flow Where It Matters&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;CutCell mesh refined around the underwater projectile and its wake&#34; 
+               srcset=&#34;http://localhost:1315/projects/ventilated-supercavitation-kan/media/computational-mesh_hu_d04e60514fa99e3e.webp 320w, http://localhost:1315/projects/ventilated-supercavitation-kan/media/computational-mesh_hu_7fe64ee3cd17b17b.webp 480w, http://localhost:1315/projects/ventilated-supercavitation-kan/media/computational-mesh_hu_8d8b8b0926752d34.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1315/projects/ventilated-supercavitation-kan/media/computational-mesh_hu_d04e60514fa99e3e.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;393&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The 0.59-million-cell CutCell mesh concentrates resolution around the nose, body, ventilation region, and wake while coarsening toward the domain boundaries. A target y+ of 50 supports the wall-function treatment used in the turbulent simulation.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

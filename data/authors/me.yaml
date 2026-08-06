@@ -1,0 +1,135 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Saif ur Rehman
+  given: Saif ur
+  family: Rehman
+postnominals: []
+role: Simulation Engineer | Process Automation & Design Optimization
+email: saifurrehman945@outlook.com
+bio: |
+  Simulation engineer focusing on physics-based modeling, AI-assisted engineering workflows,
+  and design optimization. My work connects External Aerodynamics, multiphase and cavitating-flow CFD, turbulence and heat-transfer
+  simulation, adjoint-based shape optimization, and neural surrogate models for faster engineering decisions.
+
+affiliations:
+  - name: SOCO Engineers
+    url: https://soco-engineers.com
+
+links:
+  - icon: at-symbol
+    url: mailto:saifurrehman945@outlook.com
+    label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/saifrehman945
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/saifrehman945
+  - icon: academicons/orcid
+    url: https://orcid.org/0009-0002-2344-8775
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=--WM-zoAAAAJ
+
+education:
+  - degree: B.S. Mechanical Engineering
+    institution: SMME, NUST
+    start: 2019-09-01
+    end: 2023-06-30
+    summary: |
+      Relevant electives: Computational Fluid Mechanics, Finite Element Analysis, Numerical Methods & Heat Transfer.
+
+experience:
+  - role: Simulation Engineer
+    org: SOCO Engineers
+    icon: custom/soco
+    start: 2023-12-01
+    summary: |2-
+      * Core developer of a node-based adjoint-driven shape optimization framework for multi-objective, multi-constraint problems
+      * Built Python automation pipelines for end-to-end simulation workflows (preprocessing, HPC execution, post-processing) generating structured datasets for surrogate training
+      * Architected a hybrid C++ (core kernels) + Python (orchestration) system for performance-critical simulation
+  - role: Research Assistant
+    org: NUST (SMME)
+    icon: custom/nust
+    start: 2022-11-01
+    end: 2023-12-01
+    summary: |2-
+      * Developed multiphase CFD models for turbulent heat transfer and ventilated cavitating flows (unsteady RANS-VOF)
+      * Investigated flow physics (TKE distribution, separation, cavitation dynamics) in complex geometries
+      * Integrated Kolmogorov-Arnold Networks (KAN) with CFD time-series for unsteady drag prediction, outperforming ANN/SVM
+      * Contributed to a CFD particle-deposition study in the human trachea (published, Physics of Fluids)
+
+skills:
+  - name: CFD & Simulation
+    items:
+      - label: ANSYS Fluent
+        level: 5
+      - label: OpenFOAM
+        level: 5
+      - label: Multiphase & Cavitation (RANS-VOF)
+        level: 5
+      - label: Turbulence Modeling
+        level: 4
+  - name: FEA & Structural
+    items:
+      - label: Abaqus
+        level: 4
+      - label: LS-DYNA
+        level: 3
+      - label: OptiStruct
+        level: 3
+  - name: AI & ML
+    items:
+      - label: Kolmogorov-Arnold Networks
+        level: 4
+      - label: ANN / SVM / Regression
+        level: 4
+      - label: Surrogate Modeling
+        level: 4
+  - name: Optimization
+    items:
+      - label: Adjoint Methods
+        level: 5
+      - label: Vertex Morphing
+        level: 4
+      - label: Multi-Objective / MDO
+        level: 4
+  - name: Programming
+    items:
+      - label: Python (NumPy, Pandas, SciPy)
+        level: 5
+      - label: C++
+        level: 4
+      - label: Bash
+        level: 3
+  - name: HPC & Computing
+    items:
+      - label: HPC Cluster Workflows
+        level: 4
+      - label: Solver Integration & APIs
+        level: 4
+
+languages:
+  - name: English
+    level: 4
+    label: C1 (IELTS 7.0)
+  - name: Urdu
+    level: 5
+    label: Native
+
+awards:
+  - title: Neural Networks and Deep Learning
+    date: 2024-12-01
+    awarder: deeplearning.ai
+    icon: custom/deeplearning-ai
+  - title: Mastering ANSYS (Level 1 & 2)
+    date: 2021-12-01
+    awarder: Udemy
+    icon: brands/udemy
+  - title: 3-Week OpenFOAM Workshop
+    date: 2022-10-01
+    awarder: OpenFOAM Foundation
+    icon: custom/openfoam
+  - title: CFD Training Certificate
+    date: 2022-10-01
+    awarder: SMME, NUST
+    icon: custom/nust

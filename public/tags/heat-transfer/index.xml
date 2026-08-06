@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Heat-Transfer | </title>
+    <link>http://localhost:1315/tags/heat-transfer/</link>
+      <atom:link href="http://localhost:1315/tags/heat-transfer/index.xml" rel="self" type="application/rss+xml" />
+    <description>Heat-Transfer</description>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 22 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1315/media/icon_hu_1c0e9cb08cfb822a.png</url>
+      <title>Heat-Transfer</title>
+      <link>http://localhost:1315/tags/heat-transfer/</link>
+    </image>
+    
+    <item>
+      <title>Synergistic effects of Al2O3-ethylene glycol/water nanofluids and artificial roughness on solar heater thermal performance</title>
+      <link>http://localhost:1315/publications/nanofluid-solar-heater/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1315/publications/nanofluid-solar-heater/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Highlights:&lt;/strong&gt; triangular ribs → up to &lt;strong&gt;71.6%&lt;/strong&gt; heat-transfer enhancement; &lt;strong&gt;40:60 EG/water&lt;/strong&gt; best thermal-hydraulic balance (peak PEC ≈ 1.5); higher EG improves thermal performance while reducing friction penalty; validated to &amp;lt;8% error.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
