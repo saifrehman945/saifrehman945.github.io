@@ -11,12 +11,12 @@ sections:
     id: hero
     content:
       username: me
-      greeting: "Hi, I'm"
+      # greeting: "SIMULATION ENGINEER · OPTIMIZATION · CAE AUTOMATION"
       show_status: true
       show_scroll_indicator: true
       scroll_target: "#projects"
       typewriter:
-        enable: true
+        enable: false
         prefix: "I work on"
         strings:
           - "External Aerodynamics"
@@ -26,9 +26,12 @@ sections:
         delete_speed: 40
         pause_time: 2500
       cta_buttons:
-        - text: View My Work
+        - text: View selected work
           url: "#projects"
           icon: arrow-down
+        - text: Download resume
+          url: "/uploads/saif-ur-rehman-cv.pdf"
+          icon: document-arrow-down
     design:
       style: centered
       avatar_shape: circle
@@ -46,6 +49,7 @@ sections:
     content:
       title: "Featured Projects"
       count: 4
+      sort_by: Weight
       filters:
         folders:
           - projects
@@ -216,29 +220,6 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["2rem", "0", "4rem", "0"]
-
-  # Recent Blog Posts
-  - block: collection
-    id: blog
-    content:
-      title: Recent Posts
-      subtitle: 'Notes on CFD, optimization, and physics-AI'
-      text: ''
-      filters:
-        folders:
-          - blog
-        exclude_featured: false
-      count: 3
-      order: desc
-    design:
-      view: card
-      columns: 3
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#0d0d12"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
 
   # Contact
   - block: contact-info

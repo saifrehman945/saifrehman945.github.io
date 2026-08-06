@@ -1,74 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Surrogate-Modeling | </title>
-    <link>http://localhost:1315/tags/surrogate-modeling/</link>
-      <atom:link href="http://localhost:1315/tags/surrogate-modeling/index.xml" rel="self" type="application/rss+xml" />
-    <description>Surrogate-Modeling</description>
-    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>http://localhost:1315/media/icon_hu_1c0e9cb08cfb822a.png</url>
-      <title>Surrogate-Modeling</title>
-      <link>http://localhost:1315/tags/surrogate-modeling/</link>
-    </image>
-    
-    <item>
-      <title>CamberLab</title>
-      <link>http://localhost:1315/projects/camberlab/</link>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1315/projects/camberlab/</guid>
-      <description>&lt;p&gt;It began with a basic trade-off. OpenFOAM can reveal how an airfoil behaves, but a single RANS simulation may take minutes or hours. A surrogate model can answer in milliseconds, yet speed becomes dangerous when the model quietly predicts beyond the CFD evidence that trained it.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Surrogate-Modeling |</title><link>https://saifrehman945.github.io/tags/surrogate-modeling/</link><atom:link href="https://saifrehman945.github.io/tags/surrogate-modeling/index.xml" rel="self" type="application/rss+xml"/><description>Surrogate-Modeling</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate><image><url>https://saifrehman945.github.io/media/icon_hu_1c0e9cb08cfb822a.png</url><title>Surrogate-Modeling</title><link>https://saifrehman945.github.io/tags/surrogate-modeling/</link></image><item><title>CamberLab</title><link>https://saifrehman945.github.io/projects/camberlab/</link><pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate><guid>https://saifrehman945.github.io/projects/camberlab/</guid><description>&lt;p&gt;It began with a basic trade-off. OpenFOAM can reveal how an airfoil behaves, but a single RANS simulation may take minutes or hours. A surrogate model can answer in milliseconds, yet speed becomes dangerous when the model quietly predicts beyond the CFD evidence that trained it.&lt;/p&gt;
 &lt;p&gt;I built CamberLab around a stricter idea: &lt;strong&gt;a fast prediction should also explain how far it can be trusted&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;one-dashboard-two-layers-of-evidence&#34;&gt;One Dashboard, Two Layers of Evidence&lt;/h2&gt;
+&lt;h2 id="one-dashboard-two-layers-of-evidence"&gt;One Dashboard, Two Layers of Evidence&lt;/h2&gt;
 &lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-full&#34; &gt;
-          &lt;img alt=&#34;CamberLab dashboard showing a NACA airfoil, lift and drag sweeps, uncertainty bands, and nearby CFD samples&#34; 
-               srcset=&#34;http://localhost:1315/projects/camberlab/camberlab-dashboard_hu_7b476e32a61be0d7.webp 320w, http://localhost:1315/projects/camberlab/camberlab-dashboard_hu_38645012bb2c9451.webp 480w, http://localhost:1315/projects/camberlab/camberlab-dashboard_hu_236ba4c74c1b84e0.webp 760w&#34;
-               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
-               src=&#34;http://localhost:1315/projects/camberlab/camberlab-dashboard_hu_7b476e32a61be0d7.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;427&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;
+&lt;img alt="CamberLab dashboard showing a NACA airfoil, lift and drag sweeps, uncertainty bands, and nearby CFD samples"
+srcset="https://saifrehman945.github.io/projects/camberlab/camberlab-dashboard_hu_7b476e32a61be0d7.webp 320w, https://saifrehman945.github.io/projects/camberlab/camberlab-dashboard_hu_38645012bb2c9451.webp 480w, https://saifrehman945.github.io/projects/camberlab/camberlab-dashboard_hu_236ba4c74c1b84e0.webp 760w"
+sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px"
+src="https://saifrehman945.github.io/projects/camberlab/camberlab-dashboard_hu_7b476e32a61be0d7.webp"
+width="760"
+height="427"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The dashboard turns an aerodynamic question into an interactive study. The engineer selects airfoil thickness, Reynolds number, an angle-of-attack sweep, and a surrogate family. CamberLab responds with lift, drag, lift-to-drag ratio, and a drag polar, while the airfoil preview keeps the geometry visible.&lt;/p&gt;
 &lt;p&gt;The curves are only the first layer. Confidence bands show predictive uncertainty, orange markers reveal nearby CFD training cases, and warnings identify sweep points outside the trained envelope. Instead of smoothing over missing knowledge, the interface makes it part of the result.&lt;/p&gt;
-&lt;h2 id=&#34;different-flow-different-physics&#34;&gt;Different Flow, Different Physics&lt;/h2&gt;
+&lt;h2 id="different-flow-different-physics"&gt;Different Flow, Different Physics&lt;/h2&gt;
 &lt;p&gt;The central problem is that one CFD recipe cannot represent the entire design space. Attached turbulent flow, near-stall separation, transitional low-Reynolds flow, and high-Reynolds attached flow require different turbulence models, mesh densities, wall treatments, and target y+ values.&lt;/p&gt;
 &lt;p&gt;CamberLab therefore classifies each design into a flow regime before simulation. Dedicated OpenFOAM templates generate the evidence for that regime, and the regime label becomes an explicit surrogate input rather than an assumption hidden inside the dataset.&lt;/p&gt;
-&lt;h2 id=&#34;from-expensive-simulations-to-reusable-models&#34;&gt;From Expensive Simulations to Reusable Models&lt;/h2&gt;
+&lt;h2 id="from-expensive-simulations-to-reusable-models"&gt;From Expensive Simulations to Reusable Models&lt;/h2&gt;
 &lt;p&gt;Latin Hypercube Sampling defines the CFD campaign. Python generates NACA geometry, Gmsh builds regime-specific structured meshes, and OpenFOAM runs the cases in parallel. Results pass convergence and reference-validation gates before entering the training dataset.&lt;/p&gt;
 &lt;p&gt;Four model families—Gaussian Process, Random Forest, MLP, and Kriging—learn lift and drag from the harvested cases. Frozen train/test indices and fixed random seeds keep comparisons reproducible. The deployed Streamlit app reads only the resulting model artifacts, so prediction does not require OpenFOAM.&lt;/p&gt;
 &lt;p&gt;CamberLab remains a research preview and says so plainly: unsupported camber falls back to a symmetric airfoil, stall predictions are flagged as extrapolation, and incomplete regimes receive lower confidence. That honesty is the project’s defining feature.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Flow classification → Validated CFD → Surrogate training → Uncertainty-aware prediction&lt;/code&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>KAN-Enhanced CFD Modeling of Drag Reduction in Ventilated Super-Cavities Around Underwater Projectiles</title>
-      <link>http://localhost:1315/publications/kan-supercavitation/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1315/publications/kan-supercavitation/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Highlights:&lt;/strong&gt; up to &lt;strong&gt;57% drag reduction&lt;/strong&gt; (~27% lower propulsion power); KAN surrogate &lt;strong&gt;R² ≈ 0.99&lt;/strong&gt; with millisecond inference; validated against published results.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;p&gt;&lt;code&gt;Flow classification → Validated CFD → Surrogate training → Uncertainty-aware prediction&lt;/code&gt;&lt;/p&gt;</description></item><item><title>KAN-Enhanced CFD Modeling of Drag Reduction in Ventilated Super-Cavities Around Underwater Projectiles</title><link>https://saifrehman945.github.io/publications/kan-supercavitation/</link><pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate><guid>https://saifrehman945.github.io/publications/kan-supercavitation/</guid><description>&lt;p&gt;&lt;strong&gt;Highlights:&lt;/strong&gt; up to &lt;strong&gt;57% drag reduction&lt;/strong&gt; (~27% lower propulsion power); KAN surrogate &lt;strong&gt;R² ≈ 0.99&lt;/strong&gt; with millisecond inference; validated against published results.&lt;/p&gt;</description></item></channel></rss>

@@ -1,6 +1,7 @@
 ---
 title: "Adjoint-Based Shape Optimization Framework"
 date: 2024-01-01
+weight: 80
 summary: "Large-scale adjoint-driven shape optimization spanning fluid, structural, and multi-physics problems."
 tags:
   - optimization

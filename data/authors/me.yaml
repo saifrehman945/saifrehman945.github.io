@@ -6,12 +6,11 @@ name:
   given: Saif ur
   family: Rehman
 postnominals: []
-role: Simulation Engineer | Process Automation & Design Optimization
+role: I turn complex simulations into faster engineering decisions.
 email: saifurrehman945@outlook.com
 bio: |
-  Simulation engineer focusing on physics-based modeling, AI-assisted engineering workflows,
-  and design optimization. My work connects External Aerodynamics, multiphase and cavitating-flow CFD, turbulence and heat-transfer
-  simulation, adjoint-based shape optimization, and neural surrogate models for faster engineering decisions.
+  I build validated CFD, adjoint-optimization, and Python/C++ automation workflows, from model setup and HPC execution
+  to post-processing pipelines and design decisions.
 
 affiliations:
   - name: SOCO Engineers

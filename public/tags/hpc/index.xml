@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Hpc | </title>
-    <link>http://localhost:1315/tags/hpc/</link>
-      <atom:link href="http://localhost:1315/tags/hpc/index.xml" rel="self" type="application/rss+xml" />
-    <description>Hpc</description>
-    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>http://localhost:1315/media/icon_hu_1c0e9cb08cfb822a.png</url>
-      <title>Hpc</title>
-      <link>http://localhost:1315/tags/hpc/</link>
-    </image>
-    
-    <item>
-      <title>Adjoint-Based Shape Optimization Framework</title>
-      <link>http://localhost:1315/projects/adjoint-shape-optimization/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1315/projects/adjoint-shape-optimization/</guid>
-      <description>&lt;p&gt;Contributed to a large-scale &lt;strong&gt;adjoint-driven shape optimization&lt;/strong&gt; framework spanning fluid, structural, and multi-physics applications. Combines &lt;strong&gt;C++ optimization kernels&lt;/strong&gt; (mapping, search, linear algebra) with a &lt;strong&gt;Python orchestration layer&lt;/strong&gt; for workflow management, solver coupling, and rapid prototyping.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hpc |</title><link>https://saifrehman945.github.io/tags/hpc/</link><atom:link href="https://saifrehman945.github.io/tags/hpc/index.xml" rel="self" type="application/rss+xml"/><description>Hpc</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><image><url>https://saifrehman945.github.io/media/icon_hu_1c0e9cb08cfb822a.png</url><title>Hpc</title><link>https://saifrehman945.github.io/tags/hpc/</link></image><item><title>Adjoint-Based Shape Optimization Framework</title><link>https://saifrehman945.github.io/projects/adjoint-shape-optimization/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate><guid>https://saifrehman945.github.io/projects/adjoint-shape-optimization/</guid><description>&lt;p&gt;Contributed to a large-scale &lt;strong&gt;adjoint-driven shape optimization&lt;/strong&gt; framework spanning fluid, structural, and multi-physics applications. Combines &lt;strong&gt;C++ optimization kernels&lt;/strong&gt; (mapping, search, linear algebra) with a &lt;strong&gt;Python orchestration layer&lt;/strong&gt; for workflow management, solver coupling, and rapid prototyping.&lt;/p&gt;
 &lt;p&gt;Core optimization problem:&lt;/p&gt;
 $$\min_{\mathbf{s}}\; J\big(\mathbf{X}_{\Gamma}(\mathbf{s}), \mathbf{Q}(\mathbf{X}_{\Gamma})\big)$$$$\text{subject to } \mathbf{r}\big(\mathbf{X}_{\Gamma}(\mathbf{s}), \mathbf{Q}(\mathbf{X}_{\Gamma})\big) = 0$$&lt;p&gt;where $\mathbf{s}$ are design variables, $\mathbf{X}_{\Gamma}$ the surface geometry, and $\mathbf{Q}$ the state variables.&lt;/p&gt;
 &lt;ul&gt;
@@ -26,37 +7,17 @@ $$\min_{\mathbf{s}}\; J\big(\mathbf{X}_{\Gamma}(\mathbf{s}), \mathbf{Q}(\mathbf{
 &lt;li&gt;&lt;strong&gt;Hybrid C++ + Python&lt;/strong&gt; architecture for performance + flexibility.&lt;/li&gt;
 &lt;li&gt;Integrated with Abaqus, OptiStruct, KratosMultiphysics, Star-CCM+.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;the-framework-design&#34;&gt;The Framework design&lt;/h2&gt;
+&lt;h2 id="the-framework-design"&gt;The Framework design&lt;/h2&gt;
 &lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-full&#34; &gt;
-          &lt;img alt=&#34;The design&#34; 
-               srcset=&#34;http://localhost:1315/projects/adjoint-shape-optimization/design_hu_8c7f73113fa63268.webp 320w, http://localhost:1315/projects/adjoint-shape-optimization/design_hu_bd2423b7321c0d07.webp 480w, http://localhost:1315/projects/adjoint-shape-optimization/design_hu_7b2aa867fd3a774a.webp 760w&#34;
-               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
-               src=&#34;http://localhost:1315/projects/adjoint-shape-optimization/design_hu_8c7f73113fa63268.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;523&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;
+&lt;img alt="The design"
+srcset="https://saifrehman945.github.io/projects/adjoint-shape-optimization/design_hu_8c7f73113fa63268.webp 320w, https://saifrehman945.github.io/projects/adjoint-shape-optimization/design_hu_bd2423b7321c0d07.webp 480w, https://saifrehman945.github.io/projects/adjoint-shape-optimization/design_hu_7b2aa867fd3a774a.webp 760w"
+sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px"
+src="https://saifrehman945.github.io/projects/adjoint-shape-optimization/design_hu_8c7f73113fa63268.webp"
+width="760"
+height="523"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;</description></item></channel></rss>

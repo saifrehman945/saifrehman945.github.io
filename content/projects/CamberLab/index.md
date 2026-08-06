@@ -1,6 +1,7 @@
 ---
 title: "CamberLab"
 date: 2026-08-06
+weight: 70
 summary: "A flow-physics-aware CFD surrogate that predicts NACA airfoil performance in milliseconds while exposing uncertainty and extrapolation."
 tags:
   - cfd

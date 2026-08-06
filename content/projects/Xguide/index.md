@@ -1,6 +1,7 @@
 ---
 title: "XGuide"
 date: 2026-08-06
+weight: 90
 summary: "A drag-and-drop CAE workflow for DOE, design optimization, multi-objective optimization, and Monte Carlo studies."
 tags:
   - cae
@@ -82,4 +83,3 @@ Together, the two workspaces tell the complete product story. **Discover** defin
 XGuide therefore connects the full simulation-driven design cycle in one reusable workflow:
 
 `DOE -> CAE Automation -> Optimization -> Uncertainty -> Engineering Decision`
-

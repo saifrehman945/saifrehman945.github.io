@@ -14,7 +14,7 @@ tech_stack:
   - Transient CFD
 featured: true
 highlights:
-  - "Time-resolved von KÃ¡rmÃ¡n vortex street"
+  - "Time-resolved von Karman vortex street"
   - "Lift and drag histories through wake development"
   - "Pressure-coefficient validation against experimental data"
   - "High-Reynolds-number underwater cylinder study"
@@ -24,7 +24,7 @@ links:
     label: Code
 ---
 
-A circular cylinder looks simple until water begins to move around it. At a Reynolds number of **10,000**, the separated shear layers do not remain symmetric. They roll into alternating vortices, creating a wake that repeatedly pushes the cylinder from side to sideâ€”the foundation of vortex-induced vibration.
+A circular cylinder looks simple until water begins to move around it. At a Reynolds number of **10,000**, the separated shear layers do not remain symmetric. They roll into alternating vortices, creating a wake that repeatedly pushes the cylinder from side to side - the foundation of vortex-induced vibration.
 
 This project follows that instability from startup to a developed shedding cycle, then connects the flow pattern to the forces and surface pressures an underwater structure must withstand.
 
@@ -36,7 +36,7 @@ This project follows that instability from startup to a developed shedding cycle
   <source src="media/velocity-vortex-shedding.mp4" type="video/mp4">
 </video>
 
-The early wake is almost symmetric. As the transient RANS solution advances, disturbances amplify, the shear layers roll up, and vortices detach alternately from the upper and lower surfaces. Velocity and vorticity animations reveal the same event from two perspectives: the changing momentum deficit and the rotating structures that organize it into a von KÃ¡rmÃ¡n street.
+The early wake is almost symmetric. As the transient RANS solution advances, disturbances amplify, the shear layers roll up, and vortices detach alternately from the upper and lower surfaces. Velocity and vorticity animations reveal the same event from two perspectives: the changing momentum deficit and the rotating structures that organize it into a von Karman street.
 
 ## The Flow Leaves a Force Signature
 
@@ -52,8 +52,8 @@ Drag tells a complementary story. After its startup transient, the coefficient a
 
 ![Computed cylinder pressure coefficient compared with published experimental measurements](media/pressure-coefficient.png)
 
-The final figure compares the simulated pressure coefficient around the cylinder with experimental measurements. The SST turbulence model reproduces the broad pressure fall from the stagnation region, the suction minimum around the side of the cylinder, and the pressure behavior across the separated rear surface. Differences remain, but the comparison makes the modelâ€™s accuracy visible rather than relying on wake imagery alone.
+The final figure compares the simulated pressure coefficient around the cylinder with experimental measurements. The SST turbulence model reproduces the broad pressure fall from the stagnation region, the suction minimum around the side of the cylinder, and the pressure behavior across the separated rear surface. Differences remain, but the comparison makes the model's accuracy visible rather than relying on wake imagery alone.
 
 Together, the results connect cause to consequence:
 
-`Boundary-layer separation â†’ Alternating vortices â†’ Oscillating lift and drag â†’ Vibration risk`
+`Boundary-layer separation -> Alternating vortices -> Oscillating lift and drag -> Vibration risk`

@@ -1,6 +1,7 @@
 ---
 title: "AeroForge"
 date: 2026-08-06
+weight: 100
 summary: "A PyQt desktop workflow that turns NACA airfoil inputs into meshed, solved, and repeatable OpenFOAM studies."
 tags:
   - cfd
