@@ -1,41 +1,32 @@
 ---
-# Leave the homepage title empty to use the site title
 title: ''
-summary: ''
+summary: 'Computational fluid dynamics research in turbulent and multiphase flow, scientific machine learning, and simulation-driven optimization.'
 date: 2026-01-05
 type: landing
 
 sections:
-  # Developer Hero - Gradient background with name, role, social, and CTAs
   - block: dev-hero
     id: hero
     content:
       username: me
-      # greeting: "SIMULATION ENGINEER · OPTIMIZATION · CAE AUTOMATION"
-      show_status: true
+      greeting: "COMPUTATIONAL FLUID DYNAMICS · RESEARCH PORTFOLIO"
+      show_status: false
       show_scroll_indicator: true
-      scroll_target: "#projects"
-      typewriter:
-        enable: false
-        prefix: "I work on"
-        strings:
-          - "External Aerodynamics"
-          - "Design Optimization"
-          - "Process Automation"
-        type_speed: 70
-        delete_speed: 40
-        pause_time: 2500
+      scroll_target: "#research-focus"
       cta_buttons:
-        - text: View selected work
-          url: "#projects"
+        - text: Research Projects
+          url: "#selected-research"
           icon: arrow-down
-        - text: Download resume
+        - text: Publications
+          url: "/publications/"
+          icon: book-open
+        - text: Research CV
           url: "/uploads/saif-ur-rehman-cv.pdf"
           icon: document-arrow-down
     design:
       style: centered
       avatar_shape: circle
-      animations: true
+      animations: false
       background:
         color:
           light: "#fafafa"
@@ -43,23 +34,62 @@ sections:
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
 
-  # Filterable Portfolio - Alpine.js powered project filtering
-  - block: portfolio
-    id: projects
+  - block: research-grid
+    id: research-focus
     content:
-      title: "Featured Projects"
+      eyebrow: Research focus
+      title: "Flow physics, predictive models, and computational design"
+      subtitle: "My research foundation is CFD. I extend it with data-driven modelling, optimization, and reproducible scientific computing where those methods help answer a physical or numerical question."
+      items:
+        - title: Turbulent & Unsteady Flows
+          text: "Wake dynamics, vortex shedding, separated flows, near-wall behaviour, transient forces, pressure fluctuations, and spectral analysis."
+          meta: Fluid dynamics
+        - title: Multiphase & Cavitating Flows
+          text: "VOF-based multiphase modelling, ventilated cavitation, cavity dynamics, gas-liquid interfaces, underwater hydrodynamics, and drag."
+          meta: Multiphase CFD
+        - title: Data-Driven Fluid Mechanics
+          text: "CFD surrogate modelling, time-series prediction, uncertainty and extrapolation awareness, and accelerated physics-based prediction."
+          meta: Scientific ML
+        - title: Simulation-Driven Design
+          text: "Adjoint sensitivities, shape optimization, geometry parameterisation, multi-solver workflows, and numerical verification."
+          meta: Computational methods
+    design:
+      variant: cards
+      columns: 4
+
+  - block: research-grid
+    id: research-questions
+    content:
+      eyebrow: Doctoral direction
+      title: "Questions I want to pursue"
+      subtitle: "These are future research interests arising from completed work, not claims of methods already mastered."
+      items:
+        - title: Unsteady flow physics
+          text: "How can coherent structures, vortex shedding, and pressure fluctuations be predicted and interpreted more accurately across turbulent flow regimes?"
+        - title: Multiphase and cavitation physics
+          text: "How do cavity dynamics, turbulent structures, and vortex-interface interactions determine unsteady hydrodynamic loads and flow stability?"
+        - title: Physics-aware reduced modelling
+          text: "How much governing flow physics can an accelerated predictive model preserve, and how can it signal when a prediction is no longer trustworthy?"
+    design:
+      variant: questions
+      columns: 3
+
+  - block: portfolio
+    id: selected-research
+    content:
+      title: "Selected Research"
+      subtitle: "Validated investigations and computational-method work, ordered by the research trajectory they establish."
       count: 4
       sort_by: Weight
+      sort_ascending: true
       filters:
-        folders:
-          - projects
+        folders: [projects]
       buttons:
         - name: All
           tag: '*'
-      default_button_index: 0
       archive:
         enable: true
-        text: "View All Projects"
+        text: "View all computational projects"
     design:
       columns: 2
       background:
@@ -69,119 +99,84 @@ sections:
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
 
-  # Visual Tech Stack - Icons organized by category
-  - block: tech-stack
-    id: skills
+  - block: research-publications
+    id: publications
     content:
-      title: "Tech Stack"
-      subtitle: "Tools and methods I use for simulation, optimization, and AI"
-      categories:
-        - name: CFD & Simulation
-          items:
-            - name: ANSYS Fluent
-              icon: devicon/ansys
-            - name: OpenFOAM
-              icon: custom/openfoam
-            - name: STAR-CCM+
-              icon: custom/starccm
-        - name: FEA & Structural
-          items:
-            - name: Abaqus
-              icon: custom/abaqus
-            - name: LS-DYNA
-              icon: custom/ls-dyna
-            - name: OptiStruct
-              icon: custom/optistruct
-            - name: KratosMultiphysics
-              icon: custom/kratos
-        - name: AI & ML
-          items:
-            - name: Python
-              icon: devicon/python
-            - name: NumPy
-              icon: devicon/numpy
-            - name: Pandas
-              icon: devicon/pandas
-            - name: PyTorch
-              icon: devicon/pytorch
-            - name: Jupyter
-              icon: devicon/jupyter
-        - name: Programming
-          items:
-            - name: C++
-              icon: devicon/cplusplus
-            - name: CMake
-              icon: devicon/cmake
-            - name: Bash
-              icon: devicon/bash
-            - name: Git
-              icon: devicon/git
-        - name: HPC & Computing
-          items:
-            - name: Linux
-              icon: devicon/linux
-            - name: HPC Clusters
-              icon: hero/server-stack
-            - name: Solver APIs
-              icon: hero/wrench-screwdriver
+      title: "Publications"
+      subtitle: "Peer-reviewed and under-review outputs, with the research problem, evidence, principal finding, and my contribution stated separately."
+      folders: [publications]
+      limit: 2
+      archive_url: /publications/
+      archive_text: View publication details
     design:
-      style: grid
-      show_levels: false
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#0d0d12"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
+      columns: 1
 
-  # Interactive career journey
-  - block: site-map
-    id: career-journey
+  - block: research-grid
+    id: trajectory
     content:
-      title: "Career Journey"
-      subtitle: "Navigate the professional and academic milestones behind the portfolio."
+      eyebrow: Research trajectory
+      title: "A progression from flow physics to computational research methods"
       items:
-        - label: Work Experiences
-          description: Engineering and research roles.
-          detail: My professional work includes simulation automation, HPC execution pipelines, solver coupling, hybrid C++/Python architecture, and multiphase CFD research.
-          meta: SOCO Engineers + NUST SMME
-          url: "#experience"
-          cta: View Experience
-          icon: hero/briefcase
-        - label: Education
-          description: Mechanical engineering background.
-          detail: B.S. Mechanical Engineering from SMME, NUST, with coursework in computational fluid mechanics, finite element analysis, numerical methods, and heat transfer.
-          meta: B.S. Mechanical Engineering, SMME NUST
-          url: "#experience"
-          cta: View Education
-          icon: hero/academic-cap
-        - label: Publications
-          description: Peer-reviewed and in-review research.
-          detail: Open the publications page for research outputs related to CFD, KAN-based surrogate modeling, cavitation, and heat-transfer applications.
-          meta: Dedicated publications page
-          url: "/publications/"
-          cta: View Publications
-          icon: hero/book-open
-        - label: Certifications
-          description: Training credentials and issuing organizations.
-          detail: Certificates include neural networks and deep learning, ANSYS training, OpenFOAM workshop training, and CFD training at SMME NUST.
-          meta: AI, CFD, ANSYS, OpenFOAM
-          url: "#certifications"
-          cta: View Certifications
-          icon: hero/shield-check
+        - meta: Academic CFD research
+          title: Turbulent, unsteady, and multiphase flows
+          text: "Vortex shedding and transient loads led into ventilated supercavitation and cavity dynamics."
+        - meta: Data-driven extension
+          title: Simulation evidence as predictive data
+          text: "CFD time-series informed KAN drag prediction; systematic CFD campaigns informed uncertainty-aware surrogate modelling."
+        - meta: Industrial computational methods
+          title: Adjoints, solver integration, and verification
+          text: "Production-scale work developed depth in sensitivities, parameterisation, optimization, HPC execution, and numerical comparison."
+        - meta: Doctoral direction
+          title: Deeper computational fluid mechanics
+          text: "Turbulent and multiphase CFD, data-driven fluid mechanics, reduced modelling, and simulation-driven design."
     design:
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#0d0d12"
-      spacing:
-        padding: ["3rem", "0", "3rem", "0"]
+      variant: trajectory
+      columns: 4
 
-  # Experience & Education Timeline (pulled from author profile)
+  - block: research-grid
+    id: computational-methods
+    content:
+      eyebrow: Computational methods
+      title: "Methods and infrastructure supporting the research"
+      subtitle: "Software is listed here as implementation context; validation evidence and physical interpretation remain the primary outputs."
+      items:
+        - title: Fluid mechanics
+          text: "OpenFOAM · ANSYS Fluent · STAR-CCM+ · RANS · URANS · VOF · turbulence modelling · spectral analysis"
+        - title: Scientific computing
+          text: "Python · C++ · NumPy · SciPy · scikit-learn · Bash"
+        - title: HPC & reproducibility
+          text: "Linux · OpenMPI · GNU Parallel · automated batch CFD campaigns · convergence monitoring"
+        - title: Mechanics & optimization
+          text: "Abaqus · OptiStruct · LS-DYNA · adjoint sensitivities · FEA · shape optimization"
+        - title: Geometry & meshing
+          text: "Gmsh · ANSA · ICEM-CFD · automated meshing · geometry processing · mesh-quality checks"
+    design:
+      variant: methods
+      columns: 3
+
+  - block: research-grid
+    id: industrial-research
+    content:
+      eyebrow: Industrial computational research experience
+      title: "Numerical infrastructure around simulation"
+      subtitle: "After academic CFD research, I moved into production-scale computational engineering. This work developed the less visible skills required to make simulations comparable, repeatable, and useful across solvers and computing environments."
+      items:
+        - title: Adjoint and sensitivity methods
+          text: "Core contributions to a node-based adjoint-driven shape-optimization framework, including response and sensitivity handling, parameterisation, vertex morphing, and geometry updates."
+        - title: Multi-solver scientific computing
+          text: "Python orchestration and performance-critical C++ components connecting structural and CFD solvers through repeatable computational processes."
+        - title: Numerical verification
+          text: "Investigations of normal formulations, tolerance selection, floating-point reproducibility, solver-version differences, and whether sensitivity fields are mathematically comparable."
+          url: /projects/adjoint-shape-optimization/
+          link_text: Read the sanitized method case study
+    design:
+      variant: experience
+      columns: 3
+
   - block: resume-experience
     id: experience
     content:
-      title: Experience
+      title: "Experience & Education"
       username: me
       date_format: Jan 2006
     design:
@@ -193,43 +188,14 @@ sections:
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
 
-  # Certifications
-  - block: resume-awards
-    id: certifications
-    content:
-      title: Certifications
-      username: me
-    design:
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#0d0d12"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
-
-  # Languages
-  - block: resume-languages
-    id: languages
-    content:
-      title: Languages
-      username: me
-    design:
-      background:
-        color:
-          light: "#f5f5f5"
-          dark: "#08080c"
-      spacing:
-        padding: ["2rem", "0", "4rem", "0"]
-
-  # Contact
   - block: contact-info
     id: contact
     content:
       title: Contact
-      subtitle: "For collaboration, or simulation engineering inquiries."
+      subtitle: "Research conversations and computational-science collaborations are welcome."
       username: me
-      connect_title: "Contact"
-      text: "The fastest way to reach me is by email. You can also find my technical work and research profiles below."
+      connect_title: "Get in touch"
+      text: "I am interested in doctoral research opportunities in computational fluid mechanics and computational engineering. Email is the most direct way to reach me; my code and research profiles are linked below."
       email: saifurrehman945@outlook.com
     design:
       columns: '1'
@@ -239,5 +205,4 @@ sections:
           dark: "#08080c"
       spacing:
         padding: ["4rem", "0", "5rem", "0"]
-
 ---

@@ -1,85 +1,50 @@
 ---
 title: "XGuide"
 date: 2026-08-06
-weight: 90
-summary: "A drag-and-drop CAE workflow for DOE, design optimization, multi-objective optimization, and Monte Carlo studies."
-tags:
-  - cae
-  - doe
-  - optimization
-  - process-automation
-tech_stack:
-  - Python
-  - pyDOE
-  - FEM/CAE Integration
+weight: 70
+summary: "Reusable infrastructure for computational experiments spanning DOE, Taguchi studies, parameter sweeps, optimization, Pareto analysis, and Monte Carlo propagation."
+tags: [computational-experimentation, doe, optimization, uncertainty]
+tech_stack: [Python, pyDOE, CAE Solver Integration]
 featured: true
 highlights:
-  - "DOE, optimization, MOO, and Monte Carlo in one environment"
-  - "Visual drag-and-drop process creation"
-  - "Automated simulation execution and response extraction"
-  - "Integrated statistical and Pareto post-processing"
+  - "Design of Experiments and Taguchi studies"
+  - "Parameter sweeps and reusable simulation processes"
+  - "Multi-objective optimization and Pareto analysis"
+  - "Monte Carlo uncertainty propagation"
 ---
 
-XGuide is a process-automation platform for simulation-driven engineering. It replaces disconnected scripts and repetitive CAE tasks with a visual workflow: the engineer connects reusable plugins, selects a study method, and runs the complete process automatically.
+## Computational question
 
-## Building the Engineering Process
+How can the same traceable simulation process support controlled parameter studies, optimization, and uncertainty propagation without rebuilding the experiment for every method?
 
-![XGuide Discover workspace showing a connected CAE workflow](image.png)
+XGuide is infrastructure for **computational experimentation**. It represents simulation inputs, model preparation, solver execution, response extraction, and objective or constraint calculation as a reusable process. The visual interface helps inspect that process, but the research value lies in applying consistent computations across many designs.
 
-The image shows the **Discover** workspace, where the engineering process is assembled.
+## A reusable simulation process
 
-The story begins at `InputArray1`, which supplies the design candidates. These may be DOE combinations, designs proposed by an optimizer, or random samples used in a Monte Carlo study. The `Inputfile` plugin converts each candidate into a solver-ready model.
+![Connected simulation process from design inputs through analyses and extracted responses](image.png "The graph records how candidate designs become solver models, responses, and decision quantities; the same process can be reused by different experimental methods.")
 
-The workflow then branches into two analyses:
+Design candidates enter a process that prepares solver models, executes static or dynamic analyses, and extracts quantities such as stress, displacement, mass, and modal response. Reduction nodes convert raw fields into scalar responses used as objectives, constraints, or uncertainty outputs.
 
-- `Static_Simulation` evaluates structural responses.
-- `Dynamic_Simulation` evaluates time-dependent or modal behavior.
+`sampled inputs → solver-ready models → simulations → verified responses → scientific interpretation`
 
-Their output files are collected automatically. Response plugins then extract Stresses, Displacement, Mass, and First_Mode. Additional nodes reduce the raw results into engineering quantities such as Max_Stress and Max_Displacement. Finally, these responses enter the Cost node, where they become objectives or constraints.
+Because the process is modular, the same structure can represent CFD, thermal, structural, fatigue, acoustic, or custom Python calculations. The important requirement is that each plugin preserves the inputs, outputs, units, and failure state needed to interpret the experiment.
 
-This graph makes the complete calculation traceable:
+## Methods of computational experimentation
 
-`Inputs -> CAE models -> Simulations -> Responses -> Decision metric`
+### Design of Experiments and Taguchi studies
 
-Because every operation is a plugin, the same process can be extended with CFD, thermal, fatigue, acoustics, manufacturing, or custom Python components.
+DOE and parameter sweeps sample combinations of design variables so their effects and interactions can be studied with fewer solver evaluations than an unstructured search. Taguchi designs provide a structured route to factor-level and noise-sensitivity studies.
 
-## One Workflow, Four Types of Study
+### Optimization and Pareto analysis
 
-The toolbar above the graph allows the engineer to apply different computational methods to the same process.
+For optimization, a candidate is evaluated through the same simulation process and its responses return to the search method. Multi-objective studies retain conflicting responses and identify non-dominated designs, allowing the result to be interpreted as a Pareto set rather than collapsed prematurely into one score.
 
-### DOE and Taguchi
+### Monte Carlo uncertainty propagation
 
-DOE selects informative combinations of design variables so that their effects can be understood with fewer simulations. XGuide uses **pyDOE** to generate experimental designs and sampling plans. Taguchi methods provide an additional structured approach for studying factor levels and robustness against noise.
+Monte Carlo sampling propagates uncertain material, geometry, load, or boundary-condition inputs through the simulation. Output distributions can then expose variability and estimated requirement-violation probability rather than reporting only a nominal design.
 
-### Design Optimization
+![Post-processing views for distributions, effects, response surfaces, and Pareto relationships](image_2.png "Post-processing turns accumulated runs into evidence about variable effects, uncertainty, response surfaces, and competing objectives.")
 
-The optimizer proposes a design, executes the connected CAE process, reads the responses, and proposes an improved design. The loop continues until convergence or until the available simulation budget is reached.
+## Research relevance and limits
 
-### Multi-Objective Optimization
-
-When objectives conflict—such as minimizing mass and cost while limiting stress and displacement—the platform retains multiple responses and searches for non-dominated solutions. The result is a **Pareto front** showing the best available engineering trade-offs.
-
-### Monte Carlo Analysis
-
-Monte Carlo methods propagate uncertain inputs, such as material scatter, manufacturing tolerances, loads, or friction, through the same simulation process. The resulting distributions reveal performance variability and the probability of violating a requirement.
-
-## Turning Runs into Engineering Evidence
-
-![XGuide Post workspace showing analysis and visualization options](image_2.png)
-
-The second image shows the **Post** workspace. Once the automated runs are complete, the engineer can move directly from raw results to interpretation.
-
-The available tools include:
-
-- tables for input and response data;
-- scatter and correlation plots for relationships between variables;
-- distributions for Monte Carlo results;
-- effects plots for DOE studies;
-- diagnostics for checking model and result quality; and
-- response-surface and Pareto views for optimization studies.
-
-Together, the two workspaces tell the complete product story. **Discover** defines and executes the engineering process; **Post** explains what the results mean.
-
-XGuide therefore connects the full simulation-driven design cycle in one reusable workflow:
-
-`DOE -> CAE Automation -> Optimization -> Uncertainty -> Engineering Decision`
+The platform supports simulation-driven design, robust design, uncertainty quantification, and surrogate-assisted optimization by making the underlying computational experiment reusable. It does not guarantee that a sampling plan is sufficient, an optimizer has found a global optimum, or a Monte Carlo estimate has converged; those remain study-specific numerical questions requiring diagnostics and evidence.

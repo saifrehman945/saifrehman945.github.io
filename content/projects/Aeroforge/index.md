@@ -1,58 +1,52 @@
 ---
 title: "AeroForge"
 date: 2026-08-06
-weight: 100
-summary: "A PyQt desktop workflow that turns NACA airfoil inputs into meshed, solved, and repeatable OpenFOAM studies."
-tags:
-  - cfd
-  - aerodynamics
-  - openfoam
-  - simulation-automation
-tech_stack:
-  - Python
-  - PyQt
-  - OpenFOAM
-  - Gmsh
+weight: 60
+summary: "Scientific infrastructure for reproducible aerodynamic studies: parameterized geometry, controlled meshing, quality checks, solver monitoring, and repeatable OpenFOAM campaigns."
+tags: [cfd, aerodynamics, openfoam, reproducibility]
+tech_stack: [Python, OpenFOAM, Gmsh, PyQt]
 featured: true
 highlights:
-  - "Guided geometry-to-results CFD workflow"
-  - "Automated airfoil meshing with visible quality checks"
-  - "Live solver monitoring with expert controls"
-  - "Latin Hypercube Sampling for batch studies"
+  - "Traceable geometry-to-force CFD pipeline"
+  - "Mesh-quality and near-wall evidence before execution"
+  - "Standardized convergence and force extraction"
+  - "Latin Hypercube Sampling for repeatable campaigns"
 links:
   - type: code
     url: https://github.com/saifrehman945/AeroForge
     label: Code
 ---
 
-AeroForge began with a familiar CFD problem: evaluating one airfoil requires far more than choosing its shape. Geometry must be generated correctly, flow conditions translated into solver settings, a boundary-layer mesh built and checked, and every OpenFOAM case kept consistent. Repeating that process across several designs turns engineering work into file management.
+## Computational question
 
-I built AeroForge to make that journey visible and repeatable. After first exploring a browser-based interface with NiceGUI, I migrated the application to **PyQt**, creating a focused desktop workspace for local simulation work.
+How can a parameter study preserve consistent geometry construction, meshing decisions, boundary conditions, convergence checks, and force extraction across every CFD case?
 
-## Start with the Airfoil
+AeroForge is scientific infrastructure for controlled aerodynamic experimentation. The PyQt desktop interface is an implementation mechanism; the central contribution is the reproducible pipeline behind it:
 
-![AeroForge geometry workspace previewing a NACA 0012 airfoil at four degrees angle of attack](image_1.png)
+`parameterized geometry → controlled meshing → quality and near-wall checks → solver execution → convergence monitoring → force extraction → repeatable CFD campaign`
 
-The workflow opens with the design itself. Thickness, camber, camber position, angle of attack, and surface resolution define a NACA four-digit section. The preview updates the geometry before any expensive computation begins, exposing mistakes while they are still easy to fix.
+## Parameterized geometry and controlled meshing
 
-## Make the Mesh Defensible
+![Parameterized NACA geometry with angle-of-attack and surface-resolution controls](image_1.png "Geometry variables are made explicit before simulation so each generated case can be reproduced from its recorded inputs.")
 
-![AeroForge mesh workspace showing the structured airfoil grid and mesh-quality gates](image_2.png)
+NACA four-digit geometry is generated from thickness, camber, camber position, angle of attack, and surface resolution. Gmsh then constructs the solver mesh under common meshing rules. Cell count, non-orthogonality, skewness, aspect ratio, first-cell height, layer count, and growth are exposed as evidence about the numerical model rather than hidden behind a “mesh complete” status.
 
-Next, AeroForge builds the solver-ready case and brings mesh decisions into the interface. Boundary-layer growth, layer count, wall treatment, and surface sampling remain adjustable, while cell count, non-orthogonality, skewness, aspect ratio, and first-cell height are reported beside the mesh. The engineer sees not only that a mesh exists, but whether it is credible enough to run.
+![Structured airfoil mesh accompanied by quality and near-wall checks](image_2.png "The quality gates make meshing assumptions comparable across cases and help prevent an invalid mesh from quietly entering the dataset.")
 
-## Run Without Hiding the Physics
+## Solver consistency and convergence evidence
 
-![AeroForge solver workspace with OpenFOAM controls and convergence plots](image_3.png)
+![OpenFOAM setup with residual and force monitoring](image_3.png "Residual and aerodynamic-force histories are observed together so a case is assessed from convergence evidence rather than process completion alone.")
 
-The solver stage keeps OpenFOAM accessible. Recommended defaults provide a safe starting point, while advanced controls expose iteration limits, correction schemes, relaxation factors, and parallel processes. Residual and force histories are monitored in the same workspace, so convergence becomes part of the decision rather than a terminal window left in the background.
+OpenFOAM case templates standardize boundary conditions and numerical settings while retaining expert controls. Residual and force histories are monitored during execution, and lift and drag are extracted in a consistent form for downstream comparison. This makes failed, unconverged, and numerically inconsistent cases easier to identify before their outputs contaminate a study.
 
-## Turn One Case into a Study
+## From one case to a reproducible campaign
 
-![AeroForge batch workspace generating airfoil cases with Latin Hypercube Sampling](image_4.png)
+![Latin Hypercube Sampling over airfoil and operating variables](image_4.png "Systematic sampling turns the controlled single-case pipeline into a traceable CFD campaign suitable for parameter studies or surrogate-data generation.")
 
-The final step changes the scale of the problem. Cases can be added manually or generated with **Latin Hypercube Sampling** across Reynolds number, angle of attack, thickness, and camber variables. AeroForge queues, builds, and runs them with controlled parallelism, turning the same traceable workflow into a small aerodynamic design campaign.
+Cases can be specified directly or sampled using Latin Hypercube Sampling across Reynolds number, angle of attack, thickness, and camber variables. Controlled parallel execution applies the same preprocessing, solver, and post-processing sequence to each design.
 
-The result is not a wrapper that conceals CFD. It is a guided path through it:
+Automation matters scientifically because it reduces unintended differences between cases, records the assumptions used to create them, standardizes acceptance checks, and makes large simulation datasets repeatable. AeroForge does not make an OpenFOAM result valid by itself; it makes the steps needed to assess and reproduce that result more consistent.
 
-`Airfoil definition → Flow setup → Mesh evidence → Solver convergence → Design study`
+## Limitations
+
+The current pipeline is centered on NACA four-digit sections and the implemented OpenFOAM templates. Mesh and convergence checks are necessary but not sufficient for physical validation, which still requires appropriate benchmark data and model-form assessment for each flow regime.

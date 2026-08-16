@@ -1,6 +1,7 @@
 ---
 title: "Finite Element Analysis of Zirconia Dental Prosthesis"
 date: 2023-05-01
+weight: 90
 summary: "FEA of a three-unit zirconia FDP - effect of cement stiffness and thickness on stress distribution."
 tags:
   - fea

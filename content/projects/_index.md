@@ -7,9 +7,11 @@ type: landing
 sections:
   - block: portfolio
     content:
-      title: Selected Projects
-      subtitle: CFD, FEA, ML, and optimization work spanning research and industry
+      title: Research & Computational Projects
+      subtitle: Primary fluid-mechanics research first, followed by scientific infrastructure and interdisciplinary computational work.
       count: 0
+      sort_by: Weight
+      sort_ascending: true
       filters:
         folders:
           - projects
@@ -20,10 +22,12 @@ sections:
           tag: cfd
         - name: FEA
           tag: fea
-        - name: ML
-          tag: ml
+        - name: Scientific ML
+          tag: machine-learning
         - name: Optimization
           tag: optimization
+        - name: Supporting Methods
+          tag: computational-experimentation
       default_button_index: 0
     design:
       columns: 3

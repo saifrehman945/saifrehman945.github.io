@@ -1,6 +1,7 @@
 ---
 title: "Pendula"
 date: 2026-08-06
+weight: 80
 summary: "A generalized planar pendulum simulator that derives, integrates, animates, and checks the dynamics of any N-link chain."
 tags:
   - simulation

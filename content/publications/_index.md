@@ -7,7 +7,7 @@ sections:
   - block: research-publications
     content:
       title: Research Publications
-      subtitle: Publication abstracts with the figures and visual results attached to each study
+      subtitle: Research questions, methods, findings, publication status, and contribution statements for each output.
       folders:
         - publications
     design:

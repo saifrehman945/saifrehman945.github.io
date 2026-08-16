@@ -6,11 +6,10 @@ name:
   given: Saif ur
   family: Rehman
 postnominals: []
-role: I turn complex simulations into faster engineering decisions.
+role: Computational Fluid Dynamics Researcher
 email: saifurrehman945@outlook.com
-bio: |
-  I build validated CFD, adjoint-optimization, and Python/C++ automation workflows, from model setup and HPC execution
-  to post-processing pipelines and design decisions.
+bio: >-
+  Turbulent and multiphase flows · Scientific ML · Simulation-driven optimization. I study unsteady flow physics and the numerical methods used to predict it, from vortex shedding and cavitating interfaces to CFD surrogates and adjoint-based design. My work combines validated simulation, scientific computing, numerical verification, and data-driven modelling.
 
 affiliations:
   - name: SOCO Engineers
@@ -43,19 +42,18 @@ experience:
     icon: custom/soco
     start: 2023-12-01
     summary: |2-
-      * Core developer of a node-based adjoint-driven shape optimization framework for multi-objective, multi-constraint problems
-      * Built Python automation pipelines for end-to-end simulation workflows (preprocessing, HPC execution, post-processing) generating structured datasets for surrogate training
-      * Architected a hybrid C++ (core kernels) + Python (orchestration) system for performance-critical simulation
+      * Make core contributions to a node-based, adjoint-driven shape-optimization framework for multi-objective and multi-constraint fluid and structural problems.
+      * Investigate sensitivity interpretation, geometry parameterisation, mesh motion, solver coupling, convergence, and numerical verification across simulation formulations.
+      * Develop Python orchestration and performance-critical C++ components for reproducible preprocessing, HPC execution, response extraction, and multi-solver studies.
   - role: Research Assistant
     org: NUST (SMME)
     icon: custom/nust
     start: 2022-11-01
     end: 2023-12-01
     summary: |2-
-      * Developed multiphase CFD models for turbulent heat transfer and ventilated cavitating flows (unsteady RANS-VOF)
-      * Investigated flow physics (TKE distribution, separation, cavitation dynamics) in complex geometries
-      * Integrated Kolmogorov-Arnold Networks (KAN) with CFD time-series for unsteady drag prediction, outperforming ANN/SVM
-      * Contributed to a CFD particle-deposition study in the human trachea (published, Physics of Fluids)
+      * Modelled ventilated-supercavitation cases using transient RANS-VOF and investigated cavity development, pressure response, and hydrodynamic drag.
+      * Integrated a Kolmogorov-Arnold Network surrogate with CFD time-series data for transient drag-coefficient prediction and comparison with ANN and SVM models.
+      * Studied unsteady wake development and force response around a circular cylinder at Re ≈ 10,000, including pressure and frequency-domain validation.
 
 skills:
   - name: CFD & Simulation
