@@ -8,10 +8,10 @@ sections:
     id: contact
     content:
       title: Contact
-      subtitle: "For research, collaboration, or simulation engineering inquiries."
+      subtitle: "For research, technical collaboration, and computational-engineering enquiries."
       username: me
       connect_title: "Contact"
-      text: "The fastest way to reach me is by email. You can also find my technical work and research profiles below."
+      text: "Email is the most direct way to reach me. My code, publications, and research profiles are also linked below."
       email: saifurrehman945@outlook.com
     design:
       columns: '1'

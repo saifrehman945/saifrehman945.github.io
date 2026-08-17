@@ -1,58 +1,61 @@
 ---
 title: "CamberLab"
 date: 2026-08-06
-weight: 70
-summary: "A flow-physics-aware CFD surrogate that predicts NACA airfoil performance in milliseconds while exposing uncertainty and extrapolation."
-tags:
-  - cfd
-  - machine-learning
-  - aerodynamics
-  - surrogate-modeling
+weight: 30
+summary: "Uncertainty-aware surrogate modelling built from a systematically sampled OpenFOAM dataset, with held-out testing and explicit warnings beyond the CFD evidence."
+tags: [cfd, machine-learning, aerodynamics, surrogate-modeling, scientific-computing]
 tech_stack:
-  - Python
-  - Streamlit
   - OpenFOAM 12
-  - scikit-learn
-  - Gmsh
+  - Python / scikit-learn
+  - Gaussian Process / MLP / Kriging
+  - Latin Hypercube Sampling
 featured: true
 highlights:
-  - "Millisecond predictions for lift, drag, and aerodynamic efficiency"
-  - "Flow-regime-aware OpenFOAM pipeline"
-  - "Gaussian Process uncertainty and explicit extrapolation warnings"
-  - "Reference validation and reproducible DOE splits"
+  - "Systematically sampled OpenFOAM cases across the design space"
+  - "Regime-aware dataset generation and reference checks"
+  - "Frozen train/test splits for surrogate comparison"
+  - "Predictive uncertainty and explicit extrapolation warnings"
 links:
   - type: code
     url: https://github.com/saifrehman945/CamberLab
     label: Code
   - type: site
     url: https://camberlab.streamlit.app/
-    label: Live Demo
+    label: Research Demo
 ---
 
-It began with a basic trade-off. OpenFOAM can reveal how an airfoil behaves, but a single RANS simulation may take minutes or hours. A surrogate model can answer in milliseconds, yet speed becomes dangerous when the model quietly predicts beyond the CFD evidence that trained it.
+## Research question
 
-I built CamberLab around a stricter idea: **a fast prediction should also explain how far it can be trusted**.
+How can expensive CFD evidence be transformed into a fast predictive model without hiding uncertainty or extrapolation?
 
-## One Dashboard, Two Layers of Evidence
+An OpenFOAM calculation can provide physically interpretable aerodynamic evidence, but repeating it across geometry and operating conditions is costly. A surrogate predicts in milliseconds, yet that speed is useful only if the training evidence, test discipline, and limits of applicability remain visible.
 
-![CamberLab dashboard showing a NACA airfoil, lift and drag sweeps, uncertainty bands, and nearby CFD samples](camberlab-dashboard.png)
+## Building the CFD evidence
 
-The dashboard turns an aerodynamic question into an interactive study. The engineer selects airfoil thickness, Reynolds number, an angle-of-attack sweep, and a surrogate family. CamberLab responds with lift, drag, lift-to-drag ratio, and a drag polar, while the airfoil preview keeps the geometry visible.
+Latin Hypercube Sampling defines a systematic campaign across Reynolds number, angle of attack, thickness, and camber variables. Python generates the NACA geometries, Gmsh constructs regime-specific meshes, and OpenFOAM executes the sampled cases. Convergence and reference checks gate results before they enter surrogate training.
 
-The curves are only the first layer. Confidence bands show predictive uncertainty, orange markers reveal nearby CFD training cases, and warnings identify sweep points outside the trained envelope. Instead of smoothing over missing knowledge, the interface makes it part of the result.
+The workflow classifies flow conditions before simulation because attached turbulent flow, near-stall separation, lower-Reynolds-number behaviour, and higher-Reynolds-number attached flow do not justify one unexamined CFD setup. Regime-specific templates vary turbulence treatment, mesh density, wall treatment, and target y+; the regime label remains explicit in the dataset.
 
-## Different Flow, Different Physics
+`design-space sampling → controlled CFD campaign → quality gates → structured dataset`
 
-The central problem is that one CFD recipe cannot represent the entire design space. Attached turbulent flow, near-stall separation, transitional low-Reynolds flow, and high-Reynolds attached flow require different turbulence models, mesh densities, wall treatments, and target y+ values.
+## Comparing surrogate models
 
-CamberLab therefore classifies each design into a flow regime before simulation. Dedicated OpenFOAM templates generate the evidence for that regime, and the regime label becomes an explicit surrogate input rather than an assumption hidden inside the dataset.
+Gaussian Process, Random Forest, multilayer perceptron, and Kriging models learn lift and drag from the accepted CFD cases. Frozen train/test indices and fixed random seeds keep model comparisons reproducible and prevent favourable resampling from masquerading as improvement. The deployed model artifacts are separate from OpenFOAM, so inference is fast while the provenance of the training evidence remains traceable.
 
-## From Expensive Simulations to Reusable Models
+## Showing where prediction can be trusted
 
-Latin Hypercube Sampling defines the CFD campaign. Python generates NACA geometry, Gmsh builds regime-specific structured meshes, and OpenFOAM runs the cases in parallel. Results pass convergence and reference-validation gates before entering the training dataset.
+![CamberLab view with lift and drag sweeps, uncertainty bands, nearby CFD samples, and extrapolation warnings](camberlab-dashboard.png "Predictions are shown beside uncertainty information and nearby CFD samples. Unsupported regions are marked instead of being presented with the same confidence as interpolated results.")
 
-Four model families—Gaussian Process, Random Forest, MLP, and Kriging—learn lift and drag from the harvested cases. Frozen train/test indices and fixed random seeds keep comparisons reproducible. The deployed Streamlit app reads only the resulting model artifacts, so prediction does not require OpenFOAM.
+Confidence bands expose predictive uncertainty, nearby CFD samples show local evidence density, and warnings identify points outside the trained envelope. Unsupported camber can fall back to a symmetric geometry, stall-region predictions are flagged as extrapolation, and incomplete regimes receive lower confidence. The Streamlit interface is a presentation layer for these research choices, not the central contribution.
 
-CamberLab remains a research preview and says so plainly: unsupported camber falls back to a symmetric airfoil, stall predictions are flagged as extrapolation, and incomplete regimes receive lower confidence. That honesty is the project’s defining feature.
+## Validation and limitations
 
-`Flow classification → Validated CFD → Surrogate training → Uncertainty-aware prediction`
+The surrogate evaluation uses held-out CFD cases, while the underlying simulation campaign is checked against reference aerodynamic behaviour. The prediction is therefore conditional on both layers: the surrogate can reproduce its CFD dataset and the CFD must remain credible for the sampled regime.
+
+CamberLab is a research preview. Its uncertainty estimate does not remove CFD model-form error, sparse regimes remain less reliable, and extrapolation warnings do not make extrapolated values valid. The current geometry family and mostly steady aerodynamic outputs also limit the physics represented.
+
+## Limitations and possible extensions
+
+Possible extensions include active learning that selects the next informative CFD case, multi-fidelity datasets, physics-aware constraints on surrogate behaviour, more complex geometries, and unsteady-flow prediction. These capabilities are not presented as completed features.
+
+`validated CFD dataset → surrogate comparison → uncertainty awareness → trustworthy accelerated prediction`

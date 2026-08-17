@@ -1,55 +1,74 @@
 ---
 title: "Ventilated Supercavitation"
 date: 2026-08-06
-summary: "A three-phase CFD study of how injected air forms a ventilated cavity around an underwater projectile and changes its drag."
-tags:
-  - cfd
-  - multiphase-flow
-  - cavitation
-  - hydrodynamics
+weight: 10
+summary: "Transient RANS-VOF investigation of cavity formation and drag around disk- and cone-cavitator underwater bodies, validated against published evidence and extended with CFD time-series prediction."
+tags: [cfd, multiphase-flow, cavitation, hydrodynamics]
 tech_stack:
   - ANSYS Fluent 2020 R1
-  - Volume of Fluid
-  - RANS
-  - CutCell Meshing
+  - URANS-VOF
+  - Multiphase CFD
+  - KAN / ANN / SVM
 featured: true
 highlights:
-  - "Unsteady compressible three-phase simulation"
-  - "Time-resolved cavity formation and shedding"
-  - "Ventilated and non-ventilated drag comparison"
-  - "Validation against experimental and published numerical data"
+  - "Validated transient RANS-VOF multiphase simulation"
+  - "Disk and cone cavitators under investigated ventilation conditions"
+  - "Approximately 26% average drag reduction; up to about 27%"
+  - "CFD time-series prediction with KAN, ANN, and SVM comparison"
 links:
   - type: code
     url: https://github.com/saifrehman945/VentilatedSupercavitation
     label: Code
 ---
 
-Moving quickly underwater means fighting a dense fluid across the vehicles entire wetted surface. Ventilated supercavitation proposes a striking alternative: inject air near the nose, grow a cavity around the body, and replace much of that water contact with gas.
+## Research question
 
-This project asks whether that protective envelope can form, remain useful, and reduce drag and whether the CFD can reproduce the pressure behavior seen in published work.
+What role does controlled gas ventilation play in cavity formation, stability, and hydrodynamic drag around underwater bodies, and can CFD-generated transient evidence support faster prediction of the resulting drag response?
 
-## Watching the Cavity Grow
+## Physical problem
 
-![Four stages showing ventilated air and vapor forming around the projectile](media/cavity-evolution.png)
+An underwater body normally transfers momentum to dense liquid over most of its wetted surface. Ventilated supercavitation introduces gas near the cavitator so that a gas-rich cavity envelops more of the body. The reduction in liquid contact can reduce drag, but the cavity is unsteady: its interface develops, oscillates, and sheds while interacting with the surrounding turbulent flow. A useful model must therefore represent both the evolving gas-liquid interface and its influence on pressure and force.
 
-<video controls autoplay muted loop playsinline width="100%">
+## Numerical methodology
+
+I modelled the investigated disk- and cone-cavitator cases using **transient RANS with a Volume-of-Fluid multiphase formulation**. The calculations followed cavity development under controlled ventilation conditions and resolved the time-dependent pressure, velocity, phase distribution, and drag response. The numerical results were compared with external experimental and published numerical references available for the investigated configurations.
+
+This is a **URANS-VOF study**. It is not DNS or LES, and it does not resolve every turbulent scale.
+
+![CutCell mesh refined around the cavitator, body, ventilation region, and near wake](media/computational-mesh.png "The approximately 0.59-million-cell mesh concentrates resolution where the cavity interface and hydrodynamic loads develop; the reported wall-function setup targeted y+ ≈ 50.")
+
+## Cavity development and flow physics
+
+![Four time-resolved stages of the ventilated cavity developing around the underwater body](media/cavity-evolution.png "The phase field shows initial vapour and gas structures expanding into a developed ventilated cavity, followed by an unsteady downstream interface.")
+
+<video controls muted loop playsinline width="100%">
   <source src="media/cavity-evolution.mp4" type="video/mp4">
 </video>
 
-The simulation follows an unsteady, compressible, three-phase flow using a Volume-of-Fluid formulation with RANS turbulence. Air enters through a 1 mm ventilation slot near the projectile nose. The visual sequence captures the first cavitation bubbles, the expanding air envelope, cavity shedding, and the developed flow by 0.2 seconds.
+The sequence connects ventilation to the physical mechanism of drag reduction. As the gas-rich cavity extends over the body, it displaces liquid from part of the wetted surface and changes the surface-pressure distribution. The downstream cavity remains time dependent rather than forming a perfectly steady envelope, so transient force prediction matters as much as the mean value.
 
-## Seeing the Drag Mechanism
+![Ventilated and non-ventilated phase fields compared under the investigated conditions](media/ventilated-vs-nonventilated.png "The ventilated case replaces part of the liquid-body contact with a gas-rich cavity; the comparison links cavity morphology to the lower hydrodynamic drag reported across the manuscript cases.")
 
-![Ventilated and non-ventilated projectile flows with their reported drag coefficients](media/ventilated-vs-nonventilated.png)
-
-<video controls autoplay muted loop playsinline width="100%">
+<video controls muted loop playsinline width="100%">
   <source src="media/ventilated-vs-nonventilated.mp4" type="video/mp4">
 </video>
 
-The side-by-side result makes the mechanism tangible. Without ventilation, water remains in contact with the body. With ventilation, the cavity surrounds much of the projectile. The reported drag coefficient changes from **0.02759** without ventilation to **0.01669** with ventilation, connecting the evolving flow structure to the engineering objective.
+## Quantitative findings
 
-## Resolving the Flow Where It Matters
+Across the cases reported in the associated manuscript, controlled ventilation produced approximately **26% average drag reduction**, with reductions of up to about **27%** under the investigated conditions. These values describe the studied geometries and operating range; they should not be read as a universal performance claim for supercavitating bodies.
 
-![CutCell mesh refined around the underwater projectile and its wake](media/computational-mesh.png)
+## From CFD evidence to transient prediction
 
-The 0.59-million-cell CutCell mesh concentrates resolution around the nose, body, ventilation region, and wake while coarsening toward the domain boundaries. A target y+ of 50 supports the wall-function treatment used in the turbulent simulation.
+The project also treated the CFD output as time-dependent scientific data. I integrated a **Kolmogorov-Arnold Network (KAN)** with the CFD time series to predict transient drag coefficient, and compared its predictions with **artificial neural network (ANN)** and **support vector machine (SVM)** baselines.
+
+The purpose was narrower than generic “AI for CFD”: to test whether repeated drag evaluation could be accelerated while retaining a traceable connection to URANS-VOF-generated evidence. The comparison assessed the predictive models against held-out CFD behaviour rather than presenting the surrogate as a replacement for multiphase modelling outside the sampled conditions.
+
+## Validation and limitations
+
+Validation used published experimental and numerical behaviour for the relevant cavitator configurations, including cavity and pressure response where comparable. The agreement supports use of the model for the investigated cases, while discrepancies remain evidence of model-form, mesh, boundary-condition, and reference uncertainty.
+
+The RANS turbulence closure models the effect of unresolved turbulent fluctuations and cannot expose all cavity-vortex interactions. VOF interface resolution, wall-function treatment, and the sampled ventilation range further bound the conclusions. The data-driven model inherits those bounds and should not be trusted automatically in geometries or flow regimes absent from its CFD training evidence.
+
+## Limitations and possible extensions
+
+Further investigation could examine cavity shedding and vortex-interface interactions, turbulence-resolving treatments, flow control, and reduced descriptions of unsteady cavitating flow. These are possible extensions rather than completed parts of the study.

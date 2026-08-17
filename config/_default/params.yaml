@@ -19,9 +19,9 @@ hugoblox:
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "Simulation Engineer, Optimization & CAE Automation"
+    tagline: "Computational Engineer & Researcher"
     # Site meta description for search engines and social sharing
-    description: "Saif ur Rehman - Simulation engineer working at the intersection of physics-based simulation, optimization, and CAE automation: multiphase flow modeling, adjoint-based shape optimization, and Python/C++ workflow automation."
+    description: "Saif ur Rehman is a computational engineer and researcher working across numerical simulation, computational mechanics, optimization, scientific computing, and data-driven engineering."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: ""

@@ -1,0 +1,38 @@
+{{/* Flexible research-first grid used for focus areas, questions, methods, trajectory, and experience. */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content }}
+{{ if not (reflect.IsMap $content) }}{{ $content = dict }}{{ end }}
+{{ $design := $block.design }}
+{{ if not (reflect.IsMap $design) }}{{ $design = dict }}{{ end }}
+{{ $variant := index $design "variant" | default "cards" }}
+{{ $columns := index $design "columns" | default 3 }}
+{{ $gridClass := "md:grid-cols-2 lg:grid-cols-3" }}
+{{ if eq $columns 2 }}{{ $gridClass = "md:grid-cols-2" }}{{ end }}
+{{ if eq $columns 4 }}{{ $gridClass = "md:grid-cols-2 lg:grid-cols-4" }}{{ end }}
+{{ if eq $columns 5 }}{{ $gridClass = "md:grid-cols-2 lg:grid-cols-5" }}{{ end }}
+
+<section class="research-grid research-grid--{{ $variant }} mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+  <header class="research-grid__header">
+    {{ with index $content "eyebrow" }}<p class="research-eyebrow">{{ . | $page.RenderString }}</p>{{ end }}
+    {{ with index $content "title" }}<h2>{{ . | $page.RenderString }}</h2>{{ end }}
+    {{ with index $content "subtitle" }}<p class="research-grid__subtitle">{{ . | $page.RenderString }}</p>{{ end }}
+  </header>
+
+  <div class="research-grid__items grid grid-cols-1 {{ $gridClass }} gap-5">
+    {{ range $index, $item := index $content "items" }}
+      <article class="research-grid__item">
+        {{ if eq $variant "trajectory" }}<span class="research-grid__step">{{ add $index 1 }}</span>{{ end }}
+        {{ with index $item "meta" }}<p class="research-grid__meta">{{ . | $page.RenderString }}</p>{{ end }}
+        {{ with index $item "title" }}<h3>{{ . | $page.RenderString }}</h3>{{ end }}
+        {{ with index $item "text" }}<div class="research-grid__text">{{ . | $page.RenderString }}</div>{{ end }}
+        {{ with index $item "evidence" }}<p class="research-grid__evidence">{{ . | $page.RenderString }}</p>{{ end }}
+        {{ with index $item "url" }}
+          <a class="research-grid__link" href="{{ . | relURL }}">{{ index $item "link_text" | default "Read more" }} <span aria-hidden="true">→</span></a>
+        {{ end }}
+      </article>
+    {{ end }}
+  </div>
+
+  {{ with index $content "footer" }}<div class="research-grid__footer">{{ . | $page.RenderString }}</div>{{ end }}
+</section>

@@ -22,11 +22,14 @@
   {{ $publications = $publications | append $sectionPages }}
 {{ end }}
 {{ $publications = sort $publications "Date" "desc" }}
+{{ $limit := 0 }}
+{{ with index $content "limit" }}{{ $limit = int . }}{{ end }}
+{{ if gt $limit 0 }}{{ $publications = first $limit $publications }}{{ end }}
 
 <div class="research-publications mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16">
   <div class="mb-12 text-center">
     {{ with $title }}
-    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">{{ . | $page.RenderString }}</h1>
+    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">{{ . | $page.RenderString }}</h2>
     {{ end }}
     {{ with $subtitle }}
     <p class="mx-auto max-w-3xl text-base leading-7 text-gray-600 dark:text-gray-400">{{ . | $page.RenderString }}</p>
@@ -77,21 +80,28 @@
           </div>
 
           <div class="flex flex-col justify-center p-6 sm:p-8">
-            {{ with $pub.Params.publication.name }}
-            <p class="mb-3 text-xs font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-300">{{ . }}</p>
-            {{ end }}
+            <div class="mb-3 flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wider">
+              {{ with $pub.Params.publication.name }}<span class="text-primary-600 dark:text-primary-300">{{ . }}</span>{{ end }}
+              {{ with $pub.Params.status }}<span class="publication-card__status">{{ . }}</span>{{ end }}
+            </div>
             <h2 class="text-2xl font-bold leading-tight text-gray-950 dark:text-white">
               <a href="{{ $pub.RelPermalink }}" class="hover:text-primary-600 dark:hover:text-primary-300">{{ $pub.Title }}</a>
             </h2>
-            {{ with $abstract }}
-            <div class="mt-6">
-              <p class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-500">Abstract</p>
-              <p class="mt-3 text-base leading-8 text-gray-700 dark:text-gray-300">{{ . | $pub.RenderString }}</p>
-            </div>
-            {{ end }}
+            <dl class="publication-card__evidence mt-6">
+              {{ with $pub.Params.research_problem }}<div><dt>Research problem</dt><dd>{{ . | $pub.RenderString }}</dd></div>{{ end }}
+              {{ with $pub.Params.methodology }}<div><dt>Method</dt><dd>{{ . | $pub.RenderString }}</dd></div>{{ end }}
+              {{ with $pub.Params.finding }}<div><dt>Principal finding</dt><dd>{{ . | $pub.RenderString }}</dd></div>{{ end }}
+              {{ with $pub.Params.contribution }}<div class="publication-card__contribution"><dt>My contribution</dt><dd>{{ . | $pub.RenderString }}</dd></div>{{ end }}
+            </dl>
+            <a href="{{ $pub.RelPermalink }}" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary-600 dark:text-primary-300">Read publication record <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </article>
     {{ end }}
   </div>
+  {{ with index $content "archive_url" }}
+    <div class="mt-10 text-center">
+      <a class="research-archive-link" href="{{ . | relURL }}">{{ index $content "archive_text" | default "View all publications" }} <span aria-hidden="true">→</span></a>
+    </div>
+  {{ end }}
 </div>

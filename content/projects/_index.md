@@ -7,23 +7,27 @@ type: landing
 sections:
   - block: portfolio
     content:
-      title: Selected Projects
-      subtitle: CFD, FEA, ML, and optimization work spanning research and industry
+      title: Research & Computational Projects
+      subtitle: Numerical studies, method-development work, and computational tools across fluids, mechanics, optimization, scientific computing, and data-driven engineering.
       count: 0
+      sort_by: Weight
+      sort_ascending: true
       filters:
         folders:
           - projects
       buttons:
         - name: All
           tag: '*'
-        - name: CFD
+        - name: Fluid Simulation
           tag: cfd
-        - name: FEA
-          tag: fea
-        - name: ML
-          tag: ml
+        - name: Computational Mechanics
+          tag: computational-mechanics
+        - name: Data-Driven Modelling
+          tag: machine-learning
         - name: Optimization
           tag: optimization
+        - name: Scientific Computing
+          tag: scientific-computing
       default_button_index: 0
     design:
       columns: 3

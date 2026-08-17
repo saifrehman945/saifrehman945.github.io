@@ -1,59 +1,74 @@
 ---
 title: "Vortex Shedding"
 date: 2026-08-06
-summary: "An unsteady RANS study of vortex shedding, oscillating forces, and surface pressure around an underwater circular cylinder."
-tags:
-  - cfd
-  - vortex-shedding
-  - fluid-structure-interaction
-  - hydrodynamics
+weight: 40
+summary: "Unsteady RANS/SST study at Re ≈ 10,000 connecting separation and wake development to force histories, surface pressure, and frequency-domain shedding behaviour."
+tags: [cfd, vortex-shedding, unsteady-flow, hydrodynamics]
 tech_stack:
   - ANSYS Fluent 2020 R1
-  - RANS
+  - URANS
   - SST Turbulence Model
-  - Transient CFD
+  - FFT / Spectral Analysis
 featured: true
 highlights:
-  - "Time-resolved von Karman vortex street"
-  - "Lift and drag histories through wake development"
-  - "Pressure-coefficient validation against experimental data"
-  - "High-Reynolds-number underwater cylinder study"
+  - "Circular-cylinder wake at Reynolds number ≈ 10,000"
+  - "Separation, alternating shear layers, and developed vortex street"
+  - "Transient lift/drag and surface-pressure evidence"
+  - "Frequency-domain comparison with benchmark shedding behaviour"
 links:
   - type: code
     url: https://github.com/saifrehman945/FluentVortexShedding
     label: Code
 ---
 
-A circular cylinder looks simple until water begins to move around it. At a Reynolds number of **10,000**, the separated shear layers do not remain symmetric. They roll into alternating vortices, creating a wake that repeatedly pushes the cylinder from side to side - the foundation of vortex-induced vibration.
+## Research question
 
-This project follows that instability from startup to a developed shedding cycle, then connects the flow pattern to the forces and surface pressures an underwater structure must withstand.
+Can an unsteady RANS model reproduce the development of alternating vortex shedding around an underwater circular cylinder at **Re ≈ 10,000**, and do its pressure, force, and frequency signatures agree with established cylinder-wake behaviour?
 
-## A Wake Becomes Periodic
+## From separation to unsteady loading
 
-![Velocity contours at 50, 100, 200, and 450 seconds showing the wake developing behind the cylinder](media/velocity-timestamps.png)
+The cylinder creates an adverse pressure gradient that separates the boundary layers from its upper and lower surfaces. The detached shear layers become unstable, roll into alternating vortices, and form a von Kármán street. Each shed structure changes the pressure distribution and generates a fluctuating transverse force. If that shedding frequency approaches a structural natural frequency, the same mechanism can drive vortex-induced vibration.
 
-<video controls autoplay muted loop playsinline width="100%">
+`separation → shear layers → alternating shedding → fluctuating lift and drag → dominant frequency → VIV relevance`
+
+## Numerical methodology
+
+I simulated the transient wake using an **unsteady RANS formulation with the SST turbulence model**. The calculation followed startup, symmetry breaking, and the developed periodic regime. Validation used several independent observables: wake evolution, lift and drag histories, the surface-pressure distribution, and the dominant frequency extracted from the transient force signal.
+
+## Wake development
+
+![Velocity fields at four times showing the wake evolve from near symmetry to alternating shedding](media/velocity-timestamps.png "The temporal sequence shows separated shear layers amplifying into an alternating vortex street rather than treating one contour as sufficient evidence of wake behaviour.")
+
+<video controls muted loop playsinline width="100%">
   <source src="media/velocity-vortex-shedding.mp4" type="video/mp4">
 </video>
 
-The early wake is almost symmetric. As the transient RANS solution advances, disturbances amplify, the shear layers roll up, and vortices detach alternately from the upper and lower surfaces. Velocity and vorticity animations reveal the same event from two perspectives: the changing momentum deficit and the rotating structures that organize it into a von Karman street.
+The early wake remains nearly symmetric. Disturbances then grow, the shear layers roll up, and vortices detach alternately from the two sides. The developed wake establishes the physical basis for the periodic force response.
 
-## The Flow Leaves a Force Signature
+## Transient force response
 
-![Lift coefficient growing from small disturbances into a sustained periodic oscillation](media/lift-coefficient.png)
+![Lift coefficient growing from startup disturbances into a developed periodic response](media/lift-coefficient.png "Lift changes sign with alternate shedding. Its growth into a sustained limit cycle provides a quantitative signal of wake symmetry breaking.")
 
-The lift history records the symmetry breaking directly. Small early oscillations grow until the wake reaches a stable limit cycle, after which the alternating vortices produce a nearly constant-amplitude transverse load. This repeating force is what can drive structural vibration when its frequency approaches a natural frequency.
+![Drag coefficient approaching a developed mean with a smaller periodic fluctuation](media/drag-coefficient.png "Drag remains positive and settles near a mean coefficient of approximately 0.95, while wake unsteadiness produces the superimposed oscillation.")
 
-![Drag coefficient settling toward a mean value with smaller periodic fluctuations](media/drag-coefficient.png)
+The lift signal records the alternating wake directly. Its amplitude grows from small startup disturbances and then approaches a repeatable cycle. Drag approaches a developed mean with a smaller periodic component, consistent with the different symmetry of streamwise and transverse loading.
 
-Drag tells a complementary story. After its startup transient, the coefficient approaches a mean near 0.95 with a smaller oscillation superimposed. Lift changes sign with each shed vortex; drag remains positive and fluctuates around its developed mean.
+## Frequency-domain validation
 
-## Checking the Surface Physics
+The developed portion of the transient force signal was transformed to the frequency domain using an **FFT**. The dominant spectral peak identifies the shedding frequency, which can be expressed through the Strouhal relation
 
-![Computed cylinder pressure coefficient compared with published experimental measurements](media/pressure-coefficient.png)
+$$St = \frac{fD}{U_\infty}.$$
 
-The final figure compares the simulated pressure coefficient around the cylinder with experimental measurements. The SST turbulence model reproduces the broad pressure fall from the stagnation region, the suction minimum around the side of the cylinder, and the pressure behavior across the separated rear surface. Differences remain, but the comparison makes the model's accuracy visible rather than relying on wake imagery alone.
+Comparing this frequency-based quantity with published circular-cylinder behaviour provides a stronger test than visual agreement between contours alone. The repository does not currently contain the sampled signal or final FFT figure, so this page does not invent a numerical peak or Strouhal value; adding that artifact would make the validation fully auditable.
 
-Together, the results connect cause to consequence:
+## Surface-pressure validation
 
-`Boundary-layer separation -> Alternating vortices -> Oscillating lift and drag -> Vibration risk`
+![Computed cylinder pressure coefficient compared with published experimental measurements](media/pressure-coefficient.png "The SST result captures the overall pressure fall from stagnation, side suction, and separated rear-surface behaviour; visible differences delimit the model's accuracy.")
+
+The pressure-coefficient comparison checks whether the surface loading that produces the force histories is physically plausible. The simulation reproduces the broad experimental trend while retaining discrepancies in the separated region, where RANS closure and near-wall treatment influence the result.
+
+## Limitations and possible extensions
+
+URANS models the influence of unresolved turbulent fluctuations and cannot resolve the full spectrum of wake turbulence. The study is also limited to a circular cylinder and does not couple the fluid loading to structural motion.
+
+Natural extensions include non-circular and multiple bluff bodies, fluid-structure interaction, turbulence-resolving approaches, wake control, and direct investigation of vortex-induced vibration. These are future research directions, not completed parts of this study.

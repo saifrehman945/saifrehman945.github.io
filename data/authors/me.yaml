@@ -6,11 +6,10 @@ name:
   given: Saif ur
   family: Rehman
 postnominals: []
-role: I turn complex simulations into faster engineering decisions.
+role: Computational Engineer & Researcher
 email: saifurrehman945@outlook.com
-bio: |
-  I build validated CFD, adjoint-optimization, and Python/C++ automation workflows, from model setup and HPC execution
-  to post-processing pipelines and design decisions.
+bio: >-
+  Numerical simulation · Optimization · Scientific computing · Data-driven engineering. My work spans turbulent and multiphase CFD, computational mechanics, adjoint-driven shape optimization, simulation automation, HPC workflows, numerical verification, and predictive models built from simulation data.
 
 affiliations:
   - name: SOCO Engineers
@@ -43,22 +42,23 @@ experience:
     icon: custom/soco
     start: 2023-12-01
     summary: |2-
-      * Core developer of a node-based adjoint-driven shape optimization framework for multi-objective, multi-constraint problems
-      * Built Python automation pipelines for end-to-end simulation workflows (preprocessing, HPC execution, post-processing) generating structured datasets for surrogate training
-      * Architected a hybrid C++ (core kernels) + Python (orchestration) system for performance-critical simulation
+      * Make core contributions to a node-based, adjoint-driven shape-optimization framework for multi-objective and multi-constraint fluid and structural problems.
+      * Investigate sensitivity interpretation, geometry parameterisation, mesh motion, solver coupling, convergence, and numerical verification across simulation formulations.
+      * Develop Python orchestration and performance-critical C++ components for reproducible preprocessing, HPC execution, response extraction, and multi-solver studies.
+      * Build ANSA/Python geometry and CAE automation for feature recognition, meshing, model preparation, and validation of simulation-ready geometry.
   - role: Research Assistant
     org: NUST (SMME)
     icon: custom/nust
     start: 2022-11-01
     end: 2023-12-01
     summary: |2-
-      * Developed multiphase CFD models for turbulent heat transfer and ventilated cavitating flows (unsteady RANS-VOF)
-      * Investigated flow physics (TKE distribution, separation, cavitation dynamics) in complex geometries
-      * Integrated Kolmogorov-Arnold Networks (KAN) with CFD time-series for unsteady drag prediction, outperforming ANN/SVM
-      * Contributed to a CFD particle-deposition study in the human trachea (published, Physics of Fluids)
+      * Modelled ventilated-supercavitation cases using transient RANS-VOF and investigated cavity development, pressure response, and hydrodynamic drag.
+      * Integrated a Kolmogorov-Arnold Network surrogate with CFD time-series data for transient drag-coefficient prediction and comparison with ANN and SVM models.
+      * Studied unsteady wake development and force response around a circular cylinder at Re ≈ 10,000, including pressure and frequency-domain validation.
+      * Co-authored peer-reviewed thermal-fluid research; my documented contribution was manuscript write-up and draft revision.
 
 skills:
-  - name: CFD & Simulation
+  - name: Fluid Simulation
     items:
       - label: ANSYS Fluent
         level: 5
@@ -68,7 +68,7 @@ skills:
         level: 5
       - label: Turbulence Modeling
         level: 4
-  - name: FEA & Structural
+  - name: Computational Mechanics
     items:
       - label: Abaqus
         level: 4
@@ -76,7 +76,9 @@ skills:
         level: 3
       - label: OptiStruct
         level: 3
-  - name: AI & ML
+      - label: Kratos Multiphysics
+        level: 3
+  - name: Data-Driven Modelling
     items:
       - label: Kolmogorov-Arnold Networks
         level: 4
@@ -92,7 +94,7 @@ skills:
         level: 4
       - label: Multi-Objective / MDO
         level: 4
-  - name: Programming
+  - name: Scientific Computing
     items:
       - label: Python (NumPy, Pandas, SciPy)
         level: 5
@@ -105,6 +107,8 @@ skills:
       - label: HPC Cluster Workflows
         level: 4
       - label: Solver Integration & APIs
+        level: 4
+      - label: Geometry & Meshing Automation
         level: 4
 
 languages:
