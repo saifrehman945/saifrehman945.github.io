@@ -3,7 +3,7 @@ title: "CamberLab"
 date: 2026-08-06
 weight: 30
 summary: "Uncertainty-aware surrogate modelling built from a systematically sampled OpenFOAM dataset, with held-out testing and explicit warnings beyond the CFD evidence."
-tags: [cfd, machine-learning, aerodynamics, surrogate-modeling]
+tags: [cfd, machine-learning, aerodynamics, surrogate-modeling, scientific-computing]
 tech_stack:
   - OpenFOAM 12
   - Python / scikit-learn
@@ -54,8 +54,8 @@ The surrogate evaluation uses held-out CFD cases, while the underlying simulatio
 
 CamberLab is a research preview. Its uncertainty estimate does not remove CFD model-form error, sparse regimes remain less reliable, and extrapolation warnings do not make extrapolated values valid. The current geometry family and mostly steady aerodynamic outputs also limit the physics represented.
 
-## Research questions this work motivates
+## Limitations and possible extensions
 
-Future extensions include active learning that selects the next informative CFD case, multi-fidelity datasets, physics-aware constraints on surrogate behaviour, more complex geometries, and unsteady-flow prediction. These capabilities have not been presented as completed features.
+Possible extensions include active learning that selects the next informative CFD case, multi-fidelity datasets, physics-aware constraints on surrogate behaviour, more complex geometries, and unsteady-flow prediction. These capabilities are not presented as completed features.
 
 `validated CFD dataset → surrogate comparison → uncertainty awareness → trustworthy accelerated prediction`

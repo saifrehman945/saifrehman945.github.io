@@ -1,9 +1,9 @@
 ---
 title: "AeroForge"
 date: 2026-08-06
-weight: 60
+weight: 50
 summary: "Scientific infrastructure for reproducible aerodynamic studies: parameterized geometry, controlled meshing, quality checks, solver monitoring, and repeatable OpenFOAM campaigns."
-tags: [cfd, aerodynamics, openfoam, reproducibility]
+tags: [cfd, aerodynamics, openfoam, reproducibility, scientific-computing]
 tech_stack: [Python, OpenFOAM, Gmsh, PyQt]
 featured: true
 highlights:
@@ -17,9 +17,9 @@ links:
     label: Code
 ---
 
-## Computational question
+## Objective
 
-How can a parameter study preserve consistent geometry construction, meshing decisions, boundary conditions, convergence checks, and force extraction across every CFD case?
+AeroForge was built to preserve consistent geometry construction, meshing decisions, boundary conditions, convergence checks, and force extraction across aerodynamic parameter studies.
 
 AeroForge is scientific infrastructure for controlled aerodynamic experimentation. The PyQt desktop interface is an implementation mechanism; the central contribution is the reproducible pipeline behind it:
 

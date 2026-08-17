@@ -69,9 +69,6 @@ Validation used published experimental and numerical behaviour for the relevant 
 
 The RANS turbulence closure models the effect of unresolved turbulent fluctuations and cannot expose all cavity-vortex interactions. VOF interface resolution, wall-function treatment, and the sampled ventilation range further bound the conclusions. The data-driven model inherits those bounds and should not be trusted automatically in geometries or flow regimes absent from its CFD training evidence.
 
-## Research questions this work motivates
+## Limitations and possible extensions
 
-- How do cavity shedding and cavity-vortex interactions determine pressure fluctuations and unsteady loads?
-- How would turbulence-resolving treatment change the predicted interface dynamics?
-- Can active or passive flow control stabilize the cavity without imposing an excessive ventilation cost?
-- Which reduced descriptions preserve the dynamics needed for trustworthy prediction of unsteady cavitating flow?
+Further investigation could examine cavity shedding and vortex-interface interactions, turbulence-resolving treatments, flow control, and reduced descriptions of unsteady cavitating flow. These are possible extensions rather than completed parts of the study.

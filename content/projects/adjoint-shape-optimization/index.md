@@ -1,9 +1,9 @@
 ---
 title: "Adjoint-Based Shape Optimization"
 date: 2024-01-01
-weight: 40
+weight: 20
 summary: "Sanitized computational-method experience in adjoint sensitivities, vertex morphing, multi-solver optimization, and numerical verification across fluid and structural problems."
-tags: [optimization, cfd, fea, hpc]
+tags: [optimization, cfd, fea, computational-mechanics, scientific-computing, hpc]
 tech_stack:
   - Adjoint Methods
   - C++ / Python

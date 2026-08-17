@@ -1,9 +1,9 @@
 ---
 title: "XGuide"
 date: 2026-08-06
-weight: 70
+weight: 60
 summary: "Reusable infrastructure for computational experiments spanning DOE, Taguchi studies, parameter sweeps, optimization, Pareto analysis, and Monte Carlo propagation."
-tags: [computational-experimentation, doe, optimization, uncertainty]
+tags: [computational-experimentation, doe, optimization, uncertainty, scientific-computing]
 tech_stack: [Python, pyDOE, CAE Solver Integration]
 featured: true
 highlights:
@@ -13,9 +13,9 @@ highlights:
   - "Monte Carlo uncertainty propagation"
 ---
 
-## Computational question
+## Objective
 
-How can the same traceable simulation process support controlled parameter studies, optimization, and uncertainty propagation without rebuilding the experiment for every method?
+XGuide was developed so that the same traceable simulation process could support controlled parameter studies, optimization, and uncertainty propagation without rebuilding the experiment for every method.
 
 XGuide is infrastructure for **computational experimentation**. It represents simulation inputs, model preparation, solver execution, response extraction, and objective or constraint calculation as a reusable process. The visual interface helps inspect that process, but the research value lies in applying consistent computations across many designs.
 

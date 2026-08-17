@@ -7,7 +7,7 @@ sections:
   - block: research-publications
     content:
       title: Research Publications
-      subtitle: Research questions, methods, findings, publication status, and contribution statements for each output.
+      subtitle: Study context, methods, findings, publication status, and documented contribution for each academic output.
       folders:
         - publications
     design:

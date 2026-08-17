@@ -19,9 +19,9 @@ hugoblox:
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "Computational Fluid Dynamics Researcher"
+    tagline: "Computational Engineer & Researcher"
     # Site meta description for search engines and social sharing
-    description: "Saif ur Rehman is a computational fluid dynamics researcher working on turbulent and multiphase flows, scientific machine learning, simulation-driven optimization, and numerical verification."
+    description: "Saif ur Rehman is a computational engineer and researcher working across numerical simulation, computational mechanics, optimization, scientific computing, and data-driven engineering."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: ""

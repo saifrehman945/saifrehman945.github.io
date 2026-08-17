@@ -8,7 +8,7 @@ sections:
   - block: portfolio
     content:
       title: Research & Computational Projects
-      subtitle: Primary fluid-mechanics research first, followed by scientific infrastructure and interdisciplinary computational work.
+      subtitle: Numerical studies, method-development work, and computational tools across fluids, mechanics, optimization, scientific computing, and data-driven engineering.
       count: 0
       sort_by: Weight
       sort_ascending: true
@@ -18,16 +18,16 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: CFD
+        - name: Fluid Simulation
           tag: cfd
-        - name: FEA
-          tag: fea
-        - name: Scientific ML
+        - name: Computational Mechanics
+          tag: computational-mechanics
+        - name: Data-Driven Modelling
           tag: machine-learning
         - name: Optimization
           tag: optimization
-        - name: Supporting Methods
-          tag: computational-experimentation
+        - name: Scientific Computing
+          tag: scientific-computing
       default_button_index: 0
     design:
       columns: 3

@@ -1,6 +1,6 @@
 ---
 title: ''
-summary: 'Computational fluid dynamics research in turbulent and multiphase flow, scientific machine learning, and simulation-driven optimization.'
+summary: 'Computational engineering and research across numerical simulation, optimization, scientific computing, computational mechanics, and data-driven modelling.'
 date: 2026-01-05
 type: landing
 
@@ -9,24 +9,37 @@ sections:
     id: hero
     content:
       username: me
-      greeting: "COMPUTATIONAL FLUID DYNAMICS · RESEARCH PORTFOLIO"
-      show_status: false
+      greeting: "Hi, I'm"
+      show_status: true
       show_scroll_indicator: true
-      scroll_target: "#research-focus"
+      scroll_target: "#computational-domains"
+      typewriter:
+        enable: true
+        prefix: "I work on"
+        strings:
+          - "Physics-based simulations"
+          - "Numerical method development"
+          - "Simulation-driven optimization"
+          - "Data-driven modelling"
+          - "Computational mechanics"
+          - "Scientific computing"
+        type_speed: 70
+        delete_speed: 40
+        pause_time: 2500
       cta_buttons:
-        - text: Research Projects
-          url: "#selected-research"
+        - text: Selected Work
+          url: "#selected-work"
           icon: arrow-down
         - text: Publications
           url: "/publications/"
           icon: book-open
-        - text: Research CV
+        - text: CV
           url: "/uploads/saif-ur-rehman-cv.pdf"
           icon: document-arrow-down
     design:
       style: centered
       avatar_shape: circle
-      animations: false
+      animations: true
       background:
         color:
           light: "#fafafa"
@@ -35,51 +48,37 @@ sections:
         padding: ["6rem", "0", "4rem", "0"]
 
   - block: research-grid
-    id: research-focus
+    id: computational-domains
     content:
-      eyebrow: Research focus
-      title: "Flow physics, predictive models, and computational design"
-      subtitle: "My research foundation is CFD. I extend it with data-driven modelling, optimization, and reproducible scientific computing where those methods help answer a physical or numerical question."
+      # eyebrow: Research & computational domains
+      title: "Research & computational domains"
+      # subtitle: "My work spans academic numerical research and industrial computational engineering. These domains are connected by a common emphasis on verification, reproducibility, and interpretable numerical evidence."
       items:
-        - title: Turbulent & Unsteady Flows
-          text: "Wake dynamics, vortex shedding, separated flows, near-wall behaviour, transient forces, pressure fluctuations, and spectral analysis."
-          meta: Fluid dynamics
-        - title: Multiphase & Cavitating Flows
-          text: "VOF-based multiphase modelling, ventilated cavitation, cavity dynamics, gas-liquid interfaces, underwater hydrodynamics, and drag."
-          meta: Multiphase CFD
-        - title: Data-Driven Fluid Mechanics
-          text: "CFD surrogate modelling, time-series prediction, uncertainty and extrapolation awareness, and accelerated physics-based prediction."
-          meta: Scientific ML
-        - title: Simulation-Driven Design
-          text: "Adjoint sensitivities, shape optimization, geometry parameterisation, multi-solver workflows, and numerical verification."
-          meta: Computational methods
+        - title: Fluid Dynamics
+          text: "Unsteady and turbulent CFD, vortex shedding, multiphase flow, cavitation, hydrodynamics, and thermal-fluid simulation."
+          meta: Numerical simulation
+        - title: Computational Mechanics
+          text: "Structural FEA, static and modal responses, solver coupling, sensitivities, multiphysics, and mechanical-system simulation."
+          meta: Mechanics
+        - title: Optimization
+          text: "Adjoint methods, node-based shape optimization, parameterisation, DOE, multi-objective optimization, and design under uncertainty."
+          meta: Computational design
+        - title: Scientific Computing
+          text: "Python and C++, HPC execution, numerical workflows, automated simulation campaigns, verification, and reproducible computational tools."
+          meta: Methods & infrastructure
+        - title: Data-Driven Modelling
+          text: "CFD surrogates, KAN time-series prediction, statistical and ML models, simulation-generated datasets, and uncertainty-aware prediction."
+          meta: Simulation data
     design:
       variant: cards
-      columns: 4
-
-  - block: research-grid
-    id: research-questions
-    content:
-      eyebrow: Doctoral direction
-      title: "Questions I want to pursue"
-      subtitle: "These are future research interests arising from completed work, not claims of methods already mastered."
-      items:
-        - title: Unsteady flow physics
-          text: "How can coherent structures, vortex shedding, and pressure fluctuations be predicted and interpreted more accurately across turbulent flow regimes?"
-        - title: Multiphase and cavitation physics
-          text: "How do cavity dynamics, turbulent structures, and vortex-interface interactions determine unsteady hydrodynamic loads and flow stability?"
-        - title: Physics-aware reduced modelling
-          text: "How much governing flow physics can an accelerated predictive model preserve, and how can it signal when a prediction is no longer trustworthy?"
-    design:
-      variant: questions
-      columns: 3
+      columns: 5
 
   - block: portfolio
-    id: selected-research
+    id: selected-work
     content:
-      title: "Selected Research"
-      subtitle: "Validated investigations and computational-method work, ordered by the research trajectory they establish."
-      count: 4
+      title: "Selected Work"
+      subtitle: "Research studies, numerical-method investigations, and computational frameworks across fluid mechanics, optimization, data-driven modelling, and scientific software."
+      count: 6
       sort_by: Weight
       sort_ascending: true
       filters:
@@ -91,7 +90,7 @@ sections:
         enable: true
         text: "View all computational projects"
     design:
-      columns: 2
+      columns: 3
       background:
         color:
           light: "#ffffff"
@@ -103,7 +102,7 @@ sections:
     id: publications
     content:
       title: "Publications"
-      subtitle: "Peer-reviewed and under-review outputs, with the research problem, evidence, principal finding, and my contribution stated separately."
+      subtitle: "Formal academic outputs with the study, methodology, principal finding, publication status, and documented contribution stated separately."
       folders: [publications]
       limit: 2
       archive_url: /publications/
@@ -114,64 +113,119 @@ sections:
   - block: research-grid
     id: trajectory
     content:
-      eyebrow: Research trajectory
-      title: "A progression from flow physics to computational research methods"
+      # eyebrow: Research & professional trajectory
+      title: "From Independent simulations to integrated computational engineering"
+      # subtitle: "This progression describes completed work rather than a proposed future direction."
       items:
-        - meta: Academic CFD research
-          title: Turbulent, unsteady, and multiphase flows
-          text: "Vortex shedding and transient loads led into ventilated supercavitation and cavity dynamics."
-        - meta: Data-driven extension
-          title: Simulation evidence as predictive data
-          text: "CFD time-series informed KAN drag prediction; systematic CFD campaigns informed uncertainty-aware surrogate modelling."
-        - meta: Industrial computational methods
-          title: Adjoints, solver integration, and verification
-          text: "Production-scale work developed depth in sensitivities, parameterisation, optimization, HPC execution, and numerical comparison."
-        - meta: Doctoral direction
-          title: Deeper computational fluid mechanics
-          text: "Turbulent and multiphase CFD, data-driven fluid mechanics, reduced modelling, and simulation-driven design."
+        - meta: Academic numerical work
+          title: Fluid, thermal, and structural simulation
+          text: "Projects included bluff-body wake dynamics, ventilated supercavitation, thermal-fluid analysis, and finite-element modelling of a zirconia dental prosthesis."
+        - meta: Simulation-to-data workflows
+          title: Predictive models built from numerical evidence
+          text: "CFD time-series supported KAN drag prediction, while systematic aerodynamic campaigns supported surrogate comparison and uncertainty-aware inference."
+        - meta: Industrial computational engineering
+          title: Optimization, mechanics, and simulation infrastructure
+          text: "Production-scale work covered adjoint sensitivities, structural and CFD solver integration, geometry processing, meshing, HPC execution, and reusable scientific software."
+        - meta: Cross-cutting practice
+          title: Verification and reproducibility
+          text: "Across these areas, the common work is establishing convergence, meaningful comparisons, defensible tolerances, and traceable computational results."
     design:
       variant: trajectory
       columns: 4
 
-  - block: research-grid
+  - block: tech-stack
     id: computational-methods
     content:
-      eyebrow: Computational methods
-      title: "Methods and infrastructure supporting the research"
-      subtitle: "Software is listed here as implementation context; validation evidence and physical interpretation remain the primary outputs."
-      items:
-        - title: Fluid mechanics
-          text: "OpenFOAM · ANSYS Fluent · STAR-CCM+ · RANS · URANS · VOF · turbulence modelling · spectral analysis"
-        - title: Scientific computing
-          text: "Python · C++ · NumPy · SciPy · scikit-learn · Bash"
-        - title: HPC & reproducibility
-          text: "Linux · OpenMPI · GNU Parallel · automated batch CFD campaigns · convergence monitoring"
-        - title: Mechanics & optimization
-          text: "Abaqus · OptiStruct · LS-DYNA · adjoint sensitivities · FEA · shape optimization"
-        - title: Geometry & meshing
-          text: "Gmsh · ANSA · ICEM-CFD · automated meshing · geometry processing · mesh-quality checks"
+      title: "Computational Methods & Tools"
+      subtitle: "Software and numerical methods used across the portfolio's fluid, structural, optimization, and data-driven work."
+      categories:
+        - name: Fluid Simulation
+          items:
+            - name: ANSYS Fluent
+              icon: devicon/ansys
+            - name: OpenFOAM
+              icon: custom/openfoam
+            - name: STAR-CCM+
+              icon: custom/starccm
+            - name: RANS / URANS / VOF
+              icon: hero/arrows-right-left
+        - name: Structural & Multiphysics
+          items:
+            - name: Abaqus
+              icon: hero/cube-transparent
+            - name: OptiStruct
+              icon: custom/optistruct
+            - name: LS-DYNA
+              icon: custom/ls-dyna
+            - name: Kratos Multiphysics
+              icon: custom/kratos
+        - name: Optimization
+          items:
+            - name: Adjoint Sensitivities
+              icon: hero/arrow-path
+            - name: Shape Optimization
+              icon: hero/arrows-pointing-out
+            - name: DOE & Sampling
+              icon: hero/table-cells
+            - name: Multi-Objective Optimization
+              icon: hero/chart-bar
+        - name: Scientific & Data Computing
+          items:
+            - name: Python
+              icon: devicon/python
+            - name: C++
+              icon: devicon/cplusplus
+            - name: NumPy / SciPy
+              icon: devicon/numpy
+            - name: scikit-learn
+              icon: devicon/scikitlearn
+        - name: HPC & Automation
+          items:
+            - name: Linux
+              icon: devicon/linux
+            - name: OpenMPI
+              icon: hero/server-stack
+            - name: Bash / GNU Parallel
+              icon: devicon/bash
+            - name: Batch Simulation
+              icon: hero/queue-list
+        - name: Geometry & Meshing
+          items:
+            - name: Gmsh
+              icon: hero/cube
+            - name: ANSA
+              icon: hero/wrench-screwdriver
+            - name: ICEM-CFD
+              icon: hero/squares-2x2
+            - name: Automated Preprocessing
+              icon: hero/cog-6-tooth
     design:
-      variant: methods
-      columns: 3
+      style: grid
+      show_levels: false
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#0d0d12"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
 
-  - block: research-grid
-    id: industrial-research
-    content:
-      eyebrow: Industrial computational research experience
-      title: "Numerical infrastructure around simulation"
-      subtitle: "After academic CFD research, I moved into production-scale computational engineering. This work developed the less visible skills required to make simulations comparable, repeatable, and useful across solvers and computing environments."
-      items:
-        - title: Adjoint and sensitivity methods
-          text: "Core contributions to a node-based adjoint-driven shape-optimization framework, including response and sensitivity handling, parameterisation, vertex morphing, and geometry updates."
-        - title: Multi-solver scientific computing
-          text: "Python orchestration and performance-critical C++ components connecting structural and CFD solvers through repeatable computational processes."
-        - title: Numerical verification
-          text: "Investigations of normal formulations, tolerance selection, floating-point reproducibility, solver-version differences, and whether sensitivity fields are mathematically comparable."
-          url: /projects/adjoint-shape-optimization/
-          link_text: Read the sanitized method case study
-    design:
-      variant: experience
-      columns: 3
+  # - block: research-grid
+  #   id: computational-practice
+  #   content:
+  #     eyebrow: Cross-cutting computational practice
+  #     subtitle: "These activities connect fluid simulation, computational mechanics, optimization, and scientific software rather than belonging to only one application area."
+  #     items:
+  #       - title: Numerical verification
+  #         text: "Convergence assessment, experimentally derived tolerances, solver-version comparison, floating-point reproducibility, distinguishing missing outputs from valid zero responses, and identifying non-comparable numerical quantities."
+  #       - title: Geometry & CAE automation
+  #         text: "ANSA Python scripting, feature recognition, automated meshing, middle-surface and hole processing, RBE generation, geometry validation, and CAD-to-CAE operations."
+  #       - title: Multi-solver workflows
+  #         text: "Repeatable preprocessing, solver execution, response extraction, sensitivity handling, and optimization across structural, fluid, and multiphysics solvers."
+  #         url: /projects/adjoint-shape-optimization/
+  #         link_text: Read the sanitized optimization case study
+  #   design:
+  #     variant: experience
+  #     columns: 3
 
   - block: resume-experience
     id: experience
@@ -192,10 +246,10 @@ sections:
     id: contact
     content:
       title: Contact
-      subtitle: "Research conversations and computational-science collaborations are welcome."
+      subtitle: "For research, technical collaboration, and computational-engineering enquiries."
       username: me
       connect_title: "Get in touch"
-      text: "I am interested in doctoral research opportunities in computational fluid mechanics and computational engineering. Email is the most direct way to reach me; my code and research profiles are linked below."
+      text: "Email is the most direct way to reach me. My code, publications, and research profiles are linked below."
       email: saifurrehman945@outlook.com
     design:
       columns: '1'

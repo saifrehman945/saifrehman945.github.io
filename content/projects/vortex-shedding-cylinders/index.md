@@ -1,7 +1,7 @@
 ---
 title: "Vortex Shedding"
 date: 2026-08-06
-weight: 20
+weight: 40
 summary: "Unsteady RANS/SST study at Re ≈ 10,000 connecting separation and wake development to force histories, surface pressure, and frequency-domain shedding behaviour."
 tags: [cfd, vortex-shedding, unsteady-flow, hydrodynamics]
 tech_stack:
@@ -67,7 +67,7 @@ Comparing this frequency-based quantity with published circular-cylinder behavio
 
 The pressure-coefficient comparison checks whether the surface loading that produces the force histories is physically plausible. The simulation reproduces the broad experimental trend while retaining discrepancies in the separated region, where RANS closure and near-wall treatment influence the result.
 
-## Limitations and next questions
+## Limitations and possible extensions
 
 URANS models the influence of unresolved turbulent fluctuations and cannot resolve the full spectrum of wake turbulence. The study is also limited to a circular cylinder and does not couple the fluid loading to structural motion.
 

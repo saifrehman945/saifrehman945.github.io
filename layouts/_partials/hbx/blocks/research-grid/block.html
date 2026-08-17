@@ -10,6 +10,7 @@
 {{ $gridClass := "md:grid-cols-2 lg:grid-cols-3" }}
 {{ if eq $columns 2 }}{{ $gridClass = "md:grid-cols-2" }}{{ end }}
 {{ if eq $columns 4 }}{{ $gridClass = "md:grid-cols-2 lg:grid-cols-4" }}{{ end }}
+{{ if eq $columns 5 }}{{ $gridClass = "md:grid-cols-2 lg:grid-cols-5" }}{{ end }}
 
 <section class="research-grid research-grid--{{ $variant }} mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
   <header class="research-grid__header">
